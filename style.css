@@ -306,6 +306,10 @@
 
 @media screen and (max-width: 560px) {
 
+    .header-footer__heure-fr__jp{
+        top : 0vw!important;
+    }
+
     .header-footer__a-venir{
         min-width: var(--all-width);
         height: 55vw;
