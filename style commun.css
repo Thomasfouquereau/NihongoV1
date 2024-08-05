@@ -24,8 +24,13 @@
     white-space: nowrap;
     animation: scroll 25s linear infinite;
     font-size: 1.3vw;
-  }
+}
 
+@media screen and (max-width: 900px) {
+    .info {
+        height: 11.5vw; 
+    }
+}
 /* ___________________________________ fin */
 
 /* ___________________________________style de base pour nav */

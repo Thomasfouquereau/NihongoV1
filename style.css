@@ -51,7 +51,6 @@
     font-weight: 200
 }
 
-
 .main-content__info{
     display: flex;
     width: 92.8vw;
@@ -192,3 +191,9 @@
     transform: translateX(-0.4vw);
 }
 
+
+@media screen and (max-width: 560px){
+
+    
+
+}
