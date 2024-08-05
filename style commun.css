@@ -1,4 +1,12 @@
 /* ___________________________________style de base pour info */
+@keyframes scroll {
+    0% {
+      transform: translateX(90vw);
+    }
+    100% {
+      transform: translateX(-70vw);
+    }
+  }
 
 .info {
     border : var( --border-size) solid var(--couleur-secondaire);
@@ -11,9 +19,12 @@
     overflow: hidden;
 }
 
-.info-content{
+#info-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 25s linear infinite;
     font-size: 1.3vw;
-}
+  }
 
 /* ___________________________________ fin */
 
