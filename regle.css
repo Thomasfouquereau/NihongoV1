@@ -1,0 +1,29 @@
+:root {
+    --couleur-principale: #353535;
+    --couleur-secondaire: #F7F7F2;
+    --couleur-tertiaire: #9EFF9E;
+    --couleur-quaternaire: #FF9E9E;
+    --border-size: 0.2vw;
+    --border-radius: 0.3vw;
+    --all-width: calc(100vw - 2 * var(--border-size));
+}
+
+body{
+    background-color: var(--couleur-principale);
+    color: var(--couleur-secondaire);
+    font-family: "Inter", sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+h1{
+    font-family: "Istok Web", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: var(--couleur-secondaire);
+}
