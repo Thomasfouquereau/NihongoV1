@@ -29,6 +29,11 @@
 @media screen and (max-width: 560px) {
     .info {
         height: 11.5vw; 
+        border-radius: var(--border-radius-mobile);
+    }
+
+    #info-content {
+        font-size: 4.5vw;
     }
 }
 /* ___________________________________ fin */
@@ -116,7 +121,61 @@
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 560px) {
 
+    .menu{
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: absolute;
+        top: 76.8vw;
+        width: var(--all-width);
+        transform: translate(-0 , -0);
+        height: 96vw;
+        justify-content: space-evenly;
+        border-radius: var(--border-radius-mobile);
+    }
+    .menu__content-link,.menu__content-link__a-venir{
+        height: 30vw;
+        width: 48vw;
+        border-radius: var(--border-radius-mobile);
+        margin: 0;
+    }
+
+    .menu a:nth-child(2){
+        transform: translateY(0.3vw);
+    }
+
+    .menu__content-link span:nth-child(1), .menu__content-link span:nth-child(3){
+        font-size: 3vw;
+    }
+    
+    .menu__content-link span:nth-child(2){
+        font-size: 6vw;
+        font-weight: 900;
+    }
+
+    .menu__content-ver{
+        flex-direction: column-reverse;
+    }
+    
+    .content-ver{
+        flex-direction: row;
+    }
+
+    .menu__content-ver div:nth-child(1){
+        font-size: 6vw;;
+        font-weight: 900;
+    }
+    
+    .menu__content-ver div:nth-child(2){
+        font-size: 3vw;
+        margin-left: 0.5vw;
+    }
+
+    .menu__content-fr{
+        font-size: 3vw;
+    }
+}
 
 /* ___________________________________ fin */
 
@@ -157,4 +216,34 @@
     position: absolute;
     bottom: 0.5vw;
     right: 0.5vw;
+}
+
+@media screen and (max-width: 560px) {
+
+    .header-footer__heure-fr__jp{
+        height: 16vw;
+        width: calc(var(--all-width) / 2 - 0.1vw);
+        border-radius: var(--border-radius-mobile);
+    }
+
+    .header-footer__heure-fr__jp:nth-child(1){
+        transform: translateX(0.2vw);
+    }
+
+    .header-footer__heure-fr__jp span:nth-child(1){
+        font-size: 3vw;
+        top: 1.5vw;
+        left: 1.5vw;
+    }
+    
+    .header-footer__heure-fr__jp span:nth-child(2){
+        font-size: 5vw;
+    }
+    
+    .header-footer__heure-fr__jp span:nth-child(3){
+        font-size: 3vw;
+        bottom: 1.5vw;
+        right: 1.5vw;
+    }
+
 }

@@ -5,6 +5,7 @@
     --couleur-quaternaire: #FF9E9E;
     --border-size: 0.2vw;
     --border-radius: 0.3vw;
+    --border-radius-mobile: 1vw;
     --all-width: calc(100vw - 2 * var(--border-size));
 }
 
