@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
             kanjis.forEach(item => {
                 htmlContent += `<div class="kanji-item">
                 <div class="kanji-meaning">
-                    <span class="kanji">${item.Kanji}</span>
+                    <span class="kanji" translate="no">${item.Kanji}</span>
                     <span class="meaning">${item.Meaning}</span>
                 </div>
-                    <span class="on-reading"><p>On</p>${item.OnReading.join(', ')}</span>
-                    <span class="kun-reading"><p>Kun</p>${item.KunReading.join(', ')}</span>
+                    <span class="on-reading" translate="no"><p>On</p>${item.OnReading.join(', ')}</span>
+                    <span class="kun-reading" translate="no"><p>Kun</p>${item.KunReading.join(', ')}</span>
                     <span class="jlpt-level"><p>JLPT</p>${item.JLPTLevel}</span>
                 `;
                 if (item.SecondaryMeaning) {
