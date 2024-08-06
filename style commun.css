@@ -140,6 +140,7 @@
         height: 95.96vw;
         justify-content: space-evenly;
         border-radius: var(--border-radius-mobile);
+        right: -0vw;
     }
 
     .menu__content-link,
@@ -560,19 +561,23 @@
     .play span:nth-child(1) {
         font-size: 4vw;
         top: 3vw;
-        left: 3vw;
+        left: 16vw;
     }
 
     .play span:nth-child(4) {
-        font-size: 1.5vw;
-        bottom: 9vw;
-        right: 11.1vw;
+        font-size: 2vw;
+        bottom: 12vw;
+        width: 100%;
+        text-align: center;
+        left: -6vw;
     }
 
     .play span:nth-child(5) {
-        font-size: 4vw;
+        font-size: 6vw;
         bottom: 3vw;
-        right: 3vw;
+        right: 0vw;
+        width: 100%;
+        text-align: center;
     }
 
     .play img {
