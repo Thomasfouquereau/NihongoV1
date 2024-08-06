@@ -109,25 +109,39 @@
     }
 
     .kanji-item{
-        width: 45vw;
-        height: 30vw;
-
+        width: 85vw;
+        height: 60vw;
+        border-radius: var(--border-radius-mobile);
     }
 
     .kanji{
-        font-size: 6vw;
+        font-size: 10vw;
     }
 
     .meaning{
-        font-size: 2vw;
+        font-size: 4vw;
     }
 
     .on-reading,.kun-reading,.jlpt-level{
-        font-size: 1.5vw;
+        font-size: 3vw;
     }
 
     .secondary-meaning{
-        font-size: 1.5vw;
+        font-size: 3vw;
+        top: 3.2vw;
+        right: 4vw;
+    }
+
+    .jlpt-level{
+        right: 4vw;
+    }
+
+    .on-reading,.kun-reading{
+        left: 4vw;
+    }
+
+    .on-reading p,.kun-reading p,.jlpt-level p{
+        margin-right: 2vw;
     }
     
 }
