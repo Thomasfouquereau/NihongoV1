@@ -1,0 +1,103 @@
+.page{
+    display: flex;
+    width: 100vw;
+    background-color: var(--couleur-primaire);
+}
+
+
+
+
+
+
+/* ___________________________________ dictionnaire */
+
+.dictionnaire{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 2vw;
+}
+
+.kanji-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19vw;
+    height: 13vw;
+    border-radius: var(--border-radius);
+    border: 0.15vw solid var(--couleur-secondaire);
+    position: relative;
+    z-index: 1;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.secondary-meaning{
+    display: none;
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    font-size: 0.9vw;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.kanji-item:hover{
+    transform: scale(1.15);
+    z-index: 100 !important;
+    background-color: #232323
+}
+
+.kanji-item:hover .secondary-meaning{
+    display: block;
+}
+
+.kanji-meaning{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.kanji{
+    font-size: 2.5vw;
+    font-weight: 300;
+    margin-bottom: 0.5vw;
+}
+
+.meaning{
+    font-size: 1vw;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.on-reading,.kun-reading,.jlpt-level{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 0.9vw;
+    font-weight: 300;
+}
+
+.on-reading p,.kun-reading p,.jlpt-level p{
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 0.5vw;
+}
+
+.on-reading{
+    bottom: 0vw;
+    left: 1vw;
+}
+
+.kun-reading{
+    top: 0vw;
+    left: 1vw;
+}
+
+.jlpt-level{
+    bottom: 0vw;
+    right: 1vw;
+}
+

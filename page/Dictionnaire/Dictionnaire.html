@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dictionnaire.css">
+    <link rel="stylesheet" href="../../regle.css">
+    <link rel="stylesheet" href="../../style commun.css">
+    <script src="Dictionnaire.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./assets/lvl 1 icon.svg" />
+    <title>Projet Nihongo</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="info">
+            <span id="info-content"></span>
+        </div>
+        <div class="page">
+            <div class="main-content">
+                <div class="header">
+                    <div class="header-left">
+                        <a class="back" href="../../index.html">
+                            <img src="../../assets/back icon.svg" alt="Retour">
+                            <div class="back-title">
+                                <span>もど</span>
+                                <span>戻る</span>
+                                <span>Retour</span>
+                            </div>
+                        </a>
+                        <div class="header-footer__heure-fr__jp">
+                            <span>フランス</span>
+                            <span id="heureFrance"></span>
+                            <span>France</span>
+                        </div>
+                        <div class="header-footer__heure-fr__jp">
+                            <span>日本</span>
+                            <span id="heureJapon"></span>
+                            <span>Japon</span>
+                        </div>
+                    </div>
+                    <div class="header-title">
+                        <div class="kanji-header-help">
+                            <span class="furigana">かん</span>
+                            <span class="furigana">じ</span>
+                        </div>
+                        <h1>漢字</h1>
+                        <span>kanji</span>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-right__kanji-info">
+                            <span>Nombre de kanji enregistrer</span>
+                            <div>
+                                <p class="nb-kanji-save1" id="nb-kanji-save"><span id="last-id"></span></p>/2000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="footer-left">
+                        <a class="home" href="../../index.html">
+                            <img src="../../assets/home icon.svg" alt="">
+                            <div class="home-title">
+                                <span>サイトホーム</span>
+                                <span>Accueil du site</span>
+                            </div>
+                        </a>
+                       
+                    </div>
+                    
+                    <div class="coming-soon">
+                        <div class="a-venir__content-1">
+                            <span>きんじつこうかい</span>
+                            <span>近日公開</span>
+                            <span>Prochainement</span>
+                        </div>
+                        <div class="a-venir__content-2">
+                            <span>きんじつこうかい</span>
+                            <span>近日公開</span>
+                            <span>Prochainement</span>
+                        </div>
+                        <div class="a-venir__content-3">
+                            <span>きんじつこうかい</span>
+                            <span>近日公開</span>
+                            <span>Prochainement</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <span>カタカナ</span>
+                            <span>ア</span>
+                            <span>katakana</span>
+                        </div>
+                        <div>
+                            <span>ひらがな</span>
+                            <span>あ</span>
+                            <span>hiragana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <a class="menu__content-link">
+                    <span>かんじ</span>
+                    <span>漢字</span>
+                    <span>kanji</span>
+                </a>
+                <a href="hiragana.html" class="menu__content-link">
+                    <span>ひらがな</span>
+                    <span>あ</span>
+                    <span>hiragana</span>
+                </a>
+                <a href="katakana.html" class="menu__content-link">
+                    <span>カタカナ</span>
+                    <span>ア</span>
+                    <span>katakana</span>
+                </a>
+                <a href="vocabulaire.html" class="menu__content-link">
+                    <span>ごい</span>
+                    <span>語彙</span>
+                    <span>Vocabulaire</span>
+                </a>
+                <a href="nombre.html" class="menu__content-link">
+                    <span>ばんごう</span>
+                    <span>番号</span>
+                    <span>Nombre</span>
+                </a>
+                <div class="menu__content-link__a-venir">
+                    <div class="menu__content-ver">
+                        <div class="content-ver">
+                            <span>近</span>
+                            <span>日</span>
+                            <span>公</span>
+                            <span>開</span>
+                        </div>
+                        <div class="content-ver">
+                            <span>き</span>
+                            <span>ん</span>
+                            <span>じ</span>
+                            <span>つ</span>
+                            <span>こ</span>
+                            <span>う</span>
+                            <span>か</span>
+                            <span>い</span>
+                        </div>
+                    </div>
+                    <span class="menu__content-fr">a venir</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="dictionnaire">
+
+        </div>
+    </section>
+
+</body>
+<script src="../../script.js"></script>
+<script src="../../heure.js"></script>
+
+</html>

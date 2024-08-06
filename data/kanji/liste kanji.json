@@ -1,0 +1,1565 @@
+{
+    "kanji": [
+        {
+            "id": 1,
+            "Kanji": "一",
+            "OnReading": [
+                "イチ",
+                "イツ"
+            ],
+            "KunReading": [
+                "ひと",
+                "ひと(つ)"
+            ],
+            "PrincipalReading": "イチ",
+            "JLPTLevel": "N5",
+            "Meaning": "un",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 2,
+            "Kanji": "二",
+            "OnReading": [
+                "ニ"
+            ],
+            "KunReading": [
+                "ふた",
+                "ふた(つ)"
+            ],
+            "PrincipalReading": "ニ",
+            "JLPTLevel": "N5",
+            "Meaning": "deux",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 3,
+            "Kanji": "三",
+            "OnReading": [
+                "サン"
+            ],
+            "KunReading": [
+                "み",
+                "みっ(つ)"
+            ],
+            "PrincipalReading": "サン",
+            "JLPTLevel": "N5",
+            "Meaning": "trois",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 4,
+            "Kanji": "四",
+            "OnReading": [
+                "シ",
+                "ヨン"
+            ],
+            "KunReading": [
+                "よ",
+                "よん",
+                "よっ(つ)"
+            ],
+            "PrincipalReading": "シ",
+            "JLPTLevel": "N5",
+            "Meaning": "quatre",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 5,
+            "Kanji": "五",
+            "OnReading": [
+                "ゴ"
+            ],
+            "KunReading": [
+                "いつ",
+                "いつ(つ)"
+            ],
+            "PrincipalReading": "ゴ",
+            "JLPTLevel": "N5",
+            "Meaning": "cinq",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 6,
+            "Kanji": "六",
+            "OnReading": [
+                "ロク",
+                "リク"
+            ],
+            "KunReading": [
+                "む",
+                "むっ(つ)"
+            ],
+            "PrincipalReading": "ロク",
+            "JLPTLevel": "N5",
+            "Meaning": "six",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 7,
+            "Kanji": "七",
+            "OnReading": [
+                "シチ"
+            ],
+            "KunReading": [
+                "なな",
+                "なな(つ)"
+            ],
+            "PrincipalReading": "シチ",
+            "JLPTLevel": "N5",
+            "Meaning": "sept",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 8,
+            "Kanji": "八",
+            "OnReading": [
+                "ハチ"
+            ],
+            "KunReading": [
+                "や",
+                "やっ(つ)"
+            ],
+            "PrincipalReading": "ハチ",
+            "JLPTLevel": "N5",
+            "Meaning": "huit",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 9,
+            "Kanji": "九",
+            "OnReading": [
+                "キュウ",
+                "ク"
+            ],
+            "KunReading": [
+                "ここの",
+                "ここの(つ)"
+            ],
+            "PrincipalReading": "キュウ",
+            "JLPTLevel": "N5",
+            "Meaning": "neuf",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 10,
+            "Kanji": "十",
+            "OnReading": [
+                "ジュウ"
+            ],
+            "KunReading": [
+                "とお"
+            ],
+            "PrincipalReading": "ジュウ",
+            "JLPTLevel": "N5",
+            "Meaning": "dix",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 11,
+            "Kanji": "人",
+            "OnReading": [
+                "ジン",
+                "ニン"
+            ],
+            "KunReading": [
+                "ひと"
+            ],
+            "PrincipalReading": "ジン",
+            "JLPTLevel": "N5",
+            "Meaning": "personne",
+            "SecondaryMeaning": "être humain"
+        },
+        {
+            "id": 12,
+            "Kanji": "今",
+            "OnReading": [
+                "コン",
+                "キン"
+            ],
+            "KunReading": [
+                "いま"
+            ],
+            "PrincipalReading": "コン",
+            "JLPTLevel": "N5",
+            "Meaning": "maintenant",
+            "SecondaryMeaning": "présent"
+        },
+        {
+            "id": 13,
+            "Kanji": "日",
+            "OnReading": [
+                "ニチ",
+                "ジツ"
+            ],
+            "KunReading": [
+                "ひ",
+                "び",
+                "か"
+            ],
+            "PrincipalReading": "ニチ",
+            "JLPTLevel": "N5",
+            "Meaning": "jour",
+            "SecondaryMeaning": "soleil"
+        },
+        {
+            "id": 14,
+            "Kanji": "週",
+            "OnReading": [
+                "シュウ"
+            ],
+            "KunReading": [
+                ""
+            ],
+            "PrincipalReading": "シュウ",
+            "JLPTLevel": "N5",
+            "Meaning": "semaine",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 15,
+            "Kanji": "月",
+            "OnReading": [
+                "ゲツ",
+                "ガツ"
+            ],
+            "KunReading": [
+                "つき"
+            ],
+            "PrincipalReading": "ゲツ",
+            "JLPTLevel": "N5",
+            "Meaning": "mois",
+            "SecondaryMeaning": "lune"
+        },
+        {
+            "id": 16,
+            "Kanji": "年",
+            "OnReading": [
+                "ネン"
+            ],
+            "KunReading": [
+                "とし"
+            ],
+            "PrincipalReading": "ネン",
+            "JLPTLevel": "N5",
+            "Meaning": "année",
+            "SecondaryMeaning": "âge"
+        },
+        {
+            "id": 17,
+            "Kanji": "中",
+            "OnReading": [
+                "チュウ",
+                "ジュウ"
+            ],
+            "KunReading": [
+                "なか",
+                "うち",
+                "あた(る)"
+            ],
+            "PrincipalReading": "チュウ",
+            "JLPTLevel": "N5",
+            "Meaning": "milieu",
+            "SecondaryMeaning": "intérieur"
+        },
+        {
+            "id": 18,
+            "Kanji": "山",
+            "OnReading": [
+                "サン",
+                "セイ"
+            ],
+            "KunReading": [
+                "やま"
+            ],
+            "PrincipalReading": "サン",
+            "JLPTLevel": "N5",
+            "Meaning": "montagne",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 19,
+            "Kanji": "川",
+            "OnReading": [
+                "セン"
+            ],
+            "KunReading": [
+                "かわ"
+            ],
+            "PrincipalReading": "セン",
+            "JLPTLevel": "N5",
+            "Meaning": "rivière",
+            "SecondaryMeaning": "cours d'eau"
+        },
+        {
+            "id": 20,
+            "Kanji": "左",
+            "OnReading": [
+                "サ",
+                "シャ"
+            ],
+            "KunReading": [
+                "ひだり"
+            ],
+            "PrincipalReading": "サ",
+            "JLPTLevel": "N5",
+            "Meaning": "gauche",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 21,
+            "Kanji": "右",
+            "OnReading": [
+                "ウ",
+                "ユウ"
+            ],
+            "KunReading": [
+                "みぎ"
+            ],
+            "PrincipalReading": "ウ",
+            "JLPTLevel": "N5",
+            "Meaning": "droite",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 22,
+            "Kanji": "大",
+            "OnReading": [
+                "ダイ",
+                "タイ"
+            ],
+            "KunReading": [
+                "おお(きい)",
+                "おお(い)"
+            ],
+            "PrincipalReading": "ダイ",
+            "JLPTLevel": "N5",
+            "Meaning": "grand",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 23,
+            "Kanji": "木",
+            "OnReading": [
+                "ボク",
+                "モク"
+            ],
+            "KunReading": [
+                "き",
+                "こ"
+            ],
+            "PrincipalReading": "ボク",
+            "JLPTLevel": "N5",
+            "Meaning": "arbre",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 24,
+            "Kanji": "本",
+            "OnReading": [
+                "ホン"
+            ],
+            "KunReading": [
+                "もと"
+            ],
+            "PrincipalReading": "ホン",
+            "JLPTLevel": "N5",
+            "Meaning": "livre",
+            "SecondaryMeaning": "origine"
+        },
+        {
+            "id": 25,
+            "Kanji": "水",
+            "OnReading": [
+                "スイ"
+            ],
+            "KunReading": [
+                "みず"
+            ],
+            "PrincipalReading": "スイ",
+            "JLPTLevel": "N5",
+            "Meaning": "eau",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 26,
+            "Kanji": "火",
+            "OnReading": [
+                "カ"
+            ],
+            "KunReading": [
+                "ひ",
+                "ほ"
+            ],
+            "PrincipalReading": "カ",
+            "JLPTLevel": "N5",
+            "Meaning": "feu",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 27,
+            "Kanji": "父",
+            "OnReading": [
+                "フ"
+            ],
+            "KunReading": [
+                "ちち",
+                "とう"
+            ],
+            "PrincipalReading": "フ",
+            "JLPTLevel": "N5",
+            "Meaning": "père",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 28,
+            "Kanji": "母",
+            "OnReading": [
+                "ボ"
+            ],
+            "KunReading": [
+                "はは",
+                "かあ"
+            ],
+            "PrincipalReading": "ボ",
+            "JLPTLevel": "N5",
+            "Meaning": "mère",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 29,
+            "Kanji": "耳",
+            "OnReading": [
+                "ジ"
+            ],
+            "KunReading": [
+                "みみ"
+            ],
+            "PrincipalReading": "ジ",
+            "JLPTLevel": "N5",
+            "Meaning": "oreille",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 30,
+            "Kanji": "口",
+            "OnReading": [
+                "コウ",
+                "ク"
+            ],
+            "KunReading": [
+                "くち"
+            ],
+            "PrincipalReading": "コウ",
+            "JLPTLevel": "N5",
+            "Meaning": "bouche",
+            "SecondaryMeaning": "entrée"
+        },
+        {
+            "id": 31,
+            "Kanji": "休",
+            "OnReading": [
+                "キュウ"
+            ],
+            "KunReading": [
+                "やす(む)",
+                "やす(まる)"
+            ],
+            "PrincipalReading": "キュウ",
+            "JLPTLevel": "N5",
+            "Meaning": "repos",
+            "SecondaryMeaning": "pause"
+        },
+        {
+            "id": 32,
+            "Kanji": "何",
+            "OnReading": [
+                "カ"
+            ],
+            "KunReading": [
+                "なに",
+                "なん"
+            ],
+            "PrincipalReading": "カ",
+            "JLPTLevel": "N5",
+            "Meaning": "quoi",
+            "SecondaryMeaning": "quel"
+        },
+        {
+            "id": 33,
+            "Kanji": "入",
+            "OnReading": [
+                "ニュウ",
+                "ジュ"
+            ],
+            "KunReading": [
+                "い(る)",
+                "はい(る)",
+                "い(れる)",
+                "はい(れる)"
+            ],
+            "PrincipalReading": "ニュウ",
+            "JLPTLevel": "N5",
+            "Meaning": "entrer",
+            "SecondaryMeaning": "mettre"
+        },
+        {
+            "id": 34,
+            "Kanji": "上",
+            "OnReading": [
+                "ジョウ",
+                "ショウ"
+            ],
+            "KunReading": [
+                "うえ",
+                "あ(げる)",
+                "あ(がる)",
+                "のぼ(る)"
+            ],
+            "PrincipalReading": "ジョウ",
+            "JLPTLevel": "N5",
+            "Meaning": "haut",
+            "SecondaryMeaning": "supérieur"
+        },
+        {
+            "id": 35,
+            "Kanji": "前",
+            "OnReading": [
+                "ゼン"
+            ],
+            "KunReading": [
+                "まえ"
+            ],
+            "PrincipalReading": "ゼン",
+            "JLPTLevel": "N5",
+            "Meaning": "avant",
+            "SecondaryMeaning": "devant"
+        },
+        {
+            "id": 36,
+            "Kanji": "下",
+            "OnReading": [
+                "カ",
+                "ゲ"
+            ],
+            "KunReading": [
+                "した",
+                "しも",
+                "もと",
+                "さ(げる)",
+                "さ(がる)",
+                "くだ(る)",
+                "くだ(さる)"
+            ],
+            "PrincipalReading": "カ",
+            "JLPTLevel": "N5",
+            "Meaning": "bas",
+            "SecondaryMeaning": "inférieur"
+        },
+        {
+            "id": 37,
+            "Kanji": "千",
+            "OnReading": [
+                "セン"
+            ],
+            "KunReading": [
+                "ち"
+            ],
+            "PrincipalReading": "セン",
+            "JLPTLevel": "N5",
+            "Meaning": "mille",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 38,
+            "Kanji": "午",
+            "OnReading": [
+                "ゴ"
+            ],
+            "KunReading": [
+                "うま"
+            ],
+            "PrincipalReading": "ゴ",
+            "JLPTLevel": "N5",
+            "Meaning": "midi",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 39,
+            "Kanji": "友",
+            "OnReading": [
+                "ユウ"
+            ],
+            "KunReading": [
+                "とも"
+            ],
+            "PrincipalReading": "ユウ",
+            "JLPTLevel": "N5",
+            "Meaning": "ami",
+            "SecondaryMeaning": "compagnon"
+        },
+        {
+            "id": 40,
+            "Kanji": "古",
+            "OnReading": [
+                "コ"
+            ],
+            "KunReading": [
+                "ふる(い)"
+            ],
+            "PrincipalReading": "コ",
+            "JLPTLevel": "N5",
+            "Meaning": "ancien",
+            "SecondaryMeaning": "vieux"
+        },
+        {
+            "id": 41,
+            "Kanji": "名",
+            "OnReading": [
+                "メイ",
+                "ミョウ"
+            ],
+            "KunReading": [
+                "な"
+            ],
+            "PrincipalReading": "メイ",
+            "JLPTLevel": "N5",
+            "Meaning": "nom",
+            "SecondaryMeaning": "réputation"
+        },
+        {
+            "id": 42,
+            "Kanji": "国",
+            "OnReading": [
+                "コク"
+            ],
+            "KunReading": [
+                "くに"
+            ],
+            "PrincipalReading": "コク",
+            "JLPTLevel": "N5",
+            "Meaning": "pays",
+            "SecondaryMeaning": "nation"
+        },
+        {
+            "id": 43,
+            "Kanji": "外",
+            "OnReading": [
+                "ガイ",
+                "ゲ"
+            ],
+            "KunReading": [
+                "そと",
+                "ほか",
+                "はず(す)"
+            ],
+            "PrincipalReading": "ガイ",
+            "JLPTLevel": "N5",
+            "Meaning": "extérieur",
+            "SecondaryMeaning": "autre"
+        },
+        {
+            "id": 44,
+            "Kanji": "女",
+            "OnReading": [
+                "ジョ",
+                "ニョ"
+            ],
+            "KunReading": [
+                "おんな",
+                "め"
+            ],
+            "PrincipalReading": "ジョ",
+            "JLPTLevel": "N5",
+            "Meaning": "femme",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 45,
+            "Kanji": "男",
+            "OnReading": [
+                "ダン",
+                "ナン"
+            ],
+            "KunReading": [
+                "おとこ"
+            ],
+            "PrincipalReading": "ダン",
+            "JLPTLevel": "N5",
+            "Meaning": "homme",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 46,
+            "Kanji": "子",
+            "OnReading": [
+                "シ",
+                "ス",
+                "コ"
+            ],
+            "KunReading": [
+                "こ"
+            ],
+            "PrincipalReading": "シ",
+            "JLPTLevel": "N5",
+            "Meaning": "enfant",
+            "SecondaryMeaning": "fils"
+        },
+        {
+            "id": 47,
+            "Kanji": "学",
+            "OnReading": [
+                "ガク"
+            ],
+            "KunReading": [
+                "まな(ぶ)"
+            ],
+            "PrincipalReading": "ガク",
+            "JLPTLevel": "N5",
+            "Meaning": "étudier",
+            "SecondaryMeaning": "école"
+        },
+        {
+            "id": 48,
+            "Kanji": "生",
+            "OnReading": [
+                "セイ",
+                "ショウ"
+            ],
+            "KunReading": [
+                "い(きる)",
+                "う(まれる)",
+                "なま"
+            ],
+            "PrincipalReading": "セイ",
+            "JLPTLevel": "N5",
+            "Meaning": "vie",
+            "SecondaryMeaning": "naître"
+        },
+        {
+            "id": 49,
+            "Kanji": "小",
+            "OnReading": [
+                "ショウ"
+            ],
+            "KunReading": [
+                "ちい(さい)",
+                "こ"
+            ],
+            "PrincipalReading": "ショウ",
+            "JLPTLevel": "N5",
+            "Meaning": "petit",
+            "SecondaryMeaning": "jeune"
+        },
+        {
+            "id": 50,
+            "Kanji": "書",
+            "OnReading": [
+                "ショ"
+            ],
+            "KunReading": [
+                "か(く)"
+            ],
+            "PrincipalReading": "ショ",
+            "JLPTLevel": "N5",
+            "Meaning": "écrire",
+            "SecondaryMeaning": "livre"
+        },
+        {
+            "id": 51,
+            "Kanji": "毎",
+            "OnReading": [
+                "マイ"
+            ],
+            "KunReading": [
+                "ごと",
+                "おの(ずから)"
+            ],
+            "PrincipalReading": "マイ",
+            "JLPTLevel": "N5",
+            "Meaning": "chaque",
+            "SecondaryMeaning": "tous"
+        },
+        {
+            "id": 52,
+            "Kanji": "先",
+            "OnReading": [
+                "セン"
+            ],
+            "KunReading": [
+                "さき",
+                "ま(ず)"
+            ],
+            "PrincipalReading": "セン",
+            "JLPTLevel": "N5",
+            "Meaning": "avant",
+            "SecondaryMeaning": "précédent"
+        },
+        {
+            "id": 53,
+            "Kanji": "会",
+            "OnReading": [
+                "カイ",
+                "エ"
+            ],
+            "KunReading": [
+                "あ(う)"
+            ],
+            "PrincipalReading": "カイ",
+            "JLPTLevel": "N5",
+            "Meaning": "réunion",
+            "SecondaryMeaning": "association"
+        },
+        {
+            "id": 54,
+            "Kanji": "万",
+            "OnReading": [
+                "マン",
+                "バン"
+            ],
+            "KunReading": [
+                "よろず"
+            ],
+            "PrincipalReading": "マン",
+            "JLPTLevel": "N5",
+            "Meaning": "dix mille",
+            "SecondaryMeaning": "tout"
+        },
+        {
+            "id": 55,
+            "Kanji": "円",
+            "OnReading": [
+                "エン"
+            ],
+            "KunReading": [
+                "まる(い)"
+            ],
+            "PrincipalReading": "エン",
+            "JLPTLevel": "N5",
+            "Meaning": "yen",
+            "SecondaryMeaning": "rond"
+        },
+        {
+            "id": 56,
+            "Kanji": "出",
+            "OnReading": [
+                "シュツ",
+                "スイ"
+            ],
+            "KunReading": [
+                "で(る)",
+                "だ(す)"
+            ],
+            "PrincipalReading": "シュツ",
+            "JLPTLevel": "N5",
+            "Meaning": "sortir",
+            "SecondaryMeaning": "produire"
+        },
+        {
+            "id": 57,
+            "Kanji": "分",
+            "OnReading": [
+                "ブン",
+                "フン",
+                "ブ"
+            ],
+            "KunReading": [
+                "わ(ける)",
+                "わ(かる)"
+            ],
+            "PrincipalReading": "ブン",
+            "JLPTLevel": "N5",
+            "Meaning": "diviser",
+            "SecondaryMeaning": "minute"
+        },
+        {
+            "id": 58,
+            "Kanji": "北",
+            "OnReading": [
+                "ホク"
+            ],
+            "KunReading": [
+                "きた"
+            ],
+            "PrincipalReading": "ホク",
+            "JLPTLevel": "N5",
+            "Meaning": "nord",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 59,
+            "Kanji": "半",
+            "OnReading": [
+                "ハン"
+            ],
+            "KunReading": [
+                "なか(ば)"
+            ],
+            "PrincipalReading": "ハン",
+            "JLPTLevel": "N5",
+            "Meaning": "moitié",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 60,
+            "Kanji": "南",
+            "OnReading": [
+                "ナン",
+                "なん"
+            ],
+            "KunReading": [
+                "みなみ"
+            ],
+            "PrincipalReading": "ナン",
+            "JLPTLevel": "N5",
+            "Meaning": "sud",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 61,
+            "Kanji": "土",
+            "OnReading": [
+                "ド",
+                "ト"
+            ],
+            "KunReading": [
+                "つち"
+            ],
+            "PrincipalReading": "ド",
+            "JLPTLevel": "N5",
+            "Meaning": "terre",
+            "SecondaryMeaning": "sol"
+        },
+        {
+            "id": 62,
+            "Kanji": "多",
+            "OnReading": [
+                "タ"
+            ],
+            "KunReading": [
+                "おお(い)"
+            ],
+            "PrincipalReading": "タ",
+            "JLPTLevel": "N5",
+            "Meaning": "beaucoup",
+            "SecondaryMeaning": "plusieurs"
+        },
+        {
+            "id": 63,
+            "Kanji": "天",
+            "OnReading": [
+                "テン"
+            ],
+            "KunReading": [
+                "あま"
+            ],
+            "PrincipalReading": "テン",
+            "JLPTLevel": "N5",
+            "Meaning": "ciel",
+            "SecondaryMeaning": "paradis"
+        },
+        {
+            "id": 64,
+            "Kanji": "安",
+            "OnReading": [
+                "アン"
+            ],
+            "KunReading": [
+                "やす(い)"
+            ],
+            "PrincipalReading": "アン",
+            "JLPTLevel": "N5",
+            "Meaning": "paisible",
+            "SecondaryMeaning": "bon marché"
+        },
+        {
+            "id": 65,
+            "Kanji": "少",
+            "OnReading": [
+                "ショウ"
+            ],
+            "KunReading": [
+                "すく(ない)",
+                "すこ(し)"
+            ],
+            "PrincipalReading": "ショウ",
+            "JLPTLevel": "N5",
+            "Meaning": "peu",
+            "SecondaryMeaning": "jeune"
+        },
+        {
+            "id": 66,
+            "Kanji": "店",
+            "OnReading": [
+                "テン"
+            ],
+            "KunReading": [
+                "みせ",
+                "たな"
+            ],
+            "PrincipalReading": "テン",
+            "JLPTLevel": "N5",
+            "Meaning": "magasin",
+            "SecondaryMeaning": "boutique"
+        },
+        {
+            "id": 67,
+            "Kanji": "後",
+            "OnReading": [
+                "ゴ",
+                "コウ"
+            ],
+            "KunReading": [
+                "あと",
+                "うし(ろ)"
+            ],
+            "PrincipalReading": "ゴ",
+            "JLPTLevel": "N5",
+            "Meaning": "après",
+            "SecondaryMeaning": "derrière"
+        },
+        {
+            "id": 68,
+            "Kanji": "手",
+            "OnReading": [
+                "シュ"
+            ],
+            "KunReading": [
+                "て",
+                "た"
+            ],
+            "PrincipalReading": "シュ",
+            "JLPTLevel": "N5",
+            "Meaning": "main",
+            "SecondaryMeaning": "moyen"
+        },
+        {
+            "id": 69,
+            "Kanji": "新",
+            "OnReading": [
+                "シン"
+            ],
+            "KunReading": [
+                "あたら(しい)",
+                "あら(た)"
+            ],
+            "PrincipalReading": "シン",
+            "JLPTLevel": "N5",
+            "Meaning": "nouveau",
+            "SecondaryMeaning": "récent"
+        },
+        {
+            "id": 70,
+            "Kanji": "時",
+            "OnReading": [
+                "ジ"
+            ],
+            "KunReading": [
+                "とき",
+                "どき"
+            ],
+            "PrincipalReading": "ジ",
+            "JLPTLevel": "N5",
+            "Meaning": "temps",
+            "SecondaryMeaning": "heure"
+        },
+        {
+            "id": 71,
+            "Kanji": "来",
+            "OnReading": [
+                "ライ",
+                "くる"
+            ],
+            "KunReading": [
+                "く(る)",
+                "きた(る)"
+            ],
+            "PrincipalReading": "ライ",
+            "JLPTLevel": "N5",
+            "Meaning": "venir",
+            "SecondaryMeaning": "prochain"
+        },
+        {
+            "id": 72,
+            "Kanji": "東",
+            "OnReading": [
+                "トウ"
+            ],
+            "KunReading": [
+                "ひがし"
+            ],
+            "PrincipalReading": "トウ",
+            "JLPTLevel": "N5",
+            "Meaning": "est",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 73,
+            "Kanji": "校",
+            "OnReading": [
+                "コウ"
+            ],
+            "KunReading": [
+                "こう"
+            ],
+            "PrincipalReading": "コウ",
+            "JLPTLevel": "N5",
+            "Meaning": "école",
+            "SecondaryMeaning": "vérifier"
+        },
+        {
+            "id": 74,
+            "Kanji": "気",
+            "OnReading": [
+                "キ",
+                "ケ"
+            ],
+            "KunReading": [
+                "き"
+            ],
+            "PrincipalReading": "キ",
+            "JLPTLevel": "N5",
+            "Meaning": "esprit",
+            "SecondaryMeaning": "air"
+        },
+        {
+            "id": 75,
+            "Kanji": "白",
+            "OnReading": [
+                "ハク",
+                "ビャク"
+            ],
+            "KunReading": [
+                "しろ",
+                "しろ(い)"
+            ],
+            "PrincipalReading": "ハク",
+            "JLPTLevel": "N5",
+            "Meaning": "blanc",
+            "SecondaryMeaning": "pur"
+        },
+        {
+            "id": 76,
+            "Kanji": "百",
+            "OnReading": [
+                "ヒャク"
+            ],
+            "KunReading": [
+                "もも"
+            ],
+            "PrincipalReading": "ヒャク",
+            "JLPTLevel": "N5",
+            "Meaning": "cent",
+            "SecondaryMeaning": "nombre"
+        },
+        {
+            "id": 77,
+            "Kanji": "目",
+            "OnReading": [
+                "モク",
+                "ボク"
+            ],
+            "KunReading": [
+                "め",
+                "ま"
+            ],
+            "PrincipalReading": "モク",
+            "JLPTLevel": "N5",
+            "Meaning": "œil",
+            "SecondaryMeaning": "but"
+        },
+        {
+            "id": 78,
+            "Kanji": "社",
+            "OnReading": [
+                "シャ"
+            ],
+            "KunReading": [
+                "やしろ"
+            ],
+            "PrincipalReading": "シャ",
+            "JLPTLevel": "N5",
+            "Meaning": "société",
+            "SecondaryMeaning": "sanctuaire"
+        },
+        {
+            "id": 79,
+            "Kanji": "空",
+            "OnReading": [
+                "クウ"
+            ],
+            "KunReading": [
+                "そら",
+                "あ(ける)",
+                "あ(く)"
+            ],
+            "PrincipalReading": "クウ",
+            "JLPTLevel": "N5",
+            "Meaning": "ciel",
+            "SecondaryMeaning": "vide"
+        },
+        {
+            "id": 80,
+            "Kanji": "立",
+            "OnReading": [
+                "リツ",
+                "リュウ"
+            ],
+            "KunReading": [
+                "た(つ)",
+                "た(てる)"
+            ],
+            "PrincipalReading": "リツ",
+            "JLPTLevel": "N5",
+            "Meaning": "se lever",
+            "SecondaryMeaning": "établir"
+        },
+        {
+            "id": 81,
+            "Kanji": "聞",
+            "OnReading": [
+                "ブン",
+                "モン"
+            ],
+            "KunReading": [
+                "き(く)",
+                "きこ(える)"
+            ],
+            "PrincipalReading": "ブン",
+            "JLPTLevel": "N5",
+            "Meaning": "écouter",
+            "SecondaryMeaning": "entendre"
+        },
+        {
+            "id": 82,
+            "Kanji": "花",
+            "OnReading": [
+                "カ"
+            ],
+            "KunReading": [
+                "はな"
+            ],
+            "PrincipalReading": "カ",
+            "JLPTLevel": "N5",
+            "Meaning": "fleur",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 83,
+            "Kanji": "行",
+            "OnReading": [
+                "コウ",
+                "ギョウ"
+            ],
+            "KunReading": [
+                "い(く)",
+                "おこな(う)"
+            ],
+            "PrincipalReading": "コウ",
+            "JLPTLevel": "N5",
+            "Meaning": "aller",
+            "SecondaryMeaning": "acte"
+        },
+        {
+            "id": 84,
+            "Kanji": "西",
+            "OnReading": [
+                "セイ",
+                "サイ"
+            ],
+            "KunReading": [
+                "にし"
+            ],
+            "PrincipalReading": "セイ",
+            "JLPTLevel": "N5",
+            "Meaning": "ouest",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 85,
+            "Kanji": "見",
+            "OnReading": [
+                "ケン"
+            ],
+            "KunReading": [
+                "み(る)",
+                "み(える)",
+                "み(せる)"
+            ],
+            "PrincipalReading": "ケン",
+            "JLPTLevel": "N5",
+            "Meaning": "voir",
+            "SecondaryMeaning": "regarder"
+        },
+        {
+            "id": 86,
+            "Kanji": "言",
+            "OnReading": [
+                "ゲン",
+                "ゴン"
+            ],
+            "KunReading": [
+                "い(う)",
+                "こと"
+            ],
+            "PrincipalReading": "ゲン",
+            "JLPTLevel": "N5",
+            "Meaning": "dire",
+            "SecondaryMeaning": "mot"
+        },
+        {
+            "id": 87,
+            "Kanji": "話",
+            "OnReading": [
+                "ワ"
+            ],
+            "KunReading": [
+                "はな(す)",
+                "はなし"
+            ],
+            "PrincipalReading": "ワ",
+            "JLPTLevel": "N5",
+            "Meaning": "parler",
+            "SecondaryMeaning": "histoire"
+        },
+        {
+            "id": 88,
+            "Kanji": "語",
+            "OnReading": [
+                "ゴ"
+            ],
+            "KunReading": [
+                "かた(る)",
+                "かた(らう)"
+            ],
+            "PrincipalReading": "ゴ",
+            "JLPTLevel": "N5",
+            "Meaning": "langue",
+            "SecondaryMeaning": "mot"
+        },
+        {
+            "id": 89,
+            "Kanji": "読",
+            "OnReading": [
+                "ドク",
+                "トク",
+                "トウ"
+            ],
+            "KunReading": [
+                "よ(む)"
+            ],
+            "PrincipalReading": "ドク",
+            "JLPTLevel": "N5",
+            "Meaning": "lire",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 90,
+            "Kanji": "買",
+            "OnReading": [
+                "バイ"
+            ],
+            "KunReading": [
+                "か(う)"
+            ],
+            "PrincipalReading": "バイ",
+            "JLPTLevel": "N5",
+            "Meaning": "acheter",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 91,
+            "Kanji": "足",
+            "OnReading": [
+                "ソク"
+            ],
+            "KunReading": [
+                "あし",
+                "た(りる)",
+                "た(す)"
+            ],
+            "PrincipalReading": "ソク",
+            "JLPTLevel": "N5",
+            "Meaning": "pied",
+            "SecondaryMeaning": "suffire"
+        },
+        {
+            "id": 92,
+            "Kanji": "車",
+            "OnReading": [
+                "シャ"
+            ],
+            "KunReading": [
+                "くるま"
+            ],
+            "PrincipalReading": "シャ",
+            "JLPTLevel": "N5",
+            "Meaning": "voiture",
+            "SecondaryMeaning": "chariot"
+        },
+        {
+            "id": 93,
+            "Kanji": "道",
+            "OnReading": [
+                "ドウ",
+                "チョウ"
+            ],
+            "KunReading": [
+                "みち"
+            ],
+            "PrincipalReading": "ドウ",
+            "JLPTLevel": "N5",
+            "Meaning": "route",
+            "SecondaryMeaning": "voie"
+        },
+        {
+            "id": 94,
+            "Kanji": "金",
+            "OnReading": [
+                "キン",
+                "コン"
+            ],
+            "KunReading": [
+                "かね",
+                "かな(える)"
+            ],
+            "PrincipalReading": "キン",
+            "JLPTLevel": "N5",
+            "Meaning": "argent",
+            "SecondaryMeaning": "or"
+        },
+        {
+            "id": 95,
+            "Kanji": "長",
+            "OnReading": [
+                "チョウ"
+            ],
+            "KunReading": [
+                "なが(い)"
+            ],
+            "PrincipalReading": "チョウ",
+            "JLPTLevel": "N5",
+            "Meaning": "long",
+            "SecondaryMeaning": "chef"
+        },
+        {
+            "id": 96,
+            "Kanji": "間",
+            "OnReading": [
+                "カン",
+                "ケン"
+            ],
+            "KunReading": [
+                "あいだ",
+                "ま"
+            ],
+            "PrincipalReading": "カン",
+            "JLPTLevel": "N5",
+            "Meaning": "intervalle",
+            "SecondaryMeaning": "entre"
+        },
+        {
+            "id": 97,
+            "Kanji": "雨",
+            "OnReading": [
+                "ウ"
+            ],
+            "KunReading": [
+                "あめ",
+                "あま(る)"
+            ],
+            "PrincipalReading": "ウ",
+            "JLPTLevel": "N5",
+            "Meaning": "pluie",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 98,
+            "Kanji": "電",
+            "OnReading": [
+                "デン"
+            ],
+            "KunReading": [
+                "いなずま",
+                "でん"
+            ],
+            "PrincipalReading": "デン",
+            "JLPTLevel": "N5",
+            "Meaning": "électricité",
+            "SecondaryMeaning": "éclair"
+        },
+        {
+            "id": 99,
+            "Kanji": "食",
+            "OnReading": [
+                "ショク",
+                "ジキ"
+            ],
+            "KunReading": [
+                "た(べる)",
+                "く(う)"
+            ],
+            "PrincipalReading": "ショク",
+            "JLPTLevel": "N5",
+            "Meaning": "manger",
+            "SecondaryMeaning": "nourriture"
+        },
+        {
+            "id": 100,
+            "Kanji": "飲",
+            "OnReading": [
+                "イン"
+            ],
+            "KunReading": [
+                "の(む)"
+            ],
+            "PrincipalReading": "イン",
+            "JLPTLevel": "N5",
+            "Meaning": "boire",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 101,
+            "Kanji": "駅",
+            "OnReading": [
+                "エキ"
+            ],
+            "KunReading": [
+                "いき"
+            ],
+            "PrincipalReading": "エキ",
+            "JLPTLevel": "N5",
+            "Meaning": "gare",
+            "SecondaryMeaning": null
+        },
+        {
+            "id": 102,
+            "Kanji": "高",
+            "OnReading": [
+                "コウ"
+            ],
+            "KunReading": [
+                "たか(い)"
+            ],
+            "PrincipalReading": "コウ",
+            "JLPTLevel": "N5",
+            "Meaning": "haut",
+            "SecondaryMeaning": "cher"
+        },
+        {
+            "id": 103,
+            "Kanji": "魚",
+            "OnReading": [
+                "ギョ",
+                "リョウ"
+            ],
+            "KunReading": [
+                "さかな",
+                "うお"
+            ],
+            "PrincipalReading": "ギョ",
+            "JLPTLevel": "N5",
+            "Meaning": "poisson",
+            "SecondaryMeaning": null
+        }
+    ]
+}

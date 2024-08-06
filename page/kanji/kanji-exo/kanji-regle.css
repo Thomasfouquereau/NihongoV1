@@ -364,14 +364,19 @@
 /* ___________________________________mode-1 */
 
 .mode-1 {
-    width: 36.3vw;
-    height: 28.1vw;
+    width: 36.7vw;
+    height: 28.5vw;
     transform: translate(-0.2vw, -0.54vw);
     border-radius: var(--border-radius);
     border: var(--border-size) solid var(--couleur-secondaire);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-secondaire);
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
 .mode-1 span:nth-child(1) {
@@ -411,6 +416,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-secondaire);
 }
 
 .mode-2 span:nth-child(1) {
@@ -448,6 +455,8 @@
     align-items: center;
     position: relative;
     transform: translateX(-0.2vw);
+    background-color: var(--couleur-principale);
+    color: var(--couleur-secondaire);
 }
 
 .mode-3 span:nth-child(1) {
