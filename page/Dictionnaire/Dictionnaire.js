@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Affichez le dernier id dans un span
             const lastIdSpan = document.querySelector('#last-id');
             if (lastIdSpan) {
-                lastIdSpan.textContent = ` ${lastId}`;
+                lastIdSpan.textContent = ` ${lastId}/2000`;
             }
 
             // Traitez les données JSON ici

@@ -5,6 +5,73 @@
 }
 
 
+/* ___________________________________ kanji-save-info */
+
+
+.header-right__kanji-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30.35vw;
+    width: 28.8vw;
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid var(--couleur-secondaire);
+    transform: translate(-0.4vw, -0.2vw);
+    position: relative;
+}
+
+.header-right__kanji-info span:nth-child(1) {
+    font-size: 2.5vw;
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    top: 2vw;
+}
+
+#last-id {
+    font-size: 3vw;
+    font-weight: 300;
+}
+
+.nb-kanji-save1 {
+    font-size: 3vw !important;
+    font-weight: 300 !important;
+    margin: 0 !important;
+    transform: translateY(0) !important;
+}
+
+@media screen and (max-width: 560px) {
+
+    .header-left {
+        flex-direction: row;
+    }
+
+    .header-right__kanji-info {
+        width: var(--all-width);
+        height: 62vw;
+        transform: translateX(0);
+        position: absolute;
+        left: 0;
+        top: 205vw;
+    }
+
+    .header-right__kanji-info span:nth-child(1) {
+        font-size: 5vw;
+        top: 4vw;
+    }
+
+    #last-id {
+        font-size: 6vw;
+    }
+
+    .nb-kanji-save1 {
+        font-size: 6vw !important;
+    }
+
+}
+
+/* ___________________________________ fin */
 
 
 
