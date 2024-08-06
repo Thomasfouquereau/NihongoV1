@@ -40,6 +40,10 @@
 
 /* ___________________________________ fin */
 
+.header{
+    display: flex;
+}
+
 /* ___________________________________style de base pour nav */
 
 .menu {
@@ -128,7 +132,7 @@
 
     .menu {
         flex-wrap: wrap;
-        flex-direction: row ;
+        flex-direction: row;
         position: absolute;
         top: 93.1vw;
         width: var(--all-width);
@@ -186,7 +190,7 @@
 
 /* ___________________________________ fin */
 
-.furigana{
+.furigana {
     width: 2.5em;
     text-align: center;
 }
@@ -242,12 +246,17 @@
     right: 0.5vw;
 }
 
-.back{
+/* ___________________________________ fin */
+
+/* ___________________________________back */
+
+
+.back {
     display: flex;
     justify-content: space-evenly;
 }
 
-.back img{
+.back img {
     width: 5vw;
     height: 5vw;
 }
@@ -258,21 +267,27 @@
 }
 
 .back-title span:nth-child(1) {
-    font-size: 0.9vw;
+    font-size: 1.3vw;
     font-weight: 300;
 }
 
 .back-title span:nth-child(2) {
-    font-size: 2vw;
+    font-size: 3vw;
     font-weight: 900;
 }
 
 .back-title span:nth-child(3) {
-    font-size: 0.9vw;
+    font-size: 1.8vw;
     font-weight: 300;
+
 }
 
-.header-title{
+/* ___________________________________ fin */
+
+/* ___________________________________header-title */
+
+
+.header-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -284,25 +299,31 @@
     transform: translate(-0.2vw, -0.2vw);
 }
 
-.header-title span:nth-child(1){
-    font-size: 2.5vw;
+.header-title span:nth-child(1) {
+    font-size: 3vw;
     font-weight: 300;
+    margin-right: 1.4vw;
 }
 
-.header-title span:nth-child(2){
-    font-size: 2.5vw;
+.header-title span:nth-child(2) {
+    font-size: 3vw;
     font-weight: 300;
+    margin-left: 1vw;
 }
 
-.header-title h1{
-    font-size: 6vw;
+.header-title h1 {
+    font-size: 8vw;
     font-weight: 900;
 }
 
-.header-title span:nth-child(3){
-    font-size: 2.5vw;
-    font-weight: 600;
+.header-title span:nth-child(3) {
+    font-size: 3vw;
+    font-weight: 300;
 }
+
+/* ___________________________________ fin */
+
+/* ___________________________________home */
 
 
 .home {
@@ -331,7 +352,7 @@
 
 .home-title span:nth-child(2) {
     font-size: 2vw;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .home img {
@@ -342,7 +363,8 @@
 
 @media screen and (max-width: 560px) {
 
-    .header-footer__heure-fr__jp{
+    /* ___________________________________style de base pour heure */
+    .header-footer__heure-fr__jp {
         position: absolute;
         left: 0;
         top: 177.6vw;
@@ -350,39 +372,42 @@
         width: calc(var(--all-width) / 2 - 0.1vw) !important;
         border-radius: var(--border-radius-mobile);
     }
-    .header-footer__heure-fr__jp:nth-child(1){
+
+    .header-footer__heure-fr__jp:nth-child(1) {
         left: 0;
     }
 
-    .header-footer__heure-fr__jp:nth-child(2){
+    .header-footer__heure-fr__jp:nth-child(2) {
         left: calc(var(--all-width) / 2 + 0.1vw);
     }
 
-    .header-footer__heure-fr__jp:nth-child(1){
+    .header-footer__heure-fr__jp:nth-child(1) {
         transform: translateX(0.2vw);
     }
 
-    .header-footer__heure-fr__jp span:nth-child(1){
+    .header-footer__heure-fr__jp span:nth-child(1) {
         font-size: 3vw !important;
         top: 1.5vw !important;
-        left: 1.5vw !important; 
+        left: 1.5vw !important;
     }
 
-    .header-footer__heure-fr__jp span:nth-child(2){
+    .header-footer__heure-fr__jp span:nth-child(2) {
         font-size: 5vw !important;
     }
 
-    .header-footer__heure-fr__jp span:nth-child(3){
+    .header-footer__heure-fr__jp span:nth-child(3) {
         font-size: 3vw !important;
         bottom: 1.5vw !important;
         right: 1.5vw !important;
     }
-    
+
     .header-footer__heure-fr__jp {
         transform: translateY(0vw) !important;
     }
 
-    .back{
+    /* ___________________________________ fin */
+    /* ___________________________________back */
+    .back {
         height: 16vw;
         width: var(--all-width);
         border-radius: var(--border-radius-mobile);
@@ -391,62 +416,65 @@
         left: 0;
     }
 
-    .back img{
+    .back img {
         width: 7vw;
         height: 7vw;
     }
 
-    .back-title span:nth-child(1){
+    .back-title span:nth-child(1) {
         font-size: 2vw !important;
     }
 
-    .back-title span:nth-child(2){
-        font-size: 5vw ;
+    .back-title span:nth-child(2) {
+        font-size: 5vw;
     }
 
-    .back-title span:nth-child(3){
-        font-size: 2vw ;
+    .back-title span:nth-child(3) {
+        font-size: 2vw;
     }
 
-
-    .header-title{
+    /* ___________________________________ fin */
+    /* ___________________________________header-title */
+    .header-title {
         height: 65vw;
         width: var(--all-width);
         border-radius: var(--border-radius-mobile);
         position: absolute;
         top: 11.6vw;
-        transform: translateX(0vw) ;
+        transform: translateX(0vw);
     }
 
-    .header-title span:nth-child(1){
+    .header-title span:nth-child(1) {
         font-size: 5vw !important;
     }
 
-    .header-title span:nth-child(2){
+    .header-title span:nth-child(2) {
         font-size: 5vw !important;
     }
 
-    .header-title h1{
-        font-size: 12vw ;
+    .header-title h1 {
+        font-size: 12vw;
     }
 
-    .header-title span:nth-child(3){
-        font-size: 5vw ;
+    .header-title span:nth-child(3) {
+        font-size: 5vw;
     }
 
+    /* ___________________________________ fin */
+    /* ___________________________________home */
     .home {
         position: absolute;
         top: 268.7vw;
         width: var(--all-width);
-        min-height: 20vw ;
+        min-height: 20vw;
         border-radius: var(--border-radius-mobile);
     }
 
-    .home-title span:nth-child(1){
+    .home-title span:nth-child(1) {
         font-size: 3vw;
     }
 
-    .home-title span:nth-child(2){
+    .home-title span:nth-child(2) {
         font-size: 4vw;
     }
 
@@ -455,4 +483,113 @@
         height: 10vw;
     }
 
+    /* ___________________________________ fin */
 }
+
+/* ___________________________________ play */
+
+.play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 25vw;
+    height: 29.4vw;
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid var(--couleur-secondaire);
+    transform: translate(0.2vw, -0.8vw);
+    position: relative;
+}
+
+.play img {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.play img:nth-child(2) {
+    left: 8vw;
+    margin-top: 2vw
+}
+
+.play img:nth-child(3) {
+    right: 8vw;
+    margin-bottom: 2vw;
+}
+
+.play span:nth-child(1) {
+    font-size: 2.5vw;
+    font-weight: 300;
+    position: absolute;
+    top: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.play span:nth-child(4) {
+    font-size: 0.9vw;
+    font-weight: 300;
+    position: absolute;
+    bottom: 4vw;
+    left: 9.4vw;
+}
+
+.play span:nth-child(5) {
+    font-size: 2vw;
+    font-weight: 600;
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 560px) {
+
+    .play {
+        width: var(--all-width);
+        height: 62vw;
+        transform: translateX(0);
+        border-radius: var(--border-radius-mobile);
+        position: absolute;
+        left: 0;
+        top: 205.6vw;
+    }
+
+    .play span:nth-child(1) {
+        font-size: 4vw;
+        top: 3vw;
+        left: 3vw;
+    }
+
+    .play span:nth-child(4) {
+        font-size: 1.5vw;
+        bottom: 9vw;
+        right: 11.1vw;
+    }
+
+    .play span:nth-child(5) {
+        font-size: 4vw;
+        bottom: 3vw;
+        right: 3vw;
+    }
+
+    .play img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .play img:nth-child(2) {
+        left: 41vw;
+        margin-top: 4vw
+    }
+
+    .play img:nth-child(3) {
+        right: 41vw;
+        margin-bottom: 4vw;
+    }
+
+}
+
+/* ___________________________________ fin */

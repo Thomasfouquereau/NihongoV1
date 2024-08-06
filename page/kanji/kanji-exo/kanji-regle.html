@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kanji.css">
-    <link rel="stylesheet" href="../../regle.css">
-    <link rel="stylesheet" href="../../style commun.css">
+    <link rel="stylesheet" href="kanji-regle.css">
+    <link rel="stylesheet" href="../../../regle.css">
+    <link rel="stylesheet" href="../../../style commun.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,8 +26,8 @@
             <div class="main-content">
                 <div class="header">
                     <div class="header-left">
-                        <a class="back" href="../../index.html">
-                            <img src="../../assets/back icon.svg" alt="Retour">
+                        <a class="back" href="../kanji.html">
+                            <img src="../../../assets/back icon.svg" alt="Retour">
                             <div class="back-title">
                                 <div class="kanji-header-help">
                                     <span>もど</span>
@@ -55,68 +55,89 @@
                         <h1>漢字</h1>
                         <span>kanji</span>
                     </div>
-                    <div class="header-right">
-                        <div class="header-right__kanji-info">
-                            <span>Nombre de kanji enregistrer</span>
-                            <div>
-                                <p class="nb-kanji-save1" id="nb-kanji-save">80</p>/2000
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer">
-                    <div class="footer-left">
-                        <a class="home" href="../../index.html">
-                            <img src="../../assets/home icon.svg" alt="">
+                    <div>
+                        <a class="home" href="../../../index.html">
+                            <img src="../../../assets/home icon.svg" alt="">
                             <div class="home-title">
                                 <span>サイトホーム</span>
                                 <span>Accueil du site</span>
                             </div>
                         </a>
-                        <a class="Dictionnaire" href="../Dictionnaire/Dictionnaire.html">
-                            <span class="Dictionnaire-title-fr">Dictionnaire</span>
-                            <div class="Dictionnaire-title">
+                        <div class="nb-kanji">
+                            <span>Nombre de Kanji dans l'exercice</span>
+                            <div class="nb-kanji-select">
+                                <button id="nb-kanji-select-10" class="btn-nb-kanji-select">10</button>
+                                <button id="nb-kanji-select-20" class="btn-nb-kanji-select">20</button>
+                                <button id="nb-kanji-select-30" class="btn-nb-kanji-select">30</button>
+                                <button id="nb-kanji-select-40" class="btn-nb-kanji-select">40</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+
+                    <div class="difficult">
+                        <div class="difficult-title">
+                            <h3>Difficulté</h3>
+                            <div class="difficult-title-jp">
                                 <div class="kanji-header-help">
-                                    <span class="furigana-1">じ</span>
-                                    <span class="furigana-2">しょ</span>
+                                    <span class="furigana-1">こん</span>
+                                    <span class="furigana-2">なん</span>
                                 </div>
-                                <span class="Dictionnaire-title__main">辞書</span>
-                                <div class="Dictionnaire-kanji">
-                                    <span id="nb-kanji-save">80</span>
-                                    <div class="Dictionnaire-kanji__title">
-                                        <div class="kanji-header-help">
-                                            <span class="furigana">かん</span>
-                                            <span class="furigana">じ</span>
-                                        </div>
-                                        <h3>漢字</h3>
-                                        <span>kanji</span>
+                                <h3>困難</h3>
+                            </div>
+                        </div>
+                        <div class="select-difficult">
+                            <div class="select-difficult-btn">
+                                <button id="difficult-btn-lvl1" class="difficult-btn-select">
+                                    <img src="../../../assets/lvl 1 icon.svg" alt="">
+                                    <span>Débutant</span>
+                                </button>
+                                <div class="difficult-info">
+                                    <p>Toutes les aides sont activées idéales pour débuter</p>
+                                    <div class="difficult-info-rapel" id="lvl1">
+                                        <span>Rōmaji</span>
+                                        <span>Hiragana/Katakana</span>
                                     </div>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <a class="play" href="./kanji-exo/kanji-regle.html">
-                        <span>Commencer</span>
-                        <img src="../../assets/left [ icon.svg" alt="">
-                        <img src="../../assets/right ] icon.svg" alt="">
-                        <span class="furigana">はじ</span>
-                        <span>始める</span>
-                    </a>
-                    <div class="coming-soon">
-                        <div class="a-venir__content-1">
-                            <span>きんじつこうかい</span>
-                            <span>近日公開</span>
-                            <span>Prochainement</span>
-                        </div>
-                        <div>
-                            <div class="a-venir__content-2">
-                                <span>きんじつこうかい</span>
-                                <span>近日公開</span>
-                                <span>Prochainement</span>
-                                <img src="../../assets/draw icon.svg" alt="">
+                            <div class="select-difficult-btn">
+                                <button id="difficult-btn-lvl2" class="difficult-btn-select">
+                                    <img src="../../../assets/lvl 2 icon.svg" alt="">
+                                    <span>Intermédiaire</span>
+                                </button>
+                                <div class="difficult-info">
+                                    <p>Idéal pour tester ses connaissances</p>
+                                    <div class="difficult-info-rapel" id="lvl2">
+                                        <span>Rōmaji</span>
+                                        <span>Hiragana/Katakana</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="select-difficult-btn">
+                                <button id="difficult-btn-lvl3" class="difficult-btn-select">
+                                    <img src="../../../assets/lvl 3 icon.svg" alt="">
+                                    <span>Confirmer</span>
+                                </button>
+                                <div class="difficult-info">
+                                    <p>Besoin d'un challenge</p>
+                                    <div class="difficult-info-rapel" id="lvl3">
+                                        <span>Rōmaji</span>
+                                        <span>Hiragana/Katakana</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <a class="play">
+                        <span>Commencer</span>
+                        <img src="../../../assets/left [ icon.svg" alt="">
+                        <img src="../../../assets/right ] icon.svg" alt="">
+                        <span class="furigana">はじ</span>
+                        <span>始める</span>
+                    </a>
+
                 </div>
             </div>
             <div class="menu">
@@ -171,7 +192,7 @@
     </header>
 
 </body>
-<script src="../../script.js"></script>
-<script src="../../heure.js"></script>
+<script src="../../../script.js"></script>
+<script src="../../../heure.js"></script>
 
 </html>
