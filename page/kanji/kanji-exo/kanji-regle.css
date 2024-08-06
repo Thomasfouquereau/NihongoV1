@@ -89,7 +89,7 @@
 @media screen and (max-width: 560px) {
     .nb-kanji {
         height: 52.35vw;
-        width: var(--all-width);
+        width: calc(var(--all-width) - 0.1vw);
         transform: translateX(0);
         border-radius: var(--border-radius-mobile);
         position: absolute;
@@ -109,7 +109,7 @@
     }
 
     .nb-kanji-select button:nth-child(1) {
-        width: var(--all-width);
+        width: calc(var(--all-width) + 0.1vw);
         bottom: 15.7vw;
     }
 
@@ -300,7 +300,6 @@
         flex-direction: column;
     }
 
-    .difficult-btn-select,
     .difficult-info,
     .difficult-info-rapel {
         width: var(--all-width);
@@ -309,6 +308,10 @@
 
     .difficult-btn-select {
         height: 30vw;
+        margin: 0;
+        padding: 0;
+        width: calc(var(--all-width) + 0.1vw);
+        border-radius: var(--border-radius-mobile);
     }
 
     .difficult-btn-select img {
@@ -336,6 +339,10 @@
         font-size: 4vw;
         width: 45%;
         border-radius: var(--border-radius-mobile)
+    }
+
+    #lvl1 span, #lvl2 span, #lvl3 span {
+        transform: translate(-0vw, 0vw);
     }
 
 }
