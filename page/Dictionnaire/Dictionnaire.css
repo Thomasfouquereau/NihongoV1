@@ -1,4 +1,4 @@
-.page{
+.page {
     display: flex;
     width: 100vw;
     background-color: var(--couleur-primaire);
@@ -43,6 +43,10 @@
 
 @media screen and (max-width: 560px) {
 
+    .home{
+        top: 455vw!important;
+    }
+
     .header-left {
         flex-direction: row;
     }
@@ -53,7 +57,8 @@
         transform: translateX(0);
         position: absolute;
         left: 0;
-        top: 205vw;
+        top: 474.6vw;
+        border-radius: var(--border-radius-mobile);
     }
 
     .header-right__kanji-info span:nth-child(1) {
@@ -73,21 +78,177 @@
 
 /* ___________________________________ fin */
 
+.footer {
+    display: flex;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0.15vw, -1vw);
+}
+
+.coming-soon div:nth-child(2) {
+    transform: translateY(-0.2vw);
+}
+
+.coming-soon div:nth-child(3) {
+    transform: translateY(-0.4vw);
+}
+
+.a-venir__content {
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid var(--couleur-secondaire);
+    position: relative;
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-venir__content span:nth-child(1) {
+    font-size: 0.7vw;
+    font-weight: 400;
+}
+
+.a-venir__content span:nth-child(2) {
+    font-size: 1.4vw;
+    font-weight: 900;
+}
+
+.a-venir__content span:nth-child(3) {
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+.other-dic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0.2vw, -1.1vw);
+}
+
+.other-dic-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25.8vw;
+    height: 97.5%;
+    border-radius: var(--border-radius);
+    border: var(--border-size) solid var(--couleur-secondaire);
+    position: relative;
+}
+
+.other-dic-card span:nth-child(1) {
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+.other-dic-card span:nth-child(2) {
+    font-size: 9vw;
+    font-weight: 300;
+    text-align: center;
+}
+
+.other-dic-card span:nth-child(3) {
+    font-size: 1.5vw;
+    font-weight: 300;
+    text-align: center;
+}
 
 
+@media  screen and (max-width: 560px) {
+
+    .coming-soon {
+        transform: translate(0.2vw, -0);
+        width: var(--all-width);
+        height: 89vw;
+        background-color: var(--couleur-primaire);
+        z-index: 100;  
+        position: absolute;
+        top: 366vw;
+    }
+
+    .coming-soon div:nth-child(2) {
+        transform: translateY(-0.4vw);
+    }
+
+    .coming-soon div:nth-child(3) {
+        transform: translateY(-0.8vw);
+    }
+
+    .a-venir__content {
+        height: 31vw;
+        border-radius: var(--border-radius-mobile);
+    }
+
+    .a-venir__content span:nth-child(1) {
+        font-size: 3vw;
+    }
+
+    .a-venir__content span:nth-child(2) {
+        font-size: 6vw;
+    }
+
+    .a-venir__content span:nth-child(3) {
+        font-size: 4vw;
+    }
+
+    .other-dic {
+        transform: translate(0vw, 0vw);
+        width: var(--all-width);
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 205.6vw;
+    }
+
+    .other-dic-card {
+        width: 100%;
+        height: 80vw;
+        flex-direction: column;
+        transform: translateX(0.2vw);
+        border-radius: var(--border-radius-mobile);
+    }
+
+    .other-dic-card span:nth-child(1) {
+        font-size: 5vw;
+    }
+
+    .other-dic-card span:nth-child(2) {
+        font-size: 30vw;
+    }
+
+    .other-dic-card span:nth-child(3) {
+        font-size: 5vw;
+    }
+    
+}
 
 /* ___________________________________ dictionnaire */
 
-.dictionnaire{
+.dictionnaire {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-top: 2vw;
+    margin-bottom: 10vw;
 }
 
-.kanji-item{
+.kanji-item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +261,7 @@
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
 }
 
-.secondary-meaning{
+.secondary-meaning {
     display: none;
     position: absolute;
     right: 1vw;
@@ -110,36 +271,38 @@
     text-transform: capitalize;
 }
 
-.kanji-item:hover{
+.kanji-item:hover {
     transform: scale(1.15);
     z-index: 100 !important;
     background-color: #232323
 }
 
-.kanji-item:hover .secondary-meaning{
+.kanji-item:hover .secondary-meaning {
     display: block;
 }
 
-.kanji-meaning{
+.kanji-meaning {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.kanji{
+.kanji {
     font-size: 2.5vw;
     font-weight: 300;
     margin-bottom: 0.5vw;
 }
 
-.meaning{
+.meaning {
     font-size: 1vw;
     font-weight: 300;
     text-transform: capitalize;
 }
 
-.on-reading,.kun-reading,.jlpt-level{
+.on-reading,
+.kun-reading,
+.jlpt-level {
     display: flex;
     align-items: center;
     position: absolute;
@@ -147,68 +310,92 @@
     font-weight: 300;
 }
 
-.on-reading p,.kun-reading p,.jlpt-level p{
+.on-reading p,
+.kun-reading p,
+.jlpt-level p {
     font-style: italic;
     font-weight: 600;
     margin-right: 0.5vw;
 }
 
-.on-reading{
+.on-reading {
     bottom: 0vw;
     left: 1vw;
 }
 
-.kun-reading{
+.kun-reading {
     top: 0vw;
     left: 1vw;
 }
 
-.jlpt-level{
+.jlpt-level {
     bottom: 0vw;
     right: 1vw;
 }
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 560px) {
 
-    .dictionnaire{
+    .dictionnaire {
         position: absolute;
-        top: 300vw;
+        top: 542vw;
     }
 
-    .kanji-item{
+    .kanji-item {
         width: 85vw;
         height: 60vw;
         border-radius: var(--border-radius-mobile);
     }
 
-    .kanji{
+    .kanji {
         font-size: 10vw;
     }
 
-    .meaning{
+    .meaning {
         font-size: 4vw;
     }
 
-    .on-reading,.kun-reading,.jlpt-level{
+    .on-reading,
+    .kun-reading,
+    .jlpt-level {
         font-size: 3vw;
     }
 
-    .secondary-meaning{
+    .secondary-meaning {
         font-size: 3vw;
         top: 3.2vw;
         right: 4vw;
     }
 
-    .jlpt-level{
+    .jlpt-level {
         right: 4vw;
     }
 
-    .on-reading,.kun-reading{
+    .on-reading,
+    .kun-reading {
         left: 4vw;
     }
 
-    .on-reading p,.kun-reading p,.jlpt-level p{
+    .on-reading p,
+    .kun-reading p,
+    .jlpt-level p {
         margin-right: 2vw;
+    }
+
+}
+
+.comb{
+    position: absolute;
+    border: 0.2vw solid var(--couleur-secondaire);
+    right: 0.05vw;
+    border-radius: var(--border-radius);
+    width: 7.20vw;
+    height: 25.75vw;
+    top:48.6vw
+}
+
+@media screen and (max-width: 560px) {
+    .comb{
+        display: none;
     }
     
 }
