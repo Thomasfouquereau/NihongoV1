@@ -101,3 +101,33 @@
     right: 1vw;
 }
 
+@media screen and (max-width: 560px){
+
+    .dictionnaire{
+        position: absolute;
+        top: 300vw;
+    }
+
+    .kanji-item{
+        width: 45vw;
+        height: 30vw;
+
+    }
+
+    .kanji{
+        font-size: 6vw;
+    }
+
+    .meaning{
+        font-size: 2vw;
+    }
+
+    .on-reading,.kun-reading,.jlpt-level{
+        font-size: 1.5vw;
+    }
+
+    .secondary-meaning{
+        font-size: 1.5vw;
+    }
+    
+}
