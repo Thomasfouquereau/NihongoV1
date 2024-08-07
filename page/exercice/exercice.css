@@ -58,8 +58,6 @@ footer {
     border-radius: var(--border-radius);
 }
 
-
-
 .header-nenu-kanji {
     font-size: 1.5vw;
     font-weight: 600;
@@ -138,7 +136,65 @@ footer {
     justify-content: space-around;
     align-items: center;
     width: 50vw;
-    height: 30vw;
+    height: 40vw;
+}
+
+.header-nenu-kanji-fin {
+    font-size: 1.5vw;
+    font-weight: 600;
+    width: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;  
+    height:8vw;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 2vw;
+}
+
+.header-nenu-kanji-fin span {
+    margin: 1vw;
+}
+
+.header-nenu-reponse-fin{
+    position: absolute;
+    height: 8vw;
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header-nenu-reponse-true-fin {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    color: var(--couleur-tertiaire);
+    font-size: 1.3vw;
+}
+
+.header-nenu-reponse-nb-fin {
+    font-size: 2vw;
+}
+
+.header-nenu-reponse-false-fin {
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    color: var(--couleur-quaternaire);
+    font-size:  1.3vw;
+}
+
+.close{
+    position: absolute;
+    bottom: 0vw;
+    left: 0vw;
+    font-size: 2vw;
+    cursor: pointer;
+    padding: 2vw;
+    text-transform: capitalize;
 }
 
 @media screen and (max-width: 560px) {
@@ -214,7 +270,50 @@ footer {
     .fin {
         width: 90vw;
         height: 200vw;
+        border-radius: var(--border-radius-mobile);
+    }
 
+    .header-nenu-kanji-fin {
+        font-size: 5vw;
+        width: 70vw;
+        height:8vw;
+        top: 5vw;
+    }
+    
+    .header-nenu-kanji-fin span {
+        margin: 2vw;
+    }
+    
+    .header-nenu-reponse-fin{
+        height: 25vw;
+        width: 50vw;
+    }
+    
+    .header-nenu-reponse-true-fin {
+        font-size: 4vw;
+    }
+    
+    .header-nenu-reponse-nb-fin {
+        font-size: 10vw;
+    }
+    
+    .header-nenu-reponse-false-fin {
+        position: absolute;
+        bottom: 1vw;
+        right: 1vw;
+        color: var(--couleur-quaternaire);
+        font-size:  4vw;
+    }
+    
+    .close{
+        position: absolute;
+        bottom: 5vw;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 7vw;
+        cursor: pointer;
+        padding: 2vw;
+        text-transform: capitalize;
     }
 }
 

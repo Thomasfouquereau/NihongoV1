@@ -45,12 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 updateQuestionNumber(currentKanjiIndex, randomKanjiList.length); // Mettre à jour le numéro de la question
             } else {
                 // Mettre à jour les réponses dans la <div class="fin">
-                finDiv.querySelector('.header-nenu-reponse-true').textContent = reponseTrueDiv.textContent;
-                finDiv.querySelector('.header-nenu-reponse-false').textContent = reponseFalseDiv.textContent;
-                finDiv.querySelector('.header-nenu-reponse-nb').textContent = randomKanjiList.length;
+                finDiv.querySelector('.header-nenu-reponse-true-fin').textContent = reponseTrueDiv.textContent;
+                finDiv.querySelector('.header-nenu-reponse-false-fin').textContent = reponseFalseDiv.textContent;
+                finDiv.querySelector('.header-nenu-reponse-nb-fin').textContent = randomKanjiList.length;
 
                 // Mettre à jour le contenu de .header-nenu-kanji
-                finDiv.querySelector('.header-nenu-kanji').innerHTML = headerMenuKanjiDiv.innerHTML;
+                finDiv.querySelector('.header-nenu-kanji-fin').innerHTML = headerMenuKanjiDiv.innerHTML;
 
                 // Rendre visible l'élément <div class="fin">
                 finDiv.style.display = 'flex';
