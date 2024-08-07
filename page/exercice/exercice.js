@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 finDiv.querySelector('.header-nenu-kanji').innerHTML = headerMenuKanjiDiv.innerHTML;
 
                 // Rendre visible l'élément <div class="fin">
-                finDiv.style.display = 'block';
+                finDiv.style.display = 'flex';
             }
         });
     } else {
@@ -160,7 +160,7 @@ function displayCurrentKanji(currentKanji) {
                                 finDiv.querySelector('.header-nenu-kanji').innerHTML = headerMenuKanjiDiv.innerHTML;
                             }
 
-                            finDiv.style.display = 'block';
+                            finDiv.style.display = 'flex';
                         }
                     }
                 }, 1000);
