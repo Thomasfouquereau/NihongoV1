@@ -113,6 +113,7 @@ function displayCurrentKanji(currentKanji) {
 
                 if (this.textContent === correctAnswer) {
                     this.style.borderColor = '#9EFF9E';
+                    this.classList.add('jello-horizontal');  // Correction ici
                     trueCounter.textContent = parseInt(trueCounter.textContent || '0', 10) + 1;
 
                     const kanjiElement = document.querySelector(`.header-nenu-kanji span[data-kanji="${correctAnswer}"]`);
@@ -131,6 +132,7 @@ function displayCurrentKanji(currentKanji) {
                     document.querySelectorAll('.answer-button').forEach(btn => {
                         if (btn.textContent === correctAnswer) {
                             btn.style.borderColor = '#9EFF9E';
+                            btn.classList.add('shake-bottom'); // Correction ici
                         }
                     });
                 }
