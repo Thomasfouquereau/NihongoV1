@@ -200,7 +200,7 @@ footer{
 
     .answer-button{
         width: 100%;
-        height: 10vw;
+        height: 20vw;
         font-size: 6vw;
         border-radius: var(--border-radius-mobile);
     }
