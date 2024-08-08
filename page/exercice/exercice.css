@@ -69,6 +69,7 @@ footer {
     border-radius: var(--border-radius);
     height: 100%;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .header-nenu-kanji span {
