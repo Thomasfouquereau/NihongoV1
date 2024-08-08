@@ -172,7 +172,7 @@ function initExercice() {
                 return array;
             }
 
-        } if (mode === '2') {
+        } if (mode === '2' || mode === '3') {
 
             function getRandomKanji(data) {
                 const NbKanji = parseInt(localStorage.getItem('Nb kanji'), 10);
