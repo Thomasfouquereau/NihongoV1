@@ -9,7 +9,6 @@ const difficultBtnLvl3 = document.getElementById('difficult-btn-lvl3');
 
 const mode1 = document.getElementById('mode-1');
 const mode2 = document.getElementById('mode-2');
-
 const mode3 = document.getElementById('mode-3');
 
 const play = document.getElementById('play');
@@ -55,6 +54,33 @@ mode2.addEventListener('click', function () {
 
 mode3.addEventListener('click', function () {
     localStorage.setItem('Mode', '3');
+});
+
+const nbKanjiSelectors = [nbKanjiSelect10, nbKanjiSelect20, nbKanjiSelect30, nbKanjiSelect40]; // Ajoutez d'autres éléments si nécessaire
+
+nbKanjiSelectors.forEach(selector => {
+    selector.addEventListener('click', () => {
+        nbKanjiSelectors.forEach(sel => sel.style.backgroundColor = ''); // Réinitialise la couleur de tous les éléments
+        selector.style.backgroundColor = '#1E1E1E'; // Changez la couleur selon vos besoins
+    });
+});
+
+const difficultySelectors = [difficultBtnLvl1, difficultBtnLvl2, difficultBtnLvl3]; // Ajoutez d'autres éléments si nécessaire
+
+difficultySelectors.forEach(selector => {
+    selector.addEventListener('click', () => {
+        difficultySelectors.forEach(sel => sel.style.backgroundColor = ''); // Réinitialise la couleur de tous les éléments
+        selector.style.backgroundColor = '#1E1E1E'; // Changez la couleur selon vos besoins
+    });
+});
+
+const modeSelectors = [mode1, mode2, mode3]; // Ajoutez d'autres éléments si nécessaire
+
+modeSelectors.forEach(selector => {
+    selector.addEventListener('click', () => {
+        modeSelectors.forEach(sel => sel.style.backgroundColor = ''); // Réinitialise la couleur de tous les éléments
+        selector.style.backgroundColor = '#1E1E1E'; // Changez la couleur selon vos besoins
+    });
 });
 
 document.addEventListener('DOMContentLoaded', function () {
