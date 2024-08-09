@@ -96,6 +96,21 @@ footer {
     font-size: 1vw;
 }
 
+.question{
+    display: flex;
+    justify-content: center ;
+    align-items: center ;
+    flex-direction: column;
+}
+
+.question-furigana {
+    font-size: 2.5vw;
+}
+
+.question-romaji{
+    font-size: 2.5vw;
+}
+
 .question-kanji {
     font-size: 10vw;
 }
@@ -245,8 +260,16 @@ footer {
         margin: 2vw;
     }
 
+    .question-furigana {
+        font-size: 7vw;
+    }
+
     .question-kanji {
         font-size: 25vw;
+    }
+
+    .question-romaji{
+        font-size: 7vw;
     }
 
     .reponse {

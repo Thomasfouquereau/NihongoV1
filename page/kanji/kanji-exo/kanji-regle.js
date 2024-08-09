@@ -120,7 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
             kanjis.forEach(item => {
                 htmlContent += `<button class="kanji-item">
                 <div class="kanji-meaning">
+                    <span class="PrincipalReading">${item.PrincipalReading}</span>
                     <span class="kanji" translate="no">${item.Kanji}</span>
+                    <span class="PrincipalReadingRomaji">${item.PrincipalReadingRomaji}</span>
                 </div>
                 <span class="jlpt-level"><p>JLPT</p>${item.JLPTLevel}</span>
                </button>`;
@@ -186,7 +188,9 @@ document.addEventListener('DOMContentLoaded', function () {
                                     id: selectedKanjis.length + 1,
                                     kanji: kanji,
                                     meaning: meaning,
-                                    secondaryMeaning: secondaryMeaning
+                                    secondaryMeaning: secondaryMeaning,
+                                    PrincipalReading: kanjiInfo.PrincipalReading,
+                                    PrincipalReadingRomaji: kanjiInfo.PrincipalReadingRomaji
                                 };
 
                                 selectedKanjis.push(newKanji);

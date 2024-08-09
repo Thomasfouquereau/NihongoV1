@@ -12,6 +12,7 @@
                 "ひと(つ)"
             ],
             "PrincipalReading": "イチ",
+            "PrincipalReadingRomaji": "ichi",
             "JLPTLevel": "N5",
             "Meaning": "un",
             "SecondaryMeaning": null
@@ -27,6 +28,7 @@
                 "ふた(つ)"
             ],
             "PrincipalReading": "ニ",
+            "PrincipalReadingRomaji": "ni",
             "JLPTLevel": "N5",
             "Meaning": "deux",
             "SecondaryMeaning": null
@@ -39,9 +41,10 @@
             ],
             "KunReading": [
                 "み",
-                "みっ(つ)"
+                "み(つ)"
             ],
             "PrincipalReading": "サン",
+            "PrincipalReadingRomaji": "san",
             "JLPTLevel": "N5",
             "Meaning": "trois",
             "SecondaryMeaning": null
@@ -55,10 +58,10 @@
             ],
             "KunReading": [
                 "よ",
-                "よん",
-                "よっ(つ)"
+                "よ(つ)"
             ],
             "PrincipalReading": "シ",
+            "PrincipalReadingRomaji": "shi",
             "JLPTLevel": "N5",
             "Meaning": "quatre",
             "SecondaryMeaning": null
@@ -74,6 +77,7 @@
                 "いつ(つ)"
             ],
             "PrincipalReading": "ゴ",
+            "PrincipalReadingRomaji": "go",
             "JLPTLevel": "N5",
             "Meaning": "cinq",
             "SecondaryMeaning": null
@@ -82,14 +86,14 @@
             "id": 6,
             "Kanji": "六",
             "OnReading": [
-                "ロク",
-                "リク"
+                "ロク"
             ],
             "KunReading": [
                 "む",
-                "むっ(つ)"
+                "む(つ)"
             ],
             "PrincipalReading": "ロク",
+            "PrincipalReadingRomaji": "roku",
             "JLPTLevel": "N5",
             "Meaning": "six",
             "SecondaryMeaning": null
@@ -105,6 +109,7 @@
                 "なな(つ)"
             ],
             "PrincipalReading": "シチ",
+            "PrincipalReadingRomaji": "shichi",
             "JLPTLevel": "N5",
             "Meaning": "sept",
             "SecondaryMeaning": null
@@ -117,9 +122,10 @@
             ],
             "KunReading": [
                 "や",
-                "やっ(つ)"
+                "や(つ)"
             ],
             "PrincipalReading": "ハチ",
+            "PrincipalReadingRomaji": "hachi",
             "JLPTLevel": "N5",
             "Meaning": "huit",
             "SecondaryMeaning": null
@@ -136,6 +142,7 @@
                 "ここの(つ)"
             ],
             "PrincipalReading": "キュウ",
+            "PrincipalReadingRomaji": "kyuu",
             "JLPTLevel": "N5",
             "Meaning": "neuf",
             "SecondaryMeaning": null
@@ -147,9 +154,11 @@
                 "ジュウ"
             ],
             "KunReading": [
-                "とお"
+                "とお",
+                "と"
             ],
             "PrincipalReading": "ジュウ",
+            "PrincipalReadingRomaji": "juu",
             "JLPTLevel": "N5",
             "Meaning": "dix",
             "SecondaryMeaning": null
@@ -165,6 +174,7 @@
                 "ひと"
             ],
             "PrincipalReading": "ジン",
+            "PrincipalReadingRomaji": "jin",
             "JLPTLevel": "N5",
             "Meaning": "personne",
             "SecondaryMeaning": "être humain"
@@ -180,9 +190,10 @@
                 "いま"
             ],
             "PrincipalReading": "コン",
+            "PrincipalReadingRomaji": "kon",
             "JLPTLevel": "N5",
             "Meaning": "maintenant",
-            "SecondaryMeaning": "présent"
+            "SecondaryMeaning": null
         },
         {
             "id": 13,
@@ -193,10 +204,10 @@
             ],
             "KunReading": [
                 "ひ",
-                "び",
                 "か"
             ],
             "PrincipalReading": "ニチ",
+            "PrincipalReadingRomaji": "nichi",
             "JLPTLevel": "N5",
             "Meaning": "jour",
             "SecondaryMeaning": "soleil"
@@ -208,9 +219,10 @@
                 "シュウ"
             ],
             "KunReading": [
-                ""
+                "しゅう"
             ],
             "PrincipalReading": "シュウ",
+            "PrincipalReadingRomaji": "shuu",
             "JLPTLevel": "N5",
             "Meaning": "semaine",
             "SecondaryMeaning": null
@@ -226,6 +238,7 @@
                 "つき"
             ],
             "PrincipalReading": "ゲツ",
+            "PrincipalReadingRomaji": "getsu",
             "JLPTLevel": "N5",
             "Meaning": "mois",
             "SecondaryMeaning": "lune"
@@ -240,6 +253,7 @@
                 "とし"
             ],
             "PrincipalReading": "ネン",
+            "PrincipalReadingRomaji": "nen",
             "JLPTLevel": "N5",
             "Meaning": "année",
             "SecondaryMeaning": "âge"
@@ -252,26 +266,26 @@
                 "ジュウ"
             ],
             "KunReading": [
-                "なか",
-                "うち",
-                "あた(る)"
+                "なか"
             ],
             "PrincipalReading": "チュウ",
+            "PrincipalReadingRomaji": "chuu",
             "JLPTLevel": "N5",
             "Meaning": "milieu",
-            "SecondaryMeaning": "intérieur"
+            "SecondaryMeaning": "en cours"
         },
         {
             "id": 18,
             "Kanji": "山",
             "OnReading": [
                 "サン",
-                "セイ"
+                "ザン"
             ],
             "KunReading": [
                 "やま"
             ],
             "PrincipalReading": "サン",
+            "PrincipalReadingRomaji": "san",
             "JLPTLevel": "N5",
             "Meaning": "montagne",
             "SecondaryMeaning": null
@@ -286,21 +300,22 @@
                 "かわ"
             ],
             "PrincipalReading": "セン",
+            "PrincipalReadingRomaji": "sen",
             "JLPTLevel": "N5",
             "Meaning": "rivière",
-            "SecondaryMeaning": "cours d'eau"
+            "SecondaryMeaning": null
         },
         {
             "id": 20,
             "Kanji": "左",
             "OnReading": [
-                "サ",
-                "シャ"
+                "サ"
             ],
             "KunReading": [
                 "ひだり"
             ],
             "PrincipalReading": "サ",
+            "PrincipalReadingRomaji": "sa",
             "JLPTLevel": "N5",
             "Meaning": "gauche",
             "SecondaryMeaning": null
@@ -316,6 +331,7 @@
                 "みぎ"
             ],
             "PrincipalReading": "ウ",
+            "PrincipalReadingRomaji": "u",
             "JLPTLevel": "N5",
             "Meaning": "droite",
             "SecondaryMeaning": null
@@ -328,13 +344,13 @@
                 "タイ"
             ],
             "KunReading": [
-                "おお(きい)",
-                "おお(い)"
+                "おお(きい)"
             ],
             "PrincipalReading": "ダイ",
+            "PrincipalReadingRomaji": "dai",
             "JLPTLevel": "N5",
             "Meaning": "grand",
-            "SecondaryMeaning": null
+            "SecondaryMeaning": "important"
         },
         {
             "id": 23,
@@ -344,13 +360,13 @@
                 "モク"
             ],
             "KunReading": [
-                "き",
-                "こ"
+                "き"
             ],
             "PrincipalReading": "ボク",
+            "PrincipalReadingRomaji": "boku",
             "JLPTLevel": "N5",
             "Meaning": "arbre",
-            "SecondaryMeaning": null
+            "SecondaryMeaning": "bois"
         },
         {
             "id": 24,
@@ -362,6 +378,7 @@
                 "もと"
             ],
             "PrincipalReading": "ホン",
+            "PrincipalReadingRomaji": "hon",
             "JLPTLevel": "N5",
             "Meaning": "livre",
             "SecondaryMeaning": "origine"
@@ -376,6 +393,7 @@
                 "みず"
             ],
             "PrincipalReading": "スイ",
+            "PrincipalReadingRomaji": "sui",
             "JLPTLevel": "N5",
             "Meaning": "eau",
             "SecondaryMeaning": null
@@ -387,10 +405,10 @@
                 "カ"
             ],
             "KunReading": [
-                "ひ",
-                "ほ"
+                "ひ"
             ],
             "PrincipalReading": "カ",
+            "PrincipalReadingRomaji": "ka",
             "JLPTLevel": "N5",
             "Meaning": "feu",
             "SecondaryMeaning": null
@@ -406,6 +424,7 @@
                 "とう"
             ],
             "PrincipalReading": "フ",
+            "PrincipalReadingRomaji": "fu",
             "JLPTLevel": "N5",
             "Meaning": "père",
             "SecondaryMeaning": null
@@ -421,6 +440,7 @@
                 "かあ"
             ],
             "PrincipalReading": "ボ",
+            "PrincipalReadingRomaji": "bo",
             "JLPTLevel": "N5",
             "Meaning": "mère",
             "SecondaryMeaning": null
@@ -435,6 +455,7 @@
                 "みみ"
             ],
             "PrincipalReading": "ジ",
+            "PrincipalReadingRomaji": "ji",
             "JLPTLevel": "N5",
             "Meaning": "oreille",
             "SecondaryMeaning": null
@@ -450,9 +471,10 @@
                 "くち"
             ],
             "PrincipalReading": "コウ",
+            "PrincipalReadingRomaji": "kou",
             "JLPTLevel": "N5",
             "Meaning": "bouche",
-            "SecondaryMeaning": "entrée"
+            "SecondaryMeaning": null
         },
         {
             "id": 31,
@@ -462,12 +484,14 @@
             ],
             "KunReading": [
                 "やす(む)",
-                "やす(まる)"
+                "やす(まる)",
+                "やす(める)"
             ],
             "PrincipalReading": "キュウ",
+            "PrincipalReadingRomaji": "kyuu",
             "JLPTLevel": "N5",
             "Meaning": "repos",
-            "SecondaryMeaning": "pause"
+            "SecondaryMeaning": "vacances"
         },
         {
             "id": 32,
@@ -480,6 +504,7 @@
                 "なん"
             ],
             "PrincipalReading": "カ",
+            "PrincipalReadingRomaji": "ka",
             "JLPTLevel": "N5",
             "Meaning": "quoi",
             "SecondaryMeaning": "quel"
@@ -493,14 +518,15 @@
             ],
             "KunReading": [
                 "い(る)",
-                "はい(る)",
                 "い(れる)",
-                "はい(れる)"
+                "はい(る)",
+                "い(れる)"
             ],
             "PrincipalReading": "ニュウ",
+            "PrincipalReadingRomaji": "nyuu",
             "JLPTLevel": "N5",
             "Meaning": "entrer",
-            "SecondaryMeaning": "mettre"
+            "SecondaryMeaning": "insérer"
         },
         {
             "id": 34,
@@ -512,10 +538,10 @@
             "KunReading": [
                 "うえ",
                 "あ(げる)",
-                "あ(がる)",
-                "のぼ(る)"
+                "あ(がる)"
             ],
             "PrincipalReading": "ジョウ",
+            "PrincipalReadingRomaji": "jou",
             "JLPTLevel": "N5",
             "Meaning": "haut",
             "SecondaryMeaning": "supérieur"
@@ -530,6 +556,7 @@
                 "まえ"
             ],
             "PrincipalReading": "ゼン",
+            "PrincipalReadingRomaji": "zen",
             "JLPTLevel": "N5",
             "Meaning": "avant",
             "SecondaryMeaning": "devant"
@@ -543,14 +570,11 @@
             ],
             "KunReading": [
                 "した",
-                "しも",
-                "もと",
                 "さ(げる)",
-                "さ(がる)",
-                "くだ(る)",
-                "くだ(さる)"
+                "くだ(る)"
             ],
             "PrincipalReading": "カ",
+            "PrincipalReadingRomaji": "ka",
             "JLPTLevel": "N5",
             "Meaning": "bas",
             "SecondaryMeaning": "inférieur"
@@ -562,9 +586,11 @@
                 "セン"
             ],
             "KunReading": [
-                "ち"
+                "ち",
+                "せん"
             ],
             "PrincipalReading": "セン",
+            "PrincipalReadingRomaji": "sen",
             "JLPTLevel": "N5",
             "Meaning": "mille",
             "SecondaryMeaning": null
@@ -579,6 +605,7 @@
                 "うま"
             ],
             "PrincipalReading": "ゴ",
+            "PrincipalReadingRomaji": "go",
             "JLPTLevel": "N5",
             "Meaning": "midi",
             "SecondaryMeaning": null
@@ -593,23 +620,27 @@
                 "とも"
             ],
             "PrincipalReading": "ユウ",
+            "PrincipalReadingRomaji": "yuu",
             "JLPTLevel": "N5",
             "Meaning": "ami",
-            "SecondaryMeaning": "compagnon"
+            "SecondaryMeaning": null
         },
         {
             "id": 40,
             "Kanji": "古",
             "OnReading": [
-                "コ"
+                "コ",
+                "フ"
             ],
             "KunReading": [
-                "ふる(い)"
+                "ふる(い)",
+                "ふる(す)"
             ],
             "PrincipalReading": "コ",
+            "PrincipalReadingRomaji": "ko",
             "JLPTLevel": "N5",
             "Meaning": "ancien",
-            "SecondaryMeaning": "vieux"
+            "SecondaryMeaning": null
         },
         {
             "id": 41,
@@ -622,6 +653,7 @@
                 "な"
             ],
             "PrincipalReading": "メイ",
+            "PrincipalReadingRomaji": "mei",
             "JLPTLevel": "N5",
             "Meaning": "nom",
             "SecondaryMeaning": "réputation"
@@ -636,6 +668,7 @@
                 "くに"
             ],
             "PrincipalReading": "コク",
+            "PrincipalReadingRomaji": "koku",
             "JLPTLevel": "N5",
             "Meaning": "pays",
             "SecondaryMeaning": "nation"
@@ -649,10 +682,10 @@
             ],
             "KunReading": [
                 "そと",
-                "ほか",
-                "はず(す)"
+                "ほか"
             ],
             "PrincipalReading": "ガイ",
+            "PrincipalReadingRomaji": "gai",
             "JLPTLevel": "N5",
             "Meaning": "extérieur",
             "SecondaryMeaning": "autre"
@@ -665,10 +698,10 @@
                 "ニョ"
             ],
             "KunReading": [
-                "おんな",
-                "め"
+                "おんな"
             ],
             "PrincipalReading": "ジョ",
+            "PrincipalReadingRomaji": "jo",
             "JLPTLevel": "N5",
             "Meaning": "femme",
             "SecondaryMeaning": null
@@ -684,6 +717,7 @@
                 "おとこ"
             ],
             "PrincipalReading": "ダン",
+            "PrincipalReadingRomaji": "dan",
             "JLPTLevel": "N5",
             "Meaning": "homme",
             "SecondaryMeaning": null
@@ -693,13 +727,13 @@
             "Kanji": "子",
             "OnReading": [
                 "シ",
-                "ス",
-                "コ"
+                "ス"
             ],
             "KunReading": [
                 "こ"
             ],
             "PrincipalReading": "シ",
+            "PrincipalReadingRomaji": "shi",
             "JLPTLevel": "N5",
             "Meaning": "enfant",
             "SecondaryMeaning": "fils"
@@ -714,9 +748,10 @@
                 "まな(ぶ)"
             ],
             "PrincipalReading": "ガク",
+            "PrincipalReadingRomaji": "gaku",
             "JLPTLevel": "N5",
             "Meaning": "étudier",
-            "SecondaryMeaning": "école"
+            "SecondaryMeaning": "apprendre"
         },
         {
             "id": 48,
@@ -731,9 +766,10 @@
                 "なま"
             ],
             "PrincipalReading": "セイ",
+            "PrincipalReadingRomaji": "sei",
             "JLPTLevel": "N5",
-            "Meaning": "vie",
-            "SecondaryMeaning": "naître"
+            "Meaning": "vivre",
+            "SecondaryMeaning": "naissance"
         },
         {
             "id": 49,
@@ -743,12 +779,14 @@
             ],
             "KunReading": [
                 "ちい(さい)",
-                "こ"
+                "こ",
+                "お"
             ],
             "PrincipalReading": "ショウ",
+            "PrincipalReadingRomaji": "shou",
             "JLPTLevel": "N5",
             "Meaning": "petit",
-            "SecondaryMeaning": "jeune"
+            "SecondaryMeaning": null
         },
         {
             "id": 50,
@@ -760,6 +798,7 @@
                 "か(く)"
             ],
             "PrincipalReading": "ショ",
+            "PrincipalReadingRomaji": "sho",
             "JLPTLevel": "N5",
             "Meaning": "écrire",
             "SecondaryMeaning": "livre"
@@ -771,13 +810,13 @@
                 "マイ"
             ],
             "KunReading": [
-                "ごと",
-                "おの(ずから)"
+                "ごと"
             ],
             "PrincipalReading": "マイ",
+            "PrincipalReadingRomaji": "mai",
             "JLPTLevel": "N5",
             "Meaning": "chaque",
-            "SecondaryMeaning": "tous"
+            "SecondaryMeaning": null
         },
         {
             "id": 52,
@@ -787,9 +826,10 @@
             ],
             "KunReading": [
                 "さき",
-                "ま(ず)"
+                "まず"
             ],
             "PrincipalReading": "セン",
+            "PrincipalReadingRomaji": "sen",
             "JLPTLevel": "N5",
             "Meaning": "avant",
             "SecondaryMeaning": "précédent"
@@ -805,9 +845,10 @@
                 "あ(う)"
             ],
             "PrincipalReading": "カイ",
+            "PrincipalReadingRomaji": "kai",
             "JLPTLevel": "N5",
-            "Meaning": "réunion",
-            "SecondaryMeaning": "association"
+            "Meaning": "rencontre",
+            "SecondaryMeaning": "réunion"
         },
         {
             "id": 54,
@@ -820,9 +861,10 @@
                 "よろず"
             ],
             "PrincipalReading": "マン",
+            "PrincipalReadingRomaji": "man",
             "JLPTLevel": "N5",
             "Meaning": "dix mille",
-            "SecondaryMeaning": "tout"
+            "SecondaryMeaning": "innombrable"
         },
         {
             "id": 55,
@@ -831,12 +873,13 @@
                 "エン"
             ],
             "KunReading": [
-                "まる(い)"
+                "まるい"
             ],
             "PrincipalReading": "エン",
+            "PrincipalReadingRomaji": "en",
             "JLPTLevel": "N5",
             "Meaning": "yen",
-            "SecondaryMeaning": "rond"
+            "SecondaryMeaning": "cercle"
         },
         {
             "id": 56,
@@ -850,9 +893,10 @@
                 "だ(す)"
             ],
             "PrincipalReading": "シュツ",
+            "PrincipalReadingRomaji": "shutsu",
             "JLPTLevel": "N5",
             "Meaning": "sortir",
-            "SecondaryMeaning": "produire"
+            "SecondaryMeaning": "émission"
         },
         {
             "id": 57,
@@ -864,23 +908,27 @@
             ],
             "KunReading": [
                 "わ(ける)",
-                "わ(かる)"
+                "わ(かる)",
+                "わ(かれる)"
             ],
             "PrincipalReading": "ブン",
+            "PrincipalReadingRomaji": "bun",
             "JLPTLevel": "N5",
-            "Meaning": "diviser",
-            "SecondaryMeaning": "minute"
+            "Meaning": "minute",
+            "SecondaryMeaning": "partie"
         },
         {
             "id": 58,
             "Kanji": "北",
             "OnReading": [
-                "ホク"
+                "ホク",
+                "キタ"
             ],
             "KunReading": [
                 "きた"
             ],
             "PrincipalReading": "ホク",
+            "PrincipalReadingRomaji": "hoku",
             "JLPTLevel": "N5",
             "Meaning": "nord",
             "SecondaryMeaning": null
@@ -895,6 +943,7 @@
                 "なか(ば)"
             ],
             "PrincipalReading": "ハン",
+            "PrincipalReadingRomaji": "han",
             "JLPTLevel": "N5",
             "Meaning": "moitié",
             "SecondaryMeaning": null
@@ -904,12 +953,13 @@
             "Kanji": "南",
             "OnReading": [
                 "ナン",
-                "なん"
+                "ミナミ"
             ],
             "KunReading": [
                 "みなみ"
             ],
             "PrincipalReading": "ナン",
+            "PrincipalReadingRomaji": "nan",
             "JLPTLevel": "N5",
             "Meaning": "sud",
             "SecondaryMeaning": null
@@ -925,6 +975,7 @@
                 "つち"
             ],
             "PrincipalReading": "ド",
+            "PrincipalReadingRomaji": "do",
             "JLPTLevel": "N5",
             "Meaning": "terre",
             "SecondaryMeaning": "sol"
@@ -939,9 +990,10 @@
                 "おお(い)"
             ],
             "PrincipalReading": "タ",
+            "PrincipalReadingRomaji": "ta",
             "JLPTLevel": "N5",
             "Meaning": "beaucoup",
-            "SecondaryMeaning": "plusieurs"
+            "SecondaryMeaning": null
         },
         {
             "id": 63,
@@ -950,9 +1002,11 @@
                 "テン"
             ],
             "KunReading": [
+                "あめ",
                 "あま"
             ],
             "PrincipalReading": "テン",
+            "PrincipalReadingRomaji": "ten",
             "JLPTLevel": "N5",
             "Meaning": "ciel",
             "SecondaryMeaning": "paradis"
@@ -967,6 +1021,7 @@
                 "やす(い)"
             ],
             "PrincipalReading": "アン",
+            "PrincipalReadingRomaji": "an",
             "JLPTLevel": "N5",
             "Meaning": "paisible",
             "SecondaryMeaning": "bon marché"
@@ -982,9 +1037,10 @@
                 "すこ(し)"
             ],
             "PrincipalReading": "ショウ",
+            "PrincipalReadingRomaji": "shou",
             "JLPTLevel": "N5",
             "Meaning": "peu",
-            "SecondaryMeaning": "jeune"
+            "SecondaryMeaning": null
         },
         {
             "id": 66,
@@ -997,6 +1053,7 @@
                 "たな"
             ],
             "PrincipalReading": "テン",
+            "PrincipalReadingRomaji": "ten",
             "JLPTLevel": "N5",
             "Meaning": "magasin",
             "SecondaryMeaning": "boutique"
@@ -1010,9 +1067,11 @@
             ],
             "KunReading": [
                 "あと",
-                "うし(ろ)"
+                "うし(ろ)",
+                "のち"
             ],
             "PrincipalReading": "ゴ",
+            "PrincipalReadingRomaji": "go",
             "JLPTLevel": "N5",
             "Meaning": "après",
             "SecondaryMeaning": "derrière"
@@ -1028,6 +1087,7 @@
                 "た"
             ],
             "PrincipalReading": "シュ",
+            "PrincipalReadingRomaji": "shu",
             "JLPTLevel": "N5",
             "Meaning": "main",
             "SecondaryMeaning": "moyen"
@@ -1043,6 +1103,7 @@
                 "あら(た)"
             ],
             "PrincipalReading": "シン",
+            "PrincipalReadingRomaji": "shin",
             "JLPTLevel": "N5",
             "Meaning": "nouveau",
             "SecondaryMeaning": "récent"
@@ -1058,6 +1119,7 @@
                 "どき"
             ],
             "PrincipalReading": "ジ",
+            "PrincipalReadingRomaji": "ji",
             "JLPTLevel": "N5",
             "Meaning": "temps",
             "SecondaryMeaning": "heure"
@@ -1067,16 +1129,18 @@
             "Kanji": "来",
             "OnReading": [
                 "ライ",
-                "くる"
+                "タク"
             ],
             "KunReading": [
                 "く(る)",
-                "きた(る)"
+                "きた(る)",
+                "き(ます)"
             ],
             "PrincipalReading": "ライ",
+            "PrincipalReadingRomaji": "rai",
             "JLPTLevel": "N5",
             "Meaning": "venir",
-            "SecondaryMeaning": "prochain"
+            "SecondaryMeaning": "arriver"
         },
         {
             "id": 72,
@@ -1088,6 +1152,7 @@
                 "ひがし"
             ],
             "PrincipalReading": "トウ",
+            "PrincipalReadingRomaji": "tou",
             "JLPTLevel": "N5",
             "Meaning": "est",
             "SecondaryMeaning": null
@@ -1102,9 +1167,10 @@
                 "こう"
             ],
             "PrincipalReading": "コウ",
+            "PrincipalReadingRomaji": "kou",
             "JLPTLevel": "N5",
             "Meaning": "école",
-            "SecondaryMeaning": "vérifier"
+            "SecondaryMeaning": null
         },
         {
             "id": 74,
@@ -1114,12 +1180,14 @@
                 "ケ"
             ],
             "KunReading": [
-                "き"
+                "き",
+                "け"
             ],
             "PrincipalReading": "キ",
+            "PrincipalReadingRomaji": "ki",
             "JLPTLevel": "N5",
             "Meaning": "esprit",
-            "SecondaryMeaning": "air"
+            "SecondaryMeaning": "atmosphère"
         },
         {
             "id": 75,
@@ -1133,23 +1201,27 @@
                 "しろ(い)"
             ],
             "PrincipalReading": "ハク",
+            "PrincipalReadingRomaji": "haku",
             "JLPTLevel": "N5",
             "Meaning": "blanc",
-            "SecondaryMeaning": "pur"
+            "SecondaryMeaning": "pureté"
         },
         {
             "id": 76,
             "Kanji": "百",
             "OnReading": [
-                "ヒャク"
+                "ヒャク",
+                "ビャク"
             ],
             "KunReading": [
-                "もも"
+                "びゃく",
+                "ひゃく"
             ],
             "PrincipalReading": "ヒャク",
+            "PrincipalReadingRomaji": "hyaku",
             "JLPTLevel": "N5",
             "Meaning": "cent",
-            "SecondaryMeaning": "nombre"
+            "SecondaryMeaning": null
         },
         {
             "id": 77,
@@ -1163,6 +1235,7 @@
                 "ま"
             ],
             "PrincipalReading": "モク",
+            "PrincipalReadingRomaji": "moku",
             "JLPTLevel": "N5",
             "Meaning": "œil",
             "SecondaryMeaning": "but"
@@ -1177,9 +1250,10 @@
                 "やしろ"
             ],
             "PrincipalReading": "シャ",
+            "PrincipalReadingRomaji": "sha",
             "JLPTLevel": "N5",
-            "Meaning": "société",
-            "SecondaryMeaning": "sanctuaire"
+            "Meaning": "entreprise",
+            "SecondaryMeaning": "temple"
         },
         {
             "id": 79,
@@ -1189,13 +1263,15 @@
             ],
             "KunReading": [
                 "そら",
-                "あ(ける)",
-                "あ(く)"
+                "から",
+                "あ(く)",
+                "あ(ける)"
             ],
             "PrincipalReading": "クウ",
+            "PrincipalReadingRomaji": "kuu",
             "JLPTLevel": "N5",
-            "Meaning": "ciel",
-            "SecondaryMeaning": "vide"
+            "Meaning": "vide",
+            "SecondaryMeaning": "ciel"
         },
         {
             "id": 80,
@@ -1206,9 +1282,10 @@
             ],
             "KunReading": [
                 "た(つ)",
-                "た(てる)"
+                "たて(る)"
             ],
             "PrincipalReading": "リツ",
+            "PrincipalReadingRomaji": "ritsu",
             "JLPTLevel": "N5",
             "Meaning": "se lever",
             "SecondaryMeaning": "établir"
@@ -1225,6 +1302,7 @@
                 "きこ(える)"
             ],
             "PrincipalReading": "ブン",
+            "PrincipalReadingRomaji": "bun",
             "JLPTLevel": "N5",
             "Meaning": "écouter",
             "SecondaryMeaning": "entendre"
@@ -1239,6 +1317,7 @@
                 "はな"
             ],
             "PrincipalReading": "カ",
+            "PrincipalReadingRomaji": "ka",
             "JLPTLevel": "N5",
             "Meaning": "fleur",
             "SecondaryMeaning": null
@@ -1255,6 +1334,7 @@
                 "おこな(う)"
             ],
             "PrincipalReading": "コウ",
+            "PrincipalReadingRomaji": "kou",
             "JLPTLevel": "N5",
             "Meaning": "aller",
             "SecondaryMeaning": "acte"
@@ -1270,6 +1350,7 @@
                 "にし"
             ],
             "PrincipalReading": "セイ",
+            "PrincipalReadingRomaji": "sei",
             "JLPTLevel": "N5",
             "Meaning": "ouest",
             "SecondaryMeaning": null
@@ -1286,6 +1367,7 @@
                 "み(せる)"
             ],
             "PrincipalReading": "ケン",
+            "PrincipalReadingRomaji": "ken",
             "JLPTLevel": "N5",
             "Meaning": "voir",
             "SecondaryMeaning": "regarder"
@@ -1302,6 +1384,7 @@
                 "こと"
             ],
             "PrincipalReading": "ゲン",
+            "PrincipalReadingRomaji": "gen",
             "JLPTLevel": "N5",
             "Meaning": "dire",
             "SecondaryMeaning": "mot"
@@ -1317,6 +1400,7 @@
                 "はなし"
             ],
             "PrincipalReading": "ワ",
+            "PrincipalReadingRomaji": "wa",
             "JLPTLevel": "N5",
             "Meaning": "parler",
             "SecondaryMeaning": "histoire"
@@ -1332,6 +1416,7 @@
                 "かた(らう)"
             ],
             "PrincipalReading": "ゴ",
+            "PrincipalReadingRomaji": "go",
             "JLPTLevel": "N5",
             "Meaning": "langue",
             "SecondaryMeaning": "mot"
@@ -1348,6 +1433,7 @@
                 "よ(む)"
             ],
             "PrincipalReading": "ドク",
+            "PrincipalReadingRomaji": "doku",
             "JLPTLevel": "N5",
             "Meaning": "lire",
             "SecondaryMeaning": null
@@ -1362,6 +1448,7 @@
                 "か(う)"
             ],
             "PrincipalReading": "バイ",
+            "PrincipalReadingRomaji": "bai",
             "JLPTLevel": "N5",
             "Meaning": "acheter",
             "SecondaryMeaning": null
@@ -1378,6 +1465,7 @@
                 "た(す)"
             ],
             "PrincipalReading": "ソク",
+            "PrincipalReadingRomaji": "soku",
             "JLPTLevel": "N5",
             "Meaning": "pied",
             "SecondaryMeaning": "suffire"
@@ -1392,6 +1480,7 @@
                 "くるま"
             ],
             "PrincipalReading": "シャ",
+            "PrincipalReadingRomaji": "sha",
             "JLPTLevel": "N5",
             "Meaning": "voiture",
             "SecondaryMeaning": "chariot"
@@ -1407,6 +1496,7 @@
                 "みち"
             ],
             "PrincipalReading": "ドウ",
+            "PrincipalReadingRomaji": "dou",
             "JLPTLevel": "N5",
             "Meaning": "route",
             "SecondaryMeaning": "voie"
@@ -1423,6 +1513,7 @@
                 "かな(える)"
             ],
             "PrincipalReading": "キン",
+            "PrincipalReadingRomaji": "kin",
             "JLPTLevel": "N5",
             "Meaning": "argent",
             "SecondaryMeaning": "or"
@@ -1437,6 +1528,7 @@
                 "なが(い)"
             ],
             "PrincipalReading": "チョウ",
+            "PrincipalReadingRomaji": "chou",
             "JLPTLevel": "N5",
             "Meaning": "long",
             "SecondaryMeaning": "chef"
@@ -1453,6 +1545,7 @@
                 "ま"
             ],
             "PrincipalReading": "カン",
+            "PrincipalReadingRomaji": "kan",
             "JLPTLevel": "N5",
             "Meaning": "intervalle",
             "SecondaryMeaning": "entre"
@@ -1468,6 +1561,7 @@
                 "あま(る)"
             ],
             "PrincipalReading": "ウ",
+            "PrincipalReadingRomaji": "u",
             "JLPTLevel": "N5",
             "Meaning": "pluie",
             "SecondaryMeaning": null
@@ -1483,6 +1577,7 @@
                 "でん"
             ],
             "PrincipalReading": "デン",
+            "PrincipalReadingRomaji": "den",
             "JLPTLevel": "N5",
             "Meaning": "électricité",
             "SecondaryMeaning": "éclair"
@@ -1499,6 +1594,7 @@
                 "く(う)"
             ],
             "PrincipalReading": "ショク",
+            "PrincipalReadingRomaji": "shoku",
             "JLPTLevel": "N5",
             "Meaning": "manger",
             "SecondaryMeaning": "nourriture"
@@ -1513,6 +1609,7 @@
                 "の(む)"
             ],
             "PrincipalReading": "イン",
+            "PrincipalReadingRomaji": "in",
             "JLPTLevel": "N5",
             "Meaning": "boire",
             "SecondaryMeaning": null
@@ -1527,6 +1624,7 @@
                 "いき"
             ],
             "PrincipalReading": "エキ",
+            "PrincipalReadingRomaji": "eki",
             "JLPTLevel": "N5",
             "Meaning": "gare",
             "SecondaryMeaning": null
@@ -1541,6 +1639,7 @@
                 "たか(い)"
             ],
             "PrincipalReading": "コウ",
+            "PrincipalReadingRomaji": "kou",
             "JLPTLevel": "N5",
             "Meaning": "haut",
             "SecondaryMeaning": "cher"
@@ -1557,6 +1656,7 @@
                 "うお"
             ],
             "PrincipalReading": "ギョ",
+            "PrincipalReadingRomaji": "gyo",
             "JLPTLevel": "N5",
             "Meaning": "poisson",
             "SecondaryMeaning": null

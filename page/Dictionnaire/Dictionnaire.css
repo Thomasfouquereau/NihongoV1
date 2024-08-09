@@ -255,7 +255,7 @@
     justify-content: center;
     align-items: center;
     width: 19vw;
-    height: 13vw;
+    height: 15vw;
     border-radius: var(--border-radius);
     border: 0.15vw solid var(--couleur-secondaire);
     position: relative;
@@ -291,15 +291,20 @@
     align-items: center;
 }
 
+.PrincipalReading{
+    font-size: 0.8vw;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
 .kanji {
     font-size: 2.5vw;
     font-weight: 300;
     margin-bottom: 0.5vw;
-    
 }
 
-.meaning {
-    font-size: 1vw;
+.meaning,.PrincipalReadingRomaji {
+    font-size: 0.8vw;
     font-weight: 300;
     text-transform: capitalize;
 }
@@ -350,11 +355,17 @@
         border-radius: var(--border-radius-mobile);
     }
 
+    .PrincipalReading{
+        font-size: 4vw;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
     .kanji {
         font-size: 10vw;
     }
 
-    .meaning {
+    .meaning,.PrincipalReadingRomaji {
         font-size: 4vw;
     }
 

@@ -1,9 +1,13 @@
 function initExercice() {
     document.addEventListener('DOMContentLoaded', function () {
         const mode = localStorage.getItem('Mode');
+
+
         function getRandomNumber(max) {
             return Math.floor(Math.random() * max) + 1;
         }
+
+
         function generateFalseAnswers(kanjiData, correctAnswer) {
             const falseAnswers = [];
             while (falseAnswers.length < 2) {
@@ -14,6 +18,24 @@ function initExercice() {
             }
             return falseAnswers;
         }
+
+
+        const questionFurigana = document.querySelector('.question-furigana');
+        const questionRomaji = document.querySelector('.question-romaji');
+        console.log(localStorage.getItem('Difficulté'));
+
+        if (localStorage.getItem('Difficulté') === '1') {
+            questionRomaji.style.display = 'flex';
+            questionFurigana.style.display = 'flex';
+        } else if (localStorage.getItem('Difficulté') === '2') {
+            questionRomaji.style.display = 'none';
+            questionFurigana.style.display = 'flex';
+        } else if (localStorage.getItem('Difficulté') === '3') {
+            questionRomaji.style.display = 'none';
+            questionFurigana.style.display = 'none';
+        }
+
+
         if (mode === '1') {
             // Code pour le mode 1
             const headerMenuKanjiDiv = document.querySelector('.header-nenu-kanji');
@@ -29,6 +51,7 @@ function initExercice() {
                 const randomKanjiList = generateUniqueRandomNumbers(NbKanji).map(id => kanjiData.find(kanji => kanji.id === id));
 
                 headerMenuKanjiDiv.innerHTML = randomKanjiList.map(kanji => `<span class="span">${kanji.kanji}</span>`).join(' ');
+
 
                 let currentKanjiIndex = 0;
                 displayCurrentKanji(randomKanjiList[currentKanjiIndex]);
@@ -61,7 +84,9 @@ function initExercice() {
                     id: kanji.id,
                     kanji: kanji.kanji,
                     meaning: kanji.meaning,
-                    secondaryMeaning: kanji.secondaryMeaning
+                    secondaryMeaning: kanji.secondaryMeaning,
+                    PrincipalReading: kanji.PrincipalReading,
+                    PrincipalReadingRomaji: kanji.PrincipalReadingRomaji
                 }));
             }
 
@@ -75,9 +100,13 @@ function initExercice() {
 
             function displayCurrentKanji(currentKanji) {
                 const questionKanjiDiv = document.querySelector('.question-kanji');
-                if (questionKanjiDiv) {
-                    questionKanjiDiv.innerHTML = currentKanji.kanji;
-                }
+                const questionFurigana = document.querySelector('.question-furigana');
+                const questionRomaji = document.querySelector('.question-romaji');
+
+                questionKanjiDiv.innerHTML = currentKanji.kanji;
+                questionFurigana.innerHTML = currentKanji.PrincipalReading;
+                questionRomaji.innerHTML = currentKanji.PrincipalReadingRomaji;
+
 
                 const reponseDiv = document.querySelector('.reponse');
                 if (reponseDiv) {
@@ -179,8 +208,6 @@ function initExercice() {
                 const kanjis = data.kanji;
                 const lastId = kanjis[kanjis.length - 1].id;
 
-                console.log(lastId);
-
                 const randomNumbers = new Set();
                 while (randomNumbers.size < NbKanji) {
                     randomNumbers.add(getRandomNumber(lastId));
@@ -191,108 +218,114 @@ function initExercice() {
             }
 
             fetch('../../data/kanji/liste kanji.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(data => {
-                const headerMenuKanjiDiv = document.querySelector('.header-nenu-kanji');
-                const finDiv = document.querySelector('.fin');
-                const questionNumberDiv = document.querySelector('.header-nenu-reponse-nb');
-                const questionKanjiDiv = document.querySelector('.question-kanji');
-                const reponseDiv = document.querySelector('.reponse');
-                const kanjis = data.kanji;
-
-               
-        
-                if (!Array.isArray(kanjis)) {
-                    throw new Error('Expected an array but got ' + typeof kanjis);
-                }
-        
-                let currentQuestionIndex = 0;
-                const randomKanjis = getRandomKanji(data);
-
-                 // Générer le contenu HTML en vérifiant que chaque objet a bien une propriété Kanji
-                 headerMenuKanjiDiv.innerHTML = randomKanjis.map(kanji => {
-                    if (kanji && kanji.Kanji) {
-                        return `<span class="span">${kanji.Kanji}</span>`;
-                    } else {
-                        return `<span class="span">undefined</span>`;
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
                     }
-                }).join(' ');
-        
-                function displayQuestion() {
-                    const currentKanji = randomKanjis[currentQuestionIndex];
-                    questionKanjiDiv.innerHTML = `<span class="span">${currentKanji.Kanji}</span>`;
-        
-                    const answers = [currentKanji.Meaning];
-                    while (answers.length < 3) {
-                        const randomKanji = kanjis[Math.floor(Math.random() * kanjis.length)];
-                        if (!answers.includes(randomKanji.Meaning)) {
-                            answers.push(randomKanji.Meaning);
+                    return response.json();
+                })
+                .then(data => {
+                    const headerMenuKanjiDiv = document.querySelector('.header-nenu-kanji');
+                    const finDiv = document.querySelector('.fin');
+                    const questionNumberDiv = document.querySelector('.header-nenu-reponse-nb');
+                    const questionKanjiDiv = document.querySelector('.question-kanji');
+                    const questionFurigana = document.querySelector('.question-furigana');
+                    const questionRomaji = document.querySelector('.question-romaji');
+                    const reponseDiv = document.querySelector('.reponse');
+                    const kanjis = data.kanji;
+
+
+                    if (!Array.isArray(kanjis)) {
+                        throw new Error('Expected an array but got ' + typeof kanjis);
+                    }
+
+                    let currentQuestionIndex = 0;
+                    const randomKanjis = getRandomKanji(data);
+
+                    // Générer le contenu HTML en vérifiant que chaque objet a bien une propriété Kanji
+                    headerMenuKanjiDiv.innerHTML = randomKanjis.map(kanji => {
+                        if (kanji && kanji.Kanji) {
+                            return `<span class="span">${kanji.Kanji}</span>`;
+                        } else {
+                            return `<span class="span">undefined</span>`;
                         }
-                    }
-        
-                    answers.sort(() => Math.random() - 0.5);
-        
-                    reponseDiv.innerHTML = answers.map(answer => {
-                        return `<button class="answer-button">${answer}</button>`;
                     }).join(' ');
-        
-                    // Mettre à jour le numéro de la question
-                    questionNumberDiv.innerHTML = ` ${currentQuestionIndex + 1} / ${randomKanjis.length}`;
-        
-                    document.querySelectorAll('.answer-button').forEach(button => {
-                        const trueCounter = document.querySelector('.header-nenu-reponse-true');
-                        const falseCounter = document.querySelector('.header-nenu-reponse-false');
-                        button.addEventListener('click', () => {
-                            if (button.textContent === currentKanji.Meaning) {
-                                button.style.borderColor = '#9EFF9E';
-                                button.classList.add('jello-horizontal');
-                                trueCounter.textContent = parseInt(trueCounter.textContent || '0', 10) + 1;
-                                questionKanjiDiv.style.color = '#9EFF9E';
-                                setTimeout(() => {
-                                    questionKanjiDiv.style.color = '#F7F7F2';
-                                }, 2000);
-                            } else {
-                                falseCounter.textContent = parseInt(falseCounter.textContent || '0', 10) + 1;
-                                button.style.borderColor = '#FF9E9E';
-                                questionKanjiDiv.style.color = '#FF9E9E';
-                                setTimeout(() => {
-                                    questionKanjiDiv.style.color = '#F7F7F2';
-                                }, 2000);
+
+                    function displayQuestion() {
+                        const currentKanji = randomKanjis[currentQuestionIndex];
+
+                        questionKanjiDiv.innerHTML = `<span class="span">${currentKanji.Kanji}</span>`;
+                        questionFurigana.innerHTML = `<span class="span">${currentKanji.PrincipalReading}</span>`;
+                        questionRomaji.innerHTML = `<span class="span">${currentKanji.PrincipalReadingRomaji}</span>`;
+
+                        const answers = [currentKanji.Meaning];
+                        while (answers.length < 3) {
+                            const randomKanji = kanjis[Math.floor(Math.random() * kanjis.length)];
+                            if (!answers.includes(randomKanji.Meaning)) {
+                                answers.push(randomKanji.Meaning);
                             }
-        
-                            // Afficher la bonne réponse en vert
-                            document.querySelectorAll('.answer-button').forEach(btn => {
-                                if (btn.textContent === currentKanji.Meaning) {
-                                    btn.style.borderColor = '#9EFF9E';
-                                }
-                            });
-        
-                            setTimeout(() => {
-                                currentQuestionIndex++;
-                                if (currentQuestionIndex < randomKanjis.length) {
-                                    displayQuestion();
+                        }
+
+                        answers.sort(() => Math.random() - 0.5);
+
+                        reponseDiv.innerHTML = answers.map(answer => {
+                            return `<button class="answer-button">${answer}</button>`;
+                        }).join(' ');
+
+                        // Mettre à jour le numéro de la question
+                        questionNumberDiv.innerHTML = ` ${currentQuestionIndex + 1} / ${randomKanjis.length}`;
+
+                        document.querySelectorAll('.answer-button').forEach(button => {
+                            const trueCounter = document.querySelector('.header-nenu-reponse-true');
+                            const falseCounter = document.querySelector('.header-nenu-reponse-false');
+                            button.addEventListener('click', () => {
+                                if (button.textContent === currentKanji.Meaning) {
+                                    button.style.borderColor = '#9EFF9E';
+                                    button.classList.add('jello-horizontal');
+                                    trueCounter.textContent = parseInt(trueCounter.textContent || '0', 10) + 1;
+                                    questionKanjiDiv.style.color = '#9EFF9E';
+                                    setTimeout(() => {
+                                        questionKanjiDiv.style.color = '#F7F7F2';
+                                    }, 2000);
                                 } else {
-                                    finDiv.style.display = 'flex';
+                                    falseCounter.textContent = parseInt(falseCounter.textContent || '0', 10) + 1;
+                                    button.style.borderColor = '#FF9E9E';
+                                    questionKanjiDiv.style.color = '#FF9E9E';
+                                    setTimeout(() => {
+                                        questionKanjiDiv.style.color = '#F7F7F2';
+                                    }, 2000);
                                 }
-                            }, 2000);
+
+                                // Afficher la bonne réponse en vert
+                                document.querySelectorAll('.answer-button').forEach(btn => {
+                                    if (btn.textContent === currentKanji.Meaning) {
+                                        btn.style.borderColor = '#9EFF9E';
+                                    }
+                                });
+
+                                setTimeout(() => {
+                                    currentQuestionIndex++;
+                                    if (currentQuestionIndex < randomKanjis.length) {
+                                        displayQuestion();
+                                    } else {
+                                        finDiv.style.display = 'flex';
+                                    }
+                                }, 2000);
+                            });
                         });
-                    });
-                }
-        
-                displayQuestion();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+                    }
+
+                    displayQuestion();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
 
         }
     });
 }
+
+
 
 initExercice();
 

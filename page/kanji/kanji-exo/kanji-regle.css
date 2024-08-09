@@ -184,6 +184,10 @@
     align-items: center;
 }
 
+#barre{
+    text-decoration: line-through;
+}
+
 #difficult-btn-lvl1 {
     transform: translate(-0.2vw, 0.6vw);
 }
