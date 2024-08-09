@@ -5,6 +5,10 @@
     right: -0.6vw;
 }
 
+#kanjiRegleTitle{
+    background: radial-gradient(circle, rgb(42, 71, 51) 59%, rgba(37,37,37,1) 99%) !important;
+   }
+
 .menu a:nth-child(1) {
     background-color: var(--couleur-quinaire) !important;
 }

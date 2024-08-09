@@ -4,6 +4,9 @@
     background-color: var(--couleur-primaire);
 }
 
+#dictionnaireTitle{
+    background: radial-gradient(circle, rgb(37, 59, 67) 59%, rgb(37, 37, 37) 99%)!important ;
+}
 
 /* ___________________________________ kanji-save-info */
 

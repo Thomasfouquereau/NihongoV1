@@ -18,6 +18,10 @@
     align-items: center;
 }
 
+#kanjiTitle{
+    background: radial-gradient(circle, rgb(48, 42, 71) 59%, rgba(37,37,37,1) 99%) !important;
+   }
+
 .menu a:nth-child(1){
     background-color: var(--couleur-quinaire) !important;
 }
