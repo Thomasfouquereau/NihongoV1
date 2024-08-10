@@ -29,9 +29,6 @@ footer {
     align-items: center;
 }
 
-
-   
-
 .header-nenu {
     display: flex;
     justify-content: space-between;
@@ -77,6 +74,11 @@ footer {
 
 .header-nenu-kanji span {
     margin: 1vw;
+    color: #929291;
+}
+
+.correct-answer{
+    color: var(--couleur-tertiaire) !important;
 }
 
 .header-nenu-reponse-true {
@@ -101,9 +103,11 @@ footer {
 
 .question{
     display: flex;
-    justify-content: center ;
+    justify-content: space-between ;
     align-items: center ;
     flex-direction: column;
+    height: 20vw;
+    position: relative;
 }
 
 .question-furigana {
@@ -116,6 +120,9 @@ footer {
 
 .question-kanji {
     font-size: 10vw;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .reponse {

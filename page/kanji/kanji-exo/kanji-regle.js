@@ -56,6 +56,104 @@ mode3.addEventListener('click', function () {
     localStorage.setItem('Mode', '3');
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const nbKanjiSelect10 = document.getElementById('nb-kanji-select-10');
+    const nbKanjiSelect20 = document.getElementById('nb-kanji-select-20');
+    const nbKanjiSelect30 = document.getElementById('nb-kanji-select-30');
+    const nbKanjiSelect40 = document.getElementById('nb-kanji-select-40');
+    const difficultBtnLvl1 = document.getElementById('difficult-btn-lvl1');
+    const difficultBtnLvl2 = document.getElementById('difficult-btn-lvl2');
+    const difficultBtnLvl3 = document.getElementById('difficult-btn-lvl3');
+    const mode1 = document.getElementById('mode-1');
+    const mode2 = document.getElementById('mode-2');
+    const mode3 = document.getElementById('mode-3');
+
+    if (!nbKanjiSelect10 || !nbKanjiSelect20 || !nbKanjiSelect30 || !nbKanjiSelect40) {
+        console.error('Un ou plusieurs éléments avec les identifiants nb-kanji-select-10, nb-kanji-select-20, nb-kanji-select-30, nb-kanji-select-40 sont introuvables.');
+        return;
+    }
+
+    if (!difficultBtnLvl1 || !difficultBtnLvl2 || !difficultBtnLvl3) {
+        console.error('Un ou plusieurs éléments avec les identifiants difficult-btn-lvl1, difficult-btn-lvl2, difficult-btn-lvl3 sont introuvables.');
+        return;
+    }
+
+    if (!mode1 || !mode2 || !mode3) {
+        console.error('Un ou plusieurs éléments avec les identifiants mode1, mode2, mode3 sont introuvables.');
+        return;
+    }
+
+    const nbKanji = localStorage.getItem('Nb kanji');
+    const difficulte = localStorage.getItem('Difficulté');
+    const mode = localStorage.getItem('Mode');
+
+    if (mode === '1') {
+        mode1.style.backgroundColor = '#1E1E1E';
+        mode2.style.backgroundColor = '';
+        mode3.style.backgroundColor = '';
+    } else if (mode === '2') {
+        mode1.style.backgroundColor = '';
+        mode2.style.backgroundColor = '#1E1E1E';
+        mode3.style.backgroundColor = '';
+    } else if (mode === '3') {
+        mode1.style.backgroundColor = '';
+        mode2.style.backgroundColor = '';
+        mode3.style.backgroundColor = '#1E1E1E';
+    } else {
+        // Réinitialiser les styles si aucune correspondance
+        mode1.style.backgroundColor = '';
+        mode2.style.backgroundColor = '';
+        mode3.style.backgroundColor = '';
+    }
+
+    if (nbKanji === '10') {
+        nbKanjiSelect10.style.backgroundColor = '#1E1E1E';
+        nbKanjiSelect20.style.backgroundColor = '';
+        nbKanjiSelect30.style.backgroundColor = '';
+        nbKanjiSelect40.style.backgroundColor = '';
+    } else if (nbKanji === '20') {
+        nbKanjiSelect10.style.backgroundColor = '';
+        nbKanjiSelect20.style.backgroundColor = '#1E1E1E';
+        nbKanjiSelect30.style.backgroundColor = '';
+        nbKanjiSelect40.style.backgroundColor = '';
+    } else if (nbKanji === '30') {
+        nbKanjiSelect10.style.backgroundColor = '';
+        nbKanjiSelect20.style.backgroundColor = '';
+        nbKanjiSelect30.style.backgroundColor = '#1E1E1E';
+        nbKanjiSelect40.style.backgroundColor = '';
+    } else if (nbKanji === '40') {
+        nbKanjiSelect10.style.backgroundColor = '';
+        nbKanjiSelect20.style.backgroundColor = '';
+        nbKanjiSelect30.style.backgroundColor = '';
+        nbKanjiSelect40.style.backgroundColor = '#1E1E1E';
+    } else {
+        // Réinitialiser les styles si aucune correspondance
+        nbKanjiSelect10.style.backgroundColor = '';
+        nbKanjiSelect20.style.backgroundColor = '';
+        nbKanjiSelect30.style.backgroundColor = '';
+        nbKanjiSelect40.style.backgroundColor = '';
+    }
+
+    if (difficulte === '1') {
+        difficultBtnLvl1.style.backgroundColor = '#1E1E1E';
+        difficultBtnLvl2.style.backgroundColor = '';
+        difficultBtnLvl3.style.backgroundColor = '';
+    } else if (difficulte === '2') {
+        difficultBtnLvl1.style.backgroundColor = '';
+        difficultBtnLvl2.style.backgroundColor = '#1E1E1E';
+        difficultBtnLvl3.style.backgroundColor = '';
+    } else if (difficulte === '3') {
+        difficultBtnLvl1.style.backgroundColor = '';
+        difficultBtnLvl2.style.backgroundColor = '';
+        difficultBtnLvl3.style.backgroundColor = '#1E1E1E';
+    } else {
+        // Réinitialiser les styles si aucune correspondance
+        difficultBtnLvl1.style.backgroundColor = '';
+        difficultBtnLvl2.style.backgroundColor = '';
+        difficultBtnLvl3.style.backgroundColor = '';
+    }
+});
+
 const nbKanjiSelectors = [nbKanjiSelect10, nbKanjiSelect20, nbKanjiSelect30, nbKanjiSelect40]; // Ajoutez d'autres éléments si nécessaire
 
 nbKanjiSelectors.forEach(selector => {

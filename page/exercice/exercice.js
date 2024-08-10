@@ -19,10 +19,8 @@ function initExercice() {
             return falseAnswers;
         }
 
-
         const questionFurigana = document.querySelector('.question-furigana');
         const questionRomaji = document.querySelector('.question-romaji');
-        console.log(localStorage.getItem('Difficulté'));
 
         if (localStorage.getItem('Difficulté') === '1') {
             questionRomaji.style.display = 'flex';
@@ -34,7 +32,6 @@ function initExercice() {
             questionRomaji.style.display = 'none';
             questionFurigana.style.display = 'none';
         }
-
 
         if (mode === '1') {
             // Code pour le mode 1
@@ -50,7 +47,7 @@ function initExercice() {
                 const kanjiData = exerciceMode1();
                 const randomKanjiList = generateUniqueRandomNumbers(NbKanji).map(id => kanjiData.find(kanji => kanji.id === id));
 
-                headerMenuKanjiDiv.innerHTML = randomKanjiList.map(kanji => `<span class="span">${kanji.kanji}</span>`).join(' ');
+                headerMenuKanjiDiv.innerHTML = randomKanjiList.map(kanji => `<span>${kanji.kanji}</span>`).join(' ');
 
 
                 let currentKanjiIndex = 0;
@@ -113,8 +110,6 @@ function initExercice() {
                     const correctAnswer = currentKanji.meaning;
                     const falseAnswers = generateFalseAnswers(exerciceMode1(), correctAnswer);
                     const allAnswers = shuffleArray([correctAnswer, ...falseAnswers]);
-                    console.log(allAnswers);
-
                     reponseDiv.innerHTML = allAnswers.map(answer => `<button class="answer-button">${answer}</button>`).join(' ');
 
                     let questionNbNow = 0;
@@ -125,35 +120,88 @@ function initExercice() {
                             const trueCounter = document.querySelector('.header-nenu-reponse-true');
                             const falseCounter = document.querySelector('.header-nenu-reponse-false');
                             const kanji = document.querySelector('.question-kanji');
-
+                            const questionFurigana = document.querySelector('.question-furigana');
+                            const questionRomaji = document.querySelector('.question-romaji');
+                            const difficulty = localStorage.getItem('Difficulté');
+                            const headerNenuKanji = document.querySelector('.header-nenu-kanji');
+                            const trueCount = parseInt(trueCounter.textContent || '0', 10);
+                            const falseCount = parseInt(falseCounter.textContent || '0', 10);
+                            const counter = trueCount + falseCount;
                             if (this.textContent === correctAnswer) {
                                 this.style.borderColor = '#9EFF9E';
                                 this.classList.add('jello-horizontal');
                                 trueCounter.textContent = parseInt(trueCounter.textContent || '0', 10) + 1;
                                 kanji.style.color = '#9EFF9E';
+                                questionRomaji.style.display = 'flex';
+                                questionFurigana.style.display = 'flex';
+                                questionRomaji.style.color = '#9EFF9E';
+                                questionFurigana.style.color = '#9EFF9E';
                                 setTimeout(() => {
                                     kanji.style.color = '#F7F7F2';
+                                    if (difficulty === '1') {
+                                        questionRomaji.style.display = 'flex';
+                                        questionFurigana.style.display = 'flex';
+                                        questionRomaji.style.color = '#F7F7F2 !important';
+                                        questionFurigana.style.color = '#F7F7F2 !important';
+                                    } else if (difficulty === '2') {
+                                        questionRomaji.style.display = 'none';
+                                        questionFurigana.style.display = 'flex';
+                                        questionRomaji.style.color = '#F7F7F2';
+                                        questionFurigana.style.color = '#F7F7F2';
+                                    } else if (difficulty === '3') {
+                                        questionRomaji.style.display = 'none';
+                                        questionFurigana.style.display = 'none';
+                                        questionRomaji.style.color = '#F7F7F2';
+                                        questionFurigana.style.color = '#F7F7F2';
+                                    }
                                 }, 2000);
-                                const kanjiElement = document.querySelector(`.header-nenu-kanji span[data-kanji="${correctAnswer}"]`);
-                                if (kanjiElement) {
-                                    kanjiElement.classList.add('correct-answer');
+                                const childElement = headerNenuKanji.children[counter];
+                                if (childElement) {
+                                    childElement.style.color = '#9EFF9E';
+                                } else {
+                                    console.log('L\'enfant spécifié n\'existe pas.');
                                 }
                             } else {
                                 this.style.borderColor = '#FF9E9E';
-                                falseCounter.textContent = parseInt(falseCounter.textContent || '0', 10) + 1;
-
-                                const kanjiElement = document.querySelector(`.header-nenu-kanji span[data-kanji="${correctAnswer}"]`);
-                                if (kanjiElement) {
-                                    kanjiElement.classList.add('incorrect-answer');
+                                const headerNenuKanji = document.querySelector('.header-nenu-kanji');
+                                const trueCount = parseInt(trueCounter.textContent || '0', 10);
+                                const falseCount = parseInt(falseCounter.textContent || '0', 10);
+                                const counter = trueCount + falseCount;
+                                console.log(counter);
+                                const childElement = headerNenuKanji.children[counter];
+                                if (childElement) {
+                                    childElement.style.color = '#FF9E9E';
+                                } else {
+                                    console.log('L\'enfant spécifié n\'existe pas.');
                                 }
-
                                 document.querySelectorAll('.answer-button').forEach(btn => {
                                     if (btn.textContent === correctAnswer) {
                                         btn.style.borderColor = '#9EFF9E';
                                         btn.classList.add('shake-bottom');
+                                        falseCounter.textContent = parseInt(falseCounter.textContent || '0', 10) + 1;
                                         kanji.style.color = '#FF9E9E';
+                                        questionRomaji.style.display = 'flex';
+                                        questionFurigana.style.display = 'flex';
+                                        questionRomaji.style.color = '#FF9E9E';
+                                        questionFurigana.style.color = '#FF9E9E';
                                         setTimeout(() => {
                                             kanji.style.color = '#F7F7F2';
+                                            if (difficulty === '1') {
+                                                questionRomaji.style.display = 'flex';
+                                                questionFurigana.style.display = 'flex';
+                                                questionRomaji.style.color = '#F7F7F2';
+                                                questionFurigana.style.color = '#F7F7F2';
+                                            } else if (difficulty === '2') {
+                                                questionRomaji.style.display = 'none';
+                                                questionFurigana.style.display = 'flex';
+                                                questionRomaji.style.color = '#F7F7F2';
+                                                questionFurigana.style.color = '#F7F7F2';
+                                            } else if (difficulty === '3') {
+                                                questionRomaji.style.display = 'none';
+                                                questionFurigana.style.display = 'none';
+                                                questionRomaji.style.color = '#F7F7F2';
+                                                questionFurigana.style.color = '#F7F7F2';
+                                            }
                                         }, 2000);
                                     }
                                 });
@@ -165,7 +213,6 @@ function initExercice() {
 
                             setTimeout(() => {
                                 questionNbNow++;
-                                console.log(`Question actuelle: ${questionNbNow}`);
 
                                 if (questionNbNow < totalQuestions) {
                                     const nextButton = document.querySelector('.next');
@@ -245,7 +292,7 @@ function initExercice() {
                     // Générer le contenu HTML en vérifiant que chaque objet a bien une propriété Kanji
                     headerMenuKanjiDiv.innerHTML = randomKanjis.map(kanji => {
                         if (kanji && kanji.Kanji) {
-                            return `<span class="span">${kanji.Kanji}</span>`;
+                            return `<span >${kanji.Kanji}</span>`;
                         } else {
                             return `<span class="span">undefined</span>`;
                         }
@@ -276,23 +323,88 @@ function initExercice() {
                         questionNumberDiv.innerHTML = ` ${currentQuestionIndex + 1} / ${randomKanjis.length}`;
 
                         document.querySelectorAll('.answer-button').forEach(button => {
+                            const correctAnswer = 'votre_kanji_correct';
                             const trueCounter = document.querySelector('.header-nenu-reponse-true');
                             const falseCounter = document.querySelector('.header-nenu-reponse-false');
+                            const difficulty = localStorage.getItem('Difficulté');
+                            const headerNenuKanji = document.querySelector('.header-nenu-kanji');
+                            const trueCount = parseInt(trueCounter.textContent || '0', 10);
+                            const falseCount = parseInt(falseCounter.textContent || '0', 10);
+                            const counter = trueCount + falseCount;
                             button.addEventListener('click', () => {
                                 if (button.textContent === currentKanji.Meaning) {
                                     button.style.borderColor = '#9EFF9E';
                                     button.classList.add('jello-horizontal');
                                     trueCounter.textContent = parseInt(trueCounter.textContent || '0', 10) + 1;
                                     questionKanjiDiv.style.color = '#9EFF9E';
+                                    questionRomaji.style.display = 'flex';
+                                    questionFurigana.style.display = 'flex';
+                                    questionRomaji.style.color = '#9EFF9E';
+                                    questionFurigana.style.color = '#9EFF9E';
                                     setTimeout(() => {
                                         questionKanjiDiv.style.color = '#F7F7F2';
+                                        if (difficulty === '1') {
+                                            questionRomaji.style.display = 'flex';
+                                            questionFurigana.style.display = 'flex';
+                                            questionRomaji.style.color = '#F7F7F2';
+                                            questionFurigana.style.color = '#F7F7F2';
+                                        } else if (difficulty === '2') {
+                                            questionRomaji.style.display = 'none';
+                                            questionFurigana.style.display = 'flex';
+                                            questionRomaji.style.color = '#F7F7F2';
+                                            questionFurigana.style.color = '#F7F7F2';
+                                        } else if (difficulty === '3') {
+                                            questionRomaji.style.display = 'none';
+                                            questionFurigana.style.display = 'none';
+                                            questionRomaji.style.color = '#F7F7F2';
+                                            questionFurigana.style.color = '#F7F7F2';
+                                        }
+
                                     }, 2000);
+
+                                    const childElement = headerNenuKanji.children[counter];
+                                    if (childElement) {
+                                        childElement.style.color = '#9EFF9E';
+                                    } else {
+                                        console.log('L\'enfant spécifié n\'existe pas.');
+                                    }
                                 } else {
+                                    const headerNenuKanji = document.querySelector('.header-nenu-kanji');
+                                    const trueCount = parseInt(trueCounter.textContent || '0', 10);
+                                    const falseCount = parseInt(falseCounter.textContent || '0', 10);
+                                    const counter = trueCount + falseCount;
+                                    const childElement = headerNenuKanji.children[counter];
+                                    if (childElement) {
+                                        childElement.style.color = '#FF9E9E';
+                                    } else {
+                                        console.log('L\'enfant spécifié n\'existe pas.');
+                                    }
                                     falseCounter.textContent = parseInt(falseCounter.textContent || '0', 10) + 1;
                                     button.style.borderColor = '#FF9E9E';
                                     questionKanjiDiv.style.color = '#FF9E9E';
+                                    questionRomaji.style.display = 'flex';
+                                    questionFurigana.style.display = 'flex';
+                                    questionRomaji.style.color = '#FF9E9E';
+                                    questionFurigana.style.color = '#FF9E9E';
                                     setTimeout(() => {
                                         questionKanjiDiv.style.color = '#F7F7F2';
+                                        if (difficulty === '1') {
+                                            questionRomaji.style.display = 'flex';
+                                            questionFurigana.style.display = 'flex';
+                                            questionRomaji.style.color = '#F7F7F2';
+                                            questionFurigana.style.color = '#F7F7F2';
+                                        } else if (difficulty === '2') {
+                                            questionRomaji.style.display = 'none';
+                                            questionFurigana.style.display = 'flex';
+                                            questionRomaji.style.color = '#F7F7F2';
+                                            questionFurigana.style.color = '#F7F7F2';
+                                        } else if (difficulty === '3') {
+                                            questionRomaji.style.display = 'none';
+                                            questionFurigana.style.display = 'none';
+                                            questionRomaji.style.color = '#F7F7F2';
+                                            questionFurigana.style.color = '#F7F7F2';
+                                        }
+
                                     }, 2000);
                                 }
 

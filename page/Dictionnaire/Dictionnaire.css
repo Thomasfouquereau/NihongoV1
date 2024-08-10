@@ -5,7 +5,11 @@
 }
 
 #dictionnaireTitle{
-    background: radial-gradient(circle, rgb(37, 59, 67) 59%, rgb(37, 37, 37) 99%)!important ;
+    background: radial-gradient(circle, rgb(47, 74, 84) 59%, rgb(37, 37, 37) 99%)!important ;
+}
+
+.menu a:nth-child(1) {
+    background-color: var(--couleur-quinaire) !important;
 }
 
 /* ___________________________________ kanji-save-info */
