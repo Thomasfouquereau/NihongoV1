@@ -36,6 +36,12 @@ footer {
     height: 100%;
 }
 
+.header-nenu-mobile-flex{
+    display: flex;
+    height: 100%;
+    transform: translateY(-0.2vw);
+}
+
 .header-nenu-dificult {
     display: flex;
     justify-content: center;
@@ -224,13 +230,26 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
+    body{
+        height: 100vh;
+    }
 
+    main{
+        transform: translateY(15vw);
+    }
 
     .header-nenu {
         flex-direction: column;
         width: 100%;
         height: 60vw;
+    }
 
+    .header-nenu-mobile-flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 20vw;
     }
 
     .header-nenu-dificult {
