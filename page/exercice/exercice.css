@@ -270,6 +270,10 @@ footer {
         margin: 2vw;
     }
 
+    .question{
+        height: 50vw ;
+    }
+
     .question-furigana {
         font-size: 7vw;
     }
@@ -298,7 +302,8 @@ footer {
     }
 
     .back {
-        top: 200vw !important;
+        position: relative !important;
+        top: 0 !important;
     }
 
     .fin {
