@@ -218,9 +218,15 @@ document.addEventListener('DOMContentLoaded', function () {
             kanjis.forEach(item => {
                 htmlContent += `<button class="kanji-item">
                 <div class="kanji-meaning">
-                    <span class="PrincipalReading">${item.PrincipalReading}</span>
+                    <div class="PrincipalReadingContainer">
+                        <span class="PrincipalReading">${item.OnPrincipalReading}</span>
+                        <span class="PrincipalReading">${item.KunPrincipalReading}</span>
+                    </div>
                     <span class="kanji" translate="no">${item.Kanji}</span>
-                    <span class="PrincipalReadingRomaji">${item.PrincipalReadingRomaji}</span>
+                    <div class="PrincipalReadingRomajiContainer">
+                        <span class="PrincipalReadingRomaji">${item.OnPrincipalReadingRomaji}</span>
+                        <span class="PrincipalReadingRomaji">${item.KunPrincipalReadingRomaji}</span>
+                    </div>
                 </div>
                 <span class="jlpt-level"><p>JLPT</p>${item.JLPTLevel}</span>
                </button>`;
@@ -287,8 +293,10 @@ document.addEventListener('DOMContentLoaded', function () {
                                     kanji: kanji,
                                     meaning: meaning,
                                     secondaryMeaning: secondaryMeaning,
-                                    PrincipalReading: kanjiInfo.PrincipalReading,
-                                    PrincipalReadingRomaji: kanjiInfo.PrincipalReadingRomaji
+                                    OnPrincipalReading: kanjiInfo.OnPrincipalReading,
+                                    KunPrincipalReading: kanjiInfo.KunPrincipalReading,
+                                    OnPrincipalReadingRomaji: kanjiInfo.OnPrincipalReadingRomaji,
+                                    KunPrincipalReadingRomaji: kanjiInfo.KunPrincipalReadingRomaji
                                 };
 
                                 selectedKanjis.push(newKanji);

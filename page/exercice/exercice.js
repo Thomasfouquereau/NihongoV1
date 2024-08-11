@@ -82,8 +82,10 @@ function initExercice() {
                     kanji: kanji.kanji,
                     meaning: kanji.meaning,
                     secondaryMeaning: kanji.secondaryMeaning,
-                    PrincipalReading: kanji.PrincipalReading,
-                    PrincipalReadingRomaji: kanji.PrincipalReadingRomaji
+                    OnPrincipalReading: kanji.OnPrincipalReading,
+                    KunPrincipalReading: kanji.KunPrincipalReading,
+                    OnPrincipalReadingRomaji: kanji.OnPrincipalReadingRomaji,
+                    KunPrincipalReadingRomaji: kanji.KunPrincipalReadingRomaji
                 }));
             }
 
@@ -98,11 +100,16 @@ function initExercice() {
             function displayCurrentKanji(currentKanji) {
                 const questionKanjiDiv = document.querySelector('.question-kanji');
                 const questionFurigana = document.querySelector('.question-furigana');
+                const questionFurigana2 = document.querySelector('.question-furigana2');
                 const questionRomaji = document.querySelector('.question-romaji');
+                const questionRomaji2 = document.querySelector('.question-romaji2');
+
 
                 questionKanjiDiv.innerHTML = currentKanji.kanji;
-                questionFurigana.innerHTML = currentKanji.PrincipalReading;
-                questionRomaji.innerHTML = currentKanji.PrincipalReadingRomaji;
+                questionFurigana.innerHTML = currentKanji.OnPrincipalReading;
+                questionFurigana2.innerHTML = currentKanji.KunPrincipalReading;
+                questionRomaji.innerHTML = currentKanji.OnPrincipalReadingRomaji;
+                questionRomaji2.innerHTML = currentKanji.KunPrincipalReadingRomaji;
 
 
                 const reponseDiv = document.querySelector('.reponse');
@@ -121,7 +128,9 @@ function initExercice() {
                             const falseCounter = document.querySelector('.header-nenu-reponse-false');
                             const kanji = document.querySelector('.question-kanji');
                             const questionFurigana = document.querySelector('.question-furigana');
+                            const questionFurigana2 = document.querySelector('.question-furigana2');
                             const questionRomaji = document.querySelector('.question-romaji');
+                            const questionRomaji2 = document.querySelector('.question-romaji2');
                             const difficulty = localStorage.getItem('Difficulté');
                             const headerNenuKanji = document.querySelector('.header-nenu-kanji');
                             const trueCount = parseInt(trueCounter.textContent || '0', 10);
@@ -133,26 +142,42 @@ function initExercice() {
                                 trueCounter.textContent = parseInt(trueCounter.textContent || '0', 10) + 1;
                                 kanji.style.color = '#9EFF9E';
                                 questionRomaji.style.display = 'flex';
+                                questionRomaji2.style.display = 'flex';
                                 questionFurigana.style.display = 'flex';
+                                questionFurigana2.style.display = 'flex';
                                 questionRomaji.style.color = '#9EFF9E';
+                                questionRomaji2.style.color = '#9EFF9E';
                                 questionFurigana.style.color = '#9EFF9E';
+                                questionFurigana2.style.color = '#9EFF9E';
                                 setTimeout(() => {
                                     kanji.style.color = '#F7F7F2';
                                     if (difficulty === '1') {
                                         questionRomaji.style.display = 'flex';
+                                        questionRomaji2.style.display = 'flex';
                                         questionFurigana.style.display = 'flex';
-                                        questionRomaji.style.color = '#F7F7F2 !important';
-                                        questionFurigana.style.color = '#F7F7F2 !important';
+                                        questionFurigana2.style.display = 'flex';
+                                        questionRomaji.style.color = '#F7F7F2 ';
+                                        questionRomaji2.style.color = '#F7F7F2 ';
+                                        questionFurigana.style.color = '#F7F7F2 ';
+                                        questionFurigana2.style.color = '#F7F7F2 ';
                                     } else if (difficulty === '2') {
                                         questionRomaji.style.display = 'none';
+                                        questionRomaji2.style.display = 'none';
                                         questionFurigana.style.display = 'flex';
+                                        questionFurigana2.style.display = 'flex';
                                         questionRomaji.style.color = '#F7F7F2';
+                                        questionRomaji2.style.color = '#F7F7F2';
                                         questionFurigana.style.color = '#F7F7F2';
+                                        questionFurigana2.style.color = '#F7F7F2';
                                     } else if (difficulty === '3') {
                                         questionRomaji.style.display = 'none';
+                                        questionRomaji2.style.display = 'none';
                                         questionFurigana.style.display = 'none';
+                                        questionFurigana2.style.display = 'none';
                                         questionRomaji.style.color = '#F7F7F2';
+                                        questionRomaji2.style.color = '#F7F7F2';
                                         questionFurigana.style.color = '#F7F7F2';
+                                        questionFurigana2.style.color = '#F7F7F2';
                                     }
                                 }, 2000);
                                 const childElement = headerNenuKanji.children[counter];
@@ -181,26 +206,42 @@ function initExercice() {
                                         falseCounter.textContent = parseInt(falseCounter.textContent || '0', 10) + 1;
                                         kanji.style.color = '#FF9E9E';
                                         questionRomaji.style.display = 'flex';
+                                        questionRomaji2.style.display = 'flex';
                                         questionFurigana.style.display = 'flex';
+                                        questionFurigana2.style.display = 'flex';
                                         questionRomaji.style.color = '#FF9E9E';
+                                        questionRomaji2.style.color = '#FF9E9E';
                                         questionFurigana.style.color = '#FF9E9E';
+                                        questionFurigana2.style.color = '#FF9E9E';
                                         setTimeout(() => {
                                             kanji.style.color = '#F7F7F2';
                                             if (difficulty === '1') {
                                                 questionRomaji.style.display = 'flex';
+                                                questionRomaji2.style.display = 'flex';
                                                 questionFurigana.style.display = 'flex';
+                                                questionFurigana2.style.display = 'flex';
                                                 questionRomaji.style.color = '#F7F7F2';
+                                                questionRomaji2.style.color = '#F7F7F2';
                                                 questionFurigana.style.color = '#F7F7F2';
+                                                questionFurigana2.style.color = '#F7F7F2';
                                             } else if (difficulty === '2') {
                                                 questionRomaji.style.display = 'none';
+                                                questionRomaji2.style.display = 'none';
                                                 questionFurigana.style.display = 'flex';
+                                                questionFurigana2.style.display = 'flex';
                                                 questionRomaji.style.color = '#F7F7F2';
+                                                questionRomaji2.style.color = '#F7F7F2';
                                                 questionFurigana.style.color = '#F7F7F2';
+                                                questionFurigana2.style.color = '#F7F7F2';
                                             } else if (difficulty === '3') {
                                                 questionRomaji.style.display = 'none';
+                                                questionRomaji2.style.display = 'none';
                                                 questionFurigana.style.display = 'none';
+                                                questionFurigana2.style.display = 'none';
                                                 questionRomaji.style.color = '#F7F7F2';
+                                                questionRomaji2.style.color = '#F7F7F2';
                                                 questionFurigana.style.color = '#F7F7F2';
+                                                questionFurigana2.style.color = '#F7F7F2';
                                             }
                                         }, 2000);
                                     }
@@ -277,7 +318,9 @@ function initExercice() {
                     const questionNumberDiv = document.querySelector('.header-nenu-reponse-nb');
                     const questionKanjiDiv = document.querySelector('.question-kanji');
                     const questionFurigana = document.querySelector('.question-furigana');
+                    const questionFurigana2 = document.querySelector('.question-furigana2');
                     const questionRomaji = document.querySelector('.question-romaji');
+                    const questionRomaji2 = document.querySelector('.question-romaji2');
                     const reponseDiv = document.querySelector('.reponse');
                     const kanjis = data.kanji;
 
@@ -302,8 +345,10 @@ function initExercice() {
                         const currentKanji = randomKanjis[currentQuestionIndex];
 
                         questionKanjiDiv.innerHTML = `<span class="span">${currentKanji.Kanji}</span>`;
-                        questionFurigana.innerHTML = `<span class="span">${currentKanji.PrincipalReading}</span>`;
-                        questionRomaji.innerHTML = `<span class="span">${currentKanji.PrincipalReadingRomaji}</span>`;
+                        questionFurigana.innerHTML = `<span class="span">${currentKanji.OnPrincipalReading}</span>`;
+                        questionFurigana2.innerHTML = `<span class="span">${currentKanji.KunPrincipalReading}</span>`;
+                        questionRomaji.innerHTML = `<span class="span">${currentKanji.OnPrincipalReadingRomaji}</span>`;
+                        questionRomaji2.innerHTML = `<span class="span">${currentKanji.KunPrincipalReadingRomaji}</span>`;
 
                         const answers = [currentKanji.Meaning];
                         while (answers.length < 3) {
@@ -338,26 +383,42 @@ function initExercice() {
                                     trueCounter.textContent = parseInt(trueCounter.textContent || '0', 10) + 1;
                                     questionKanjiDiv.style.color = '#9EFF9E';
                                     questionRomaji.style.display = 'flex';
+                                    questionRomaji2.style.display = 'flex';
                                     questionFurigana.style.display = 'flex';
+                                    questionFurigana2.style.display = 'flex';
                                     questionRomaji.style.color = '#9EFF9E';
+                                    questionRomaji2.style.color = '#9EFF9E';
                                     questionFurigana.style.color = '#9EFF9E';
+                                    questionFurigana2.style.color = '#9EFF9E';
                                     setTimeout(() => {
                                         questionKanjiDiv.style.color = '#F7F7F2';
                                         if (difficulty === '1') {
                                             questionRomaji.style.display = 'flex';
+                                            questionRomaji2.style.display = 'flex';
                                             questionFurigana.style.display = 'flex';
+                                            questionFurigana2.style.display = 'flex';
                                             questionRomaji.style.color = '#F7F7F2';
+                                            questionRomaji2.style.color = '#F7F7F2';
                                             questionFurigana.style.color = '#F7F7F2';
+                                            questionFurigana2.style.color = '#F7F7F2';
                                         } else if (difficulty === '2') {
                                             questionRomaji.style.display = 'none';
+                                            questionRomaji2.style.display = 'none';
                                             questionFurigana.style.display = 'flex';
+                                            questionFurigana2.style.display = 'flex';
                                             questionRomaji.style.color = '#F7F7F2';
+                                            questionRomaji2.style.color = '#F7F7F2';
                                             questionFurigana.style.color = '#F7F7F2';
+                                            questionFurigana2.style.color = '#F7F7F2';
                                         } else if (difficulty === '3') {
                                             questionRomaji.style.display = 'none';
+                                            questionRomaji2.style.display = 'none';
                                             questionFurigana.style.display = 'none';
+                                            questionFurigana2.style.display = 'none';
                                             questionRomaji.style.color = '#F7F7F2';
+                                            questionRomaji2.style.color = '#F7F7F2';
                                             questionFurigana.style.color = '#F7F7F2';
+                                            questionFurigana2.style.color = '#F7F7F2';
                                         }
 
                                     }, 2000);
@@ -383,26 +444,42 @@ function initExercice() {
                                     button.style.borderColor = '#FF9E9E';
                                     questionKanjiDiv.style.color = '#FF9E9E';
                                     questionRomaji.style.display = 'flex';
+                                    questionRomaji2.style.display = 'flex';
                                     questionFurigana.style.display = 'flex';
+                                    questionFurigana2.style.display = 'flex';
                                     questionRomaji.style.color = '#FF9E9E';
+                                    questionRomaji2.style.color = '#FF9E9E';
                                     questionFurigana.style.color = '#FF9E9E';
+                                    questionFurigana2.style.color = '#FF9E9E';
                                     setTimeout(() => {
                                         questionKanjiDiv.style.color = '#F7F7F2';
                                         if (difficulty === '1') {
                                             questionRomaji.style.display = 'flex';
+                                            questionRomaji2.style.display = 'flex';
                                             questionFurigana.style.display = 'flex';
+                                            questionFurigana2.style.display = 'flex';
                                             questionRomaji.style.color = '#F7F7F2';
+                                            questionRomaji2.style.color = '#F7F7F2';
                                             questionFurigana.style.color = '#F7F7F2';
+                                            questionFurigana2.style.color = '#F7F7F2';
                                         } else if (difficulty === '2') {
                                             questionRomaji.style.display = 'none';
+                                            questionRomaji2.style.display = 'none';
                                             questionFurigana.style.display = 'flex';
+                                            questionFurigana2.style.display = 'flex';
                                             questionRomaji.style.color = '#F7F7F2';
+                                            questionRomaji2.style.color = '#F7F7F2';
                                             questionFurigana.style.color = '#F7F7F2';
+                                            questionFurigana2.style.color = '#F7F7F2';
                                         } else if (difficulty === '3') {
                                             questionRomaji.style.display = 'none';
+                                            questionRomaji2.style.display = 'none';
                                             questionFurigana.style.display = 'none';
+                                            questionFurigana2.style.display = 'none';
                                             questionRomaji.style.color = '#F7F7F2';
+                                            questionRomaji2.style.color = '#F7F7F2';
                                             questionFurigana.style.color = '#F7F7F2';
+                                            questionFurigana2.style.color = '#F7F7F2';
                                         }
 
                                     }, 2000);

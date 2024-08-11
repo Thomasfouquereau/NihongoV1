@@ -36,7 +36,7 @@ footer {
     height: 100%;
 }
 
-.header-nenu-mobile-flex{
+.header-nenu-mobile-flex {
     display: flex;
     height: 100%;
     transform: translateY(-0.2vw);
@@ -76,14 +76,17 @@ footer {
     height: 100%;
     position: relative;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 .header-nenu-kanji span {
     margin: 1vw;
     color: #929291;
+
 }
 
-.correct-answer{
+.correct-answer {
     color: var(--couleur-tertiaire) !important;
 }
 
@@ -107,20 +110,30 @@ footer {
     font-size: 1vw;
 }
 
-.question{
+.question {
     display: flex;
-    justify-content: space-between ;
-    align-items: center ;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     height: 20vw;
     position: relative;
 }
 
+.PrincipalReadingContainer,
+.PrincipalReadingRomajiContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25vw !important;
+    font-size: 2vw;
+}
+
+
 .question-furigana {
     font-size: 2.5vw;
 }
 
-.question-romaji{
+.question-romaji {
     font-size: 2.5vw;
 }
 
@@ -135,7 +148,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 45%;
     margin-top: 4vw;
 }
 
@@ -178,8 +191,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-content: flex-start;  
-    height:8vw;
+    align-content: flex-start;
+    height: 8vw;
     position: absolute;
     flex-wrap: wrap;
     top: 2vw;
@@ -189,14 +202,14 @@ footer {
     margin: 1vw;
 }
 
-.header-nenu-reponse-fin{
+.header-nenu-reponse-fin {
     position: absolute;
     height: 8vw;
     width: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .header-nenu-reponse-true-fin {
@@ -216,10 +229,10 @@ footer {
     bottom: 1vw;
     right: 1vw;
     color: var(--couleur-quaternaire);
-    font-size:  1.3vw;
+    font-size: 1.3vw;
 }
 
-.close{
+.close {
     position: absolute;
     bottom: 0vw;
     left: 0vw;
@@ -230,11 +243,11 @@ footer {
 }
 
 @media screen and (max-width: 560px) {
-    body{
+    body {
         height: 100vh;
     }
 
-    main{
+    main {
         transform: translateY(15vw);
     }
 
@@ -242,15 +255,17 @@ footer {
         flex-direction: column;
         width: 100%;
         height: 60vw;
+        
     }
 
-    .header-nenu-mobile-flex{
+    .header-nenu-mobile-flex {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         width: 100%;
         height: 20vw;
+       
     }
 
     .header-nenu-dificult {
@@ -290,8 +305,17 @@ footer {
         margin: 2vw;
     }
 
-    .question{
-        height: 50vw ;
+    .question {
+        height: 70vw;
+    }
+
+    .PrincipalReadingContainer,
+    .PrincipalReadingRomajiContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 65vw !important;
+        font-size: 7vw;
     }
 
     .question-furigana {
@@ -302,7 +326,7 @@ footer {
         font-size: 25vw;
     }
 
-    .question-romaji{
+    .question-romaji {
         font-size: 7vw;
     }
 
@@ -335,36 +359,36 @@ footer {
     .header-nenu-kanji-fin {
         font-size: 5vw;
         width: 70vw;
-        height:8vw;
+        height: 8vw;
         top: 5vw;
     }
-    
+
     .header-nenu-kanji-fin span {
         margin: 2vw;
     }
-    
-    .header-nenu-reponse-fin{
+
+    .header-nenu-reponse-fin {
         height: 25vw;
         width: 50vw;
     }
-    
+
     .header-nenu-reponse-true-fin {
         font-size: 4vw;
     }
-    
+
     .header-nenu-reponse-nb-fin {
         font-size: 10vw;
     }
-    
+
     .header-nenu-reponse-false-fin {
         position: absolute;
         bottom: 1vw;
         right: 1vw;
         color: var(--couleur-quaternaire);
-        font-size:  4vw;
+        font-size: 4vw;
     }
-    
-    .close{
+
+    .close {
         position: absolute;
         bottom: 5vw;
         left: 50%;
