@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
             kanjis.forEach(item => {
                 htmlContent += `<div class="kanji-item">
                 <div class="kanji-meaning">
-                    <span class="PrincipalReading">${item.PrincipalReading}</span>
                     <span class="kanji" translate="no">${item.Kanji}</span>
                     <span class="meaning">${item.Meaning}</span>
                 </div>

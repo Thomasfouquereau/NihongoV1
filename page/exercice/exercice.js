@@ -498,8 +498,13 @@ function initExercice() {
                                         displayQuestion();
                                     } else {
                                         finDiv.style.display = 'flex';
+                                        finDiv.querySelector('.header-nenu-reponse-true-fin').textContent = trueCounter.textContent;
+                                        finDiv.querySelector('.header-nenu-reponse-false-fin').textContent = falseCounter.textContent;
+                                        finDiv.querySelector('.header-nenu-reponse-nb-fin').textContent = randomKanjis.length;
+                                        finDiv.querySelector('.header-nenu-kanji-fin').innerHTML = headerMenuKanjiDiv.innerHTML;
                                     }
                                 }, 2000);
+
                             });
                         });
                     }
