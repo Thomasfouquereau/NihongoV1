@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
             dictionnaire.innerHTML = htmlContent;
 
             const kanjiItems = document.querySelectorAll('.kanji-item');
-            const maxKanjiSelectable = localStorage.getItem('Nb kanji') || 10;
+
             let selectedKanjis = JSON.parse(localStorage.getItem('selectedKanjis')) || [];
 
             // Fonction pour afficher les kanjis sélectionnés
@@ -245,77 +245,75 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // Fonction pour mettre à jour le nombre de kanjis sélectionnés
-            function mettreAJourNbKanji() {
-                const lastId = selectedKanjis.length > 0 ? selectedKanjis[selectedKanjis.length - 1].id : 0;
-                nbKanjiDiv.textContent = `${selectedKanjis.length}/${maxKanjiSelectable}`;
-            }
+           // Fonction pour mettre à jour le nombre de kanjis sélectionnés
+function mettreAJourNbKanji() {
+    const maxKanjiSelectable = localStorage.getItem('Nb kanji') || 10;
+    nbKanjiDiv.textContent = `${selectedKanjis.length}/${maxKanjiSelectable}`;
+}
 
-            // Appliquer la couleur de bordure et de police aux kanjis déjà sélectionnés
-            kanjiItems.forEach(item => {
-                const kanji = item.querySelector('.kanji').textContent;
-                if (selectedKanjis.some(k => k.kanji === kanji)) {
-                    item.style.borderColor = '#9EFF9E';
-                    item.querySelector('.kanji').style.color = '#9EFF9E';
+// Appliquer la couleur de bordure et de police aux kanjis déjà sélectionnés
+kanjiItems.forEach(item => {
+    const kanji = item.querySelector('.kanji').textContent;
+    if (selectedKanjis.some(k => k.kanji === kanji)) {
+        item.style.borderColor = '#9EFF9E';
+        item.querySelector('.kanji').style.color = '#9EFF9E';
+    }
+});
+
+kanjiItems.forEach((item, index) => {
+    item.addEventListener('click', function () {
+        const maxKanjiSelectable = localStorage.getItem('Nb kanji') || 10;
+        const kanji = item.querySelector('.kanji').textContent;
+
+        // Vérifier si le kanji est déjà sélectionné
+        const kanjiIndex = selectedKanjis.findIndex(k => k.kanji === kanji);
+        if (kanjiIndex !== -1) {
+            // Retirer le kanji de la liste
+            selectedKanjis.splice(kanjiIndex, 1);
+            localStorage.setItem('selectedKanjis', JSON.stringify(selectedKanjis));
+            item.style.borderColor = ''; // Réinitialiser la couleur de la bordure
+            item.querySelector('.kanji').style.color = ''; // Réinitialiser la couleur de la police
+            afficherKanjisSelectionnes();
+            mettreAJourNbKanji();
+            return;
+        }
+
+        if (selectedKanjis.length >= maxKanjiSelectable) {
+            alert('Vous avez atteint le nombre maximum de kanjis sélectionnables.');
+            return;
+        }
+
+        fetch('../../../data/kanji/liste kanji.json')
+            .then(response => response.json())
+            .then(data => {
+                const kanjiInfo = data.kanji.find(k => k.Kanji === kanji);
+
+                if (kanjiInfo) {
+                    const meaning = kanjiInfo.Meaning;
+                    const secondaryMeaning = kanjiInfo.SecondaryMeaning;
+
+                    const newKanji = {
+                        id: selectedKanjis.length + 1,
+                        kanji: kanji,
+                        meaning: meaning,
+                        secondaryMeaning: secondaryMeaning,
+                        OnPrincipalReading: kanjiInfo.OnPrincipalReading,
+                        KunPrincipalReading: kanjiInfo.KunPrincipalReading,
+                    };
+
+                    selectedKanjis.push(newKanji);
+                    localStorage.setItem('selectedKanjis', JSON.stringify(selectedKanjis));
+                    item.style.borderColor = '#9EFF9E'; // Appliquer la couleur de la bordure
+                    item.querySelector('.kanji').style.color = '#9EFF9E'; // Appliquer la couleur de la police
+                    afficherKanjisSelectionnes();
+                    mettreAJourNbKanji();
                 }
             });
+    });
+});
 
-            kanjiItems.forEach((item, index) => {
-                item.addEventListener('click', function () {
-                    const kanji = item.querySelector('.kanji').textContent;
-
-                    // Vérifier si le kanji est déjà sélectionné
-                    const kanjiIndex = selectedKanjis.findIndex(k => k.kanji === kanji);
-                    if (kanjiIndex !== -1) {
-                        // Retirer le kanji de la liste
-                        selectedKanjis.splice(kanjiIndex, 1);
-                        localStorage.setItem('selectedKanjis', JSON.stringify(selectedKanjis));
-                        item.style.borderColor = ''; // Réinitialiser la couleur de la bordure
-                        item.querySelector('.kanji').style.color = ''; // Réinitialiser la couleur de la police
-                        afficherKanjisSelectionnes();
-                        mettreAJourNbKanji();
-                        return;
-                    }
-
-                    if (selectedKanjis.length >= maxKanjiSelectable) {
-                        alert('Vous avez atteint le nombre maximum de kanjis sélectionnables.');
-                        return;
-                    }
-
-                    fetch('../../../data/kanji/liste kanji.json')
-                        .then(response => response.json())
-                        .then(data => {
-                            const kanjiInfo = data.kanji.find(k => k.Kanji === kanji);
-
-                            if (kanjiInfo) {
-                                const meaning = kanjiInfo.Meaning;
-                                const secondaryMeaning = kanjiInfo.SecondaryMeaning;
-
-                                const newKanji = {
-                                    id: selectedKanjis.length + 1,
-                                    kanji: kanji,
-                                    meaning: meaning,
-                                    secondaryMeaning: secondaryMeaning,
-                                    OnPrincipalReading: kanjiInfo.OnPrincipalReading,
-                                    KunPrincipalReading: kanjiInfo.KunPrincipalReading,
-                                    OnPrincipalReadingRomaji: kanjiInfo.OnPrincipalReadingRomaji,
-                                    KunPrincipalReadingRomaji: kanjiInfo.KunPrincipalReadingRomaji
-                                };
-
-                                selectedKanjis.push(newKanji);
-                                localStorage.setItem('selectedKanjis', JSON.stringify(selectedKanjis));
-                                item.style.borderColor = '#9EFF9E'; // Changer la couleur de la bordure
-                                item.querySelector('.kanji').style.color = '#9EFF9E'; // Changer la couleur de la police
-                                afficherKanjisSelectionnes();
-                                mettreAJourNbKanji();
-                            } else {
-                                console.error('Kanji non trouvé dans les données JSON.');
-                            }
-                        })
-                        .catch(error => {
-                            console.error('Erreur lors de la récupération des informations du kanji:', error);
-                        });
-                });
-            });
+// Initialiser le nombre de kanjis sélectionnés au chargement de la page
+mettreAJourNbKanji();
 
             // Ajouter l'écouteur d'événement pour le bouton "Vider"
             viderButton.addEventListener('click', function () {
@@ -388,5 +386,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         console.error("L'élément avec l'ID 'play' n'existe pas.");
     }
 });
-
 
