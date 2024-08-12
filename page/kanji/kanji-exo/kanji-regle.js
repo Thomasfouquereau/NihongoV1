@@ -245,75 +245,75 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // Fonction pour mettre à jour le nombre de kanjis sélectionnés
-           // Fonction pour mettre à jour le nombre de kanjis sélectionnés
-function mettreAJourNbKanji() {
-    const maxKanjiSelectable = localStorage.getItem('Nb kanji') || 10;
-    nbKanjiDiv.textContent = `${selectedKanjis.length}/${maxKanjiSelectable}`;
-}
+            // Fonction pour mettre à jour le nombre de kanjis sélectionnés
+            function mettreAJourNbKanji() {
+                const maxKanjiSelectable = localStorage.getItem('Nb kanji') || 10;
+                nbKanjiDiv.textContent = `${selectedKanjis.length}/${maxKanjiSelectable}`;
+            }
 
-// Appliquer la couleur de bordure et de police aux kanjis déjà sélectionnés
-kanjiItems.forEach(item => {
-    const kanji = item.querySelector('.kanji').textContent;
-    if (selectedKanjis.some(k => k.kanji === kanji)) {
-        item.style.borderColor = '#9EFF9E';
-        item.querySelector('.kanji').style.color = '#9EFF9E';
-    }
-});
-
-kanjiItems.forEach((item, index) => {
-    item.addEventListener('click', function () {
-        const maxKanjiSelectable = localStorage.getItem('Nb kanji') || 10;
-        const kanji = item.querySelector('.kanji').textContent;
-
-        // Vérifier si le kanji est déjà sélectionné
-        const kanjiIndex = selectedKanjis.findIndex(k => k.kanji === kanji);
-        if (kanjiIndex !== -1) {
-            // Retirer le kanji de la liste
-            selectedKanjis.splice(kanjiIndex, 1);
-            localStorage.setItem('selectedKanjis', JSON.stringify(selectedKanjis));
-            item.style.borderColor = ''; // Réinitialiser la couleur de la bordure
-            item.querySelector('.kanji').style.color = ''; // Réinitialiser la couleur de la police
-            afficherKanjisSelectionnes();
-            mettreAJourNbKanji();
-            return;
-        }
-
-        if (selectedKanjis.length >= maxKanjiSelectable) {
-            alert('Vous avez atteint le nombre maximum de kanjis sélectionnables.');
-            return;
-        }
-
-        fetch('../../../data/kanji/liste kanji.json')
-            .then(response => response.json())
-            .then(data => {
-                const kanjiInfo = data.kanji.find(k => k.Kanji === kanji);
-
-                if (kanjiInfo) {
-                    const meaning = kanjiInfo.Meaning;
-                    const secondaryMeaning = kanjiInfo.SecondaryMeaning;
-
-                    const newKanji = {
-                        id: selectedKanjis.length + 1,
-                        kanji: kanji,
-                        meaning: meaning,
-                        secondaryMeaning: secondaryMeaning,
-                        OnPrincipalReading: kanjiInfo.OnPrincipalReading,
-                        KunPrincipalReading: kanjiInfo.KunPrincipalReading,
-                    };
-
-                    selectedKanjis.push(newKanji);
-                    localStorage.setItem('selectedKanjis', JSON.stringify(selectedKanjis));
-                    item.style.borderColor = '#9EFF9E'; // Appliquer la couleur de la bordure
-                    item.querySelector('.kanji').style.color = '#9EFF9E'; // Appliquer la couleur de la police
-                    afficherKanjisSelectionnes();
-                    mettreAJourNbKanji();
+            // Appliquer la couleur de bordure et de police aux kanjis déjà sélectionnés
+            kanjiItems.forEach(item => {
+                const kanji = item.querySelector('.kanji').textContent;
+                if (selectedKanjis.some(k => k.kanji === kanji)) {
+                    item.style.borderColor = '#9EFF9E';
+                    item.querySelector('.kanji').style.color = '#9EFF9E';
                 }
             });
-    });
-});
 
-// Initialiser le nombre de kanjis sélectionnés au chargement de la page
-mettreAJourNbKanji();
+            kanjiItems.forEach((item, index) => {
+                item.addEventListener('click', function () {
+                    const maxKanjiSelectable = localStorage.getItem('Nb kanji') || 10;
+                    const kanji = item.querySelector('.kanji').textContent;
+
+                    // Vérifier si le kanji est déjà sélectionné
+                    const kanjiIndex = selectedKanjis.findIndex(k => k.kanji === kanji);
+                    if (kanjiIndex !== -1) {
+                        // Retirer le kanji de la liste
+                        selectedKanjis.splice(kanjiIndex, 1);
+                        localStorage.setItem('selectedKanjis', JSON.stringify(selectedKanjis));
+                        item.style.borderColor = ''; // Réinitialiser la couleur de la bordure
+                        item.querySelector('.kanji').style.color = ''; // Réinitialiser la couleur de la police
+                        afficherKanjisSelectionnes();
+                        mettreAJourNbKanji();
+                        return;
+                    }
+
+                    if (selectedKanjis.length >= maxKanjiSelectable) {
+                        alert('Vous avez atteint le nombre maximum de kanjis sélectionnables.');
+                        return;
+                    }
+
+                    fetch('../../../data/kanji/liste kanji.json')
+                        .then(response => response.json())
+                        .then(data => {
+                            const kanjiInfo = data.kanji.find(k => k.Kanji === kanji);
+
+                            if (kanjiInfo) {
+                                const meaning = kanjiInfo.Meaning;
+                                const secondaryMeaning = kanjiInfo.SecondaryMeaning;
+
+                                const newKanji = {
+                                    id: selectedKanjis.length + 1,
+                                    kanji: kanji,
+                                    meaning: meaning,
+                                    secondaryMeaning: secondaryMeaning,
+                                    OnPrincipalReading: kanjiInfo.OnPrincipalReading,
+                                    KunPrincipalReading: kanjiInfo.KunPrincipalReading,
+                                };
+
+                                selectedKanjis.push(newKanji);
+                                localStorage.setItem('selectedKanjis', JSON.stringify(selectedKanjis));
+                                item.style.borderColor = '#9EFF9E'; // Appliquer la couleur de la bordure
+                                item.querySelector('.kanji').style.color = '#9EFF9E'; // Appliquer la couleur de la police
+                                afficherKanjisSelectionnes();
+                                mettreAJourNbKanji();
+                            }
+                        });
+                });
+            });
+
+            // Initialiser le nombre de kanjis sélectionnés au chargement de la page
+            mettreAJourNbKanji();
 
             // Ajouter l'écouteur d'événement pour le bouton "Vider"
             viderButton.addEventListener('click', function () {
@@ -344,7 +344,7 @@ function playGame() {
     const selectedKanjis = JSON.parse(localStorage.getItem('selectedKanjis'));
     const NbKanji = localStorage.getItem('Nb kanji');
 
-    if ( NbKanji === "0") {
+    if (NbKanji === "0") {
         alert('Veuillez sélectionner Nombre de Kanji dans l exercice.');
         console.log('Veuillez sélectionner Nombre de Kanji dans l exercice.');
         return;
@@ -356,26 +356,19 @@ function playGame() {
         alert('Veuillez sélectionner le mode dans l exercice.');
         console.log('Veuillez sélectionner le mode dans l exercice.');
         return;
-    } if (NbKanji === '10' && selectedKanjis.length < 10) {
-        alert('Veuillez sélectionner 10 kanjis.');
-        console.log('Veuillez sélectionner 10 kanjis.');
-        return;
-    } if (NbKanji === '20' && selectedKanjis.length < 20) {
-        alert('Veuillez sélectionner 20 kanjis.');
-        console.log('Veuillez sélectionner 20 kanjis.');
-        return;
-    } if (NbKanji === '30' && selectedKanjis.length < 30) {
-        alert('Veuillez sélectionner 30 kanjis.');
-        console.log('Veuillez sélectionner 30 kanjis.');
-        return;
-    } if (NbKanji === '40' && selectedKanjis.length < 40) {
-        alert('Veuillez sélectionner 40 kanjis.');
-        console.log('Veuillez sélectionner 40 kanjis.');
-        return;
+    } if (mode === '1') {
+        if (selectedKanjis.length === 0) {
+            alert('Veuillez sélectionner au moins un kanji.');
+            console.log('Veuillez sélectionner au moins un kanji.');
+            return;
+        } if (selectedKanjis.length < NbKanji) {
+            alert('Veuillez sélectionner le nombre de kanji correspondant.');
+            console.log('Veuillez sélectionner le nombre de kanji correspondant.');
+            return;
+        }
     } else {
         window.location.href = `../../exercice/exercice.html`;
     }
-
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {

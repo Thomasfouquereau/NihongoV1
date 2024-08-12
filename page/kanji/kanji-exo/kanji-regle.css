@@ -70,12 +70,17 @@
     background-color: var(--couleur-principale);
     color: var(--couleur-secondaire);
     font-size: 2vw;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
 
 .nb-kanji-select button:nth-child(1) {
     position: absolute;
     left: -0.5vw;
     bottom: 4.6vw;
+}
+
+.nb-kanji-select button:hover {
+    background-color: #2a4733;
 }
 
 .nb-kanji-select button:nth-child(2) {
@@ -186,6 +191,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.difficult-btn-select:hover {
+    background-color: #2a4733;
 }
 
 #barre{
@@ -385,6 +395,11 @@
     padding: 0;
     margin: 0;
     text-align: left;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.mode-1:hover {
+    background-color: #2a4733;
 }
 
 .mode-1 span:nth-child(1) {
@@ -426,6 +441,11 @@
     position: relative;
     background-color: var(--couleur-principale);
     color: var(--couleur-secondaire);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.mode-2:hover {
+    background-color: #2a4733;
 }
 
 .mode-2 span:nth-child(1) {
@@ -465,6 +485,11 @@
     transform: translateX(-0.2vw);
     background-color: var(--couleur-principale);
     color: var(--couleur-secondaire);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.mode-3:hover {
+    background-color: #2a4733;
 }
 
 .mode-3 span:nth-child(1) {
