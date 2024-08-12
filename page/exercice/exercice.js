@@ -2,11 +2,9 @@ function initExercice() {
     document.addEventListener('DOMContentLoaded', function () {
         const mode = localStorage.getItem('Mode');
 
-
         function getRandomNumber(max) {
             return Math.floor(Math.random() * max) + 1;
         }
-
 
         function generateFalseAnswers(kanjiData, correctAnswer) {
             const falseAnswers = [];
@@ -48,7 +46,6 @@ function initExercice() {
                 const randomKanjiList = generateUniqueRandomNumbers(NbKanji).map(id => kanjiData.find(kanji => kanji.id === id));
 
                 headerMenuKanjiDiv.innerHTML = randomKanjiList.map(kanji => `<span>${kanji.kanji}</span>`).join(' ');
-
 
                 let currentKanjiIndex = 0;
                 displayCurrentKanji(randomKanjiList[currentKanjiIndex]);
@@ -122,13 +119,11 @@ function initExercice() {
                     questionFurigana2.style.display = 'none';
                 }
 
-
                 questionKanjiDiv.innerHTML = currentKanji.kanji;
                 questionFurigana.innerHTML = currentKanji.OnPrincipalReading;
                 questionFurigana2.innerHTML = currentKanji.KunPrincipalReading;
                 questionRomaji.innerHTML = currentKanji.OnPrincipalReadingRomaji;
                 questionRomaji2.innerHTML = currentKanji.KunPrincipalReadingRomaji;
-
 
                 const reponseDiv = document.querySelector('.reponse');
                 if (reponseDiv) {
@@ -154,8 +149,6 @@ function initExercice() {
                             const trueCount = parseInt(trueCounter.textContent || '0', 10);
                             const falseCount = parseInt(falseCounter.textContent || '0', 10);
                             const counter = trueCount + falseCount;
-
-                           
 
                             if (this.textContent === correctAnswer) {
                                 this.style.borderColor = '#9EFF9E';
@@ -345,7 +338,7 @@ function initExercice() {
                     const reponseDiv = document.querySelector('.reponse');
                     const kanjis = data.kanji;
 
-
+                    
                     if (!Array.isArray(kanjis)) {
                         throw new Error('Expected an array but got ' + typeof kanjis);
                     }
@@ -520,7 +513,6 @@ function initExercice() {
                                             questionFurigana.style.color = '#F7F7F2';
                                             questionFurigana2.style.color = '#F7F7F2';
                                         }
-
                                     }, 2000);
                                 }
 
@@ -553,7 +545,6 @@ function initExercice() {
                 .catch(error => {
                     console.error('Error:', error);
                 });
-
         }
     });
 }

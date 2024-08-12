@@ -35,3 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('There has been a problem with your fetch operation:', error);
         });
 });
+
+localStorage.setItem('Nb kanji', "0")
+localStorage.setItem('Difficulté', "0");
+localStorage.setItem('Mode', "0");

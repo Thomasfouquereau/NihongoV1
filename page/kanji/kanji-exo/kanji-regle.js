@@ -13,6 +13,8 @@ const mode3 = document.getElementById('mode-3');
 
 const play = document.getElementById('play');
 
+
+
 nbKanjiSelect10.addEventListener('click', function () {
     localStorage.setItem('Nb kanji', '10');
 });
@@ -336,3 +338,55 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('There has been a problem with your fetch operation:', error);
         });
 });
+
+
+function playGame() {
+    const difficulte = localStorage.getItem('Difficulté');
+    const mode = localStorage.getItem('Mode');
+    const selectedKanjis = JSON.parse(localStorage.getItem('selectedKanjis'));
+    const NbKanji = localStorage.getItem('Nb kanji');
+
+    if ( NbKanji === "0") {
+        alert('Veuillez sélectionner Nombre de Kanji dans l exercice.');
+        console.log('Veuillez sélectionner Nombre de Kanji dans l exercice.');
+        return;
+    } if (difficulte === '0') {
+        alert('Veuillez sélectionner la difficulté dans l exercice.');
+        console.log('Veuillez sélectionner la difficulté dans l exercice.');
+        return;
+    } if (mode === '0') {
+        alert('Veuillez sélectionner le mode dans l exercice.');
+        console.log('Veuillez sélectionner le mode dans l exercice.');
+        return;
+    } if (NbKanji === '10' && selectedKanjis.length < 10) {
+        alert('Veuillez sélectionner 10 kanjis.');
+        console.log('Veuillez sélectionner 10 kanjis.');
+        return;
+    } if (NbKanji === '20' && selectedKanjis.length < 20) {
+        alert('Veuillez sélectionner 20 kanjis.');
+        console.log('Veuillez sélectionner 20 kanjis.');
+        return;
+    } if (NbKanji === '30' && selectedKanjis.length < 30) {
+        alert('Veuillez sélectionner 30 kanjis.');
+        console.log('Veuillez sélectionner 30 kanjis.');
+        return;
+    } if (NbKanji === '40' && selectedKanjis.length < 40) {
+        alert('Veuillez sélectionner 40 kanjis.');
+        console.log('Veuillez sélectionner 40 kanjis.');
+        return;
+    } else {
+        window.location.href = `../../exercice/exercice.html`;
+    }
+
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const playButton = document.getElementById('play');
+    if (playButton) {
+        playButton.addEventListener('click', playGame);
+    } else {
+        console.error("L'élément avec l'ID 'play' n'existe pas.");
+    }
+});
+
+
