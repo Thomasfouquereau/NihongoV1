@@ -103,6 +103,24 @@ function initExercice() {
                 const questionFurigana2 = document.querySelector('.question-furigana2');
                 const questionRomaji = document.querySelector('.question-romaji');
                 const questionRomaji2 = document.querySelector('.question-romaji2');
+                const difficulty = localStorage.getItem('Difficulté');
+
+                if (difficulty === '1') {
+                    questionRomaji.style.display = 'flex';
+                    questionRomaji2.style.display = 'flex';
+                    questionFurigana.style.display = 'flex';
+                    questionFurigana2.style.display = 'flex';
+                } if (difficulty === '2') {
+                    questionRomaji.style.display = 'none';
+                    questionRomaji2.style.display = 'none';
+                    questionFurigana.style.display = 'flex';
+                    questionFurigana2.style.display = 'flex';
+                } if (difficulty === '3') {
+                    questionRomaji.style.display = 'none';
+                    questionRomaji2.style.display = 'none';
+                    questionFurigana.style.display = 'none';
+                    questionFurigana2.style.display = 'none';
+                }
 
 
                 questionKanjiDiv.innerHTML = currentKanji.kanji;
@@ -136,6 +154,9 @@ function initExercice() {
                             const trueCount = parseInt(trueCounter.textContent || '0', 10);
                             const falseCount = parseInt(falseCounter.textContent || '0', 10);
                             const counter = trueCount + falseCount;
+
+                           
+
                             if (this.textContent === correctAnswer) {
                                 this.style.borderColor = '#9EFF9E';
                                 this.classList.add('jello-horizontal');
@@ -160,7 +181,7 @@ function initExercice() {
                                         questionRomaji2.style.color = '#F7F7F2 ';
                                         questionFurigana.style.color = '#F7F7F2 ';
                                         questionFurigana2.style.color = '#F7F7F2 ';
-                                    } else if (difficulty === '2') {
+                                    } if (difficulty === '2') {
                                         questionRomaji.style.display = 'none';
                                         questionRomaji2.style.display = 'none';
                                         questionFurigana.style.display = 'flex';
@@ -169,7 +190,7 @@ function initExercice() {
                                         questionRomaji2.style.color = '#F7F7F2';
                                         questionFurigana.style.color = '#F7F7F2';
                                         questionFurigana2.style.color = '#F7F7F2';
-                                    } else if (difficulty === '3') {
+                                    } if (difficulty === '3') {
                                         questionRomaji.style.display = 'none';
                                         questionRomaji2.style.display = 'none';
                                         questionFurigana.style.display = 'none';
@@ -224,7 +245,7 @@ function initExercice() {
                                                 questionRomaji2.style.color = '#F7F7F2';
                                                 questionFurigana.style.color = '#F7F7F2';
                                                 questionFurigana2.style.color = '#F7F7F2';
-                                            } else if (difficulty === '2') {
+                                            } if (difficulty === '2') {
                                                 questionRomaji.style.display = 'none';
                                                 questionRomaji2.style.display = 'none';
                                                 questionFurigana.style.display = 'flex';
@@ -233,7 +254,7 @@ function initExercice() {
                                                 questionRomaji2.style.color = '#F7F7F2';
                                                 questionFurigana.style.color = '#F7F7F2';
                                                 questionFurigana2.style.color = '#F7F7F2';
-                                            } else if (difficulty === '3') {
+                                            } if (difficulty === '3') {
                                                 questionRomaji.style.display = 'none';
                                                 questionRomaji2.style.display = 'none';
                                                 questionFurigana.style.display = 'none';
@@ -343,6 +364,24 @@ function initExercice() {
 
                     function displayQuestion() {
                         const currentKanji = randomKanjis[currentQuestionIndex];
+                        const difficulty = localStorage.getItem('Difficulté');
+
+                        if (difficulty === '1') {
+                            questionRomaji.style.display = 'flex';
+                            questionRomaji2.style.display = 'flex';
+                            questionFurigana.style.display = 'flex';
+                            questionFurigana2.style.display = 'flex';
+                        } if (difficulty === '2') {
+                            questionRomaji.style.display = 'none';
+                            questionRomaji2.style.display = 'none';
+                            questionFurigana.style.display = 'flex';
+                            questionFurigana2.style.display = 'flex';
+                        } if (difficulty === '3') {
+                            questionRomaji.style.display = 'none';
+                            questionRomaji2.style.display = 'none';
+                            questionFurigana.style.display = 'none';
+                            questionFurigana2.style.display = 'none';
+                        }
 
                         questionKanjiDiv.innerHTML = `<span class="span">${currentKanji.Kanji}</span>`;
                         questionFurigana.innerHTML = `<span class="span">${currentKanji.OnPrincipalReading}</span>`;
