@@ -15,7 +15,7 @@
             "KunPrincipalReading": "ひと(つ)",
             "OnPrincipalReadingRomaji": "ichi",
             "KunPrincipalReadingRomaji": "hito(tsu)",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "un",
             "SecondaryMeaning": null
         },
@@ -34,7 +34,7 @@
             "KunPrincipalReading": "ふた(つ)",
             "OnPrincipalReadingRomaji": "ni",
             "KunPrincipalReadingRomaji": "futa(tsu)",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "deux",
             "SecondaryMeaning": null
         },
@@ -52,7 +52,7 @@
             "KunPrincipalReading": "み(つ)",
             "OnPrincipalReadingRomaji": "san",
             "KunPrincipalReadingRomaji": "mi(tsu)",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "trois",
             "SecondaryMeaning": null
         },
@@ -71,7 +71,7 @@
             "KunPrincipalReading": "よん",
             "OnPrincipalReadingRomaji": "shi",
             "KunPrincipalReadingRomaji": "yon",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "quatre",
             "SecondaryMeaning": null
         },
@@ -89,7 +89,7 @@
             "KunPrincipalReading": "いつ(つ)",
             "OnPrincipalReadingRomaji": "go",
             "KunPrincipalReadingRomaji": "itsu(tsu)",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "cinq",
             "SecondaryMeaning": null
         },
@@ -108,7 +108,7 @@
             "KunPrincipalReading": "む(つ)",
             "OnPrincipalReadingRomaji": "roku",
             "KunPrincipalReadingRomaji": "mu(tsu)",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "six",
             "SecondaryMeaning": null
         },
@@ -127,7 +127,7 @@
             "KunPrincipalReading": "なな(つ)",
             "OnPrincipalReadingRomaji": "shichi",
             "KunPrincipalReadingRomaji": "nana(tsu)",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "sept",
             "SecondaryMeaning": null
         },
@@ -146,7 +146,7 @@
             "KunPrincipalReading": "や(つ)",
             "OnPrincipalReadingRomaji": "hachi",
             "KunPrincipalReadingRomaji": "ya(tsu)",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "huit",
             "SecondaryMeaning": null
         },
@@ -165,7 +165,7 @@
             "KunPrincipalReading": "ここの(つ)",
             "OnPrincipalReadingRomaji": "kyuu",
             "KunPrincipalReadingRomaji": "kokono(tsu)",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "neuf",
             "SecondaryMeaning": null
         },
@@ -173,7 +173,6 @@
             "id": 10,
             "Kanji": "十",
             "OnReading": [
-                "ジュウ",
                 "ジッ"
             ],
             "KunReading": [
@@ -184,7 +183,7 @@
             "KunPrincipalReading": "とお",
             "OnPrincipalReadingRomaji": "juu",
             "KunPrincipalReadingRomaji": "too",
-            "JLPTLevel": "N5",
+            "JLPTLevel": "N4",
             "Meaning": "dix",
             "SecondaryMeaning": null
         },

@@ -39,3 +39,4 @@ document.addEventListener('DOMContentLoaded', function () {
 localStorage.setItem('Nb kanji', "0")
 localStorage.setItem('Difficulté', "0");
 localStorage.setItem('Mode', "0");
+localStorage.setItem('selectedKanjis', "[]");

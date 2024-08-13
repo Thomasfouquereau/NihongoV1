@@ -319,6 +319,23 @@ function initExercice() {
                 return randomKanjis;
             }
 
+            function getRandomKanjiN5(data) {
+                const NbKanji = parseInt(localStorage.getItem('Nb kanji'), 10);
+                const kanjis = data.kanji;
+
+                // Filtrer les kanjis pour ne garder que ceux dont le niveau JLPT est N5
+                const kanjisN5 = kanjis.filter(kanji => kanji.JLPTLevel === 'N5');
+                const lastIndex = kanjisN5.length - 1;
+
+                const randomNumbers = new Set();
+                while (randomNumbers.size < NbKanji) {
+                    randomNumbers.add(getRandomNumber(lastIndex));
+                }
+
+                const randomKanjisN5 = Array.from(randomNumbers).map(index => kanjisN5[index]);
+                return randomKanjisN5;
+            }
+
             fetch('../../data/kanji/liste kanji.json')
                 .then(response => {
                     if (!response.ok) {
@@ -338,22 +355,35 @@ function initExercice() {
                     const reponseDiv = document.querySelector('.reponse');
                     const kanjis = data.kanji;
 
-                    
                     if (!Array.isArray(kanjis)) {
                         throw new Error('Expected an array but got ' + typeof kanjis);
                     }
 
-                    let currentQuestionIndex = 0;
-                    const randomKanjis = getRandomKanji(data);
 
-                    // Générer le contenu HTML en vérifiant que chaque objet a bien une propriété Kanji
-                    headerMenuKanjiDiv.innerHTML = randomKanjis.map(kanji => {
-                        if (kanji && kanji.Kanji) {
-                            return `<span >${kanji.Kanji}</span>`;
+                    let currentQuestionIndex = 0;
+                    let randomKanjis;
+                    if (mode === '2') {
+                        randomKanjis = getRandomKanji(data);
+                    } else if (mode === '3') {
+                        randomKanjis = getRandomKanjiN5(data);
+                    }
+                    randomKanjis.forEach(kanjiObj => {
+                        // Vérifier que l'objet kanji a une propriété 'Kanji'
+                        if (kanjiObj && kanjiObj.Kanji) {
+                            // Accéder à la propriété 'Kanji' de chaque objet kanji
+                            console.log(kanjiObj.Kanji);
                         } else {
-                            return `<span class="span">undefined</span>`;
+                            console.warn('Objet kanji invalide:', kanjiObj);
                         }
-                    }).join(' ');
+                    });
+
+                    // Insérer les kanjis dans le headerMenuKanjiDiv
+                    headerMenuKanjiDiv.innerHTML = randomKanjis
+                        .filter(kanjiObj => kanjiObj && kanjiObj.Kanji) // Filtrer les objets kanji valides
+                        .map(kanjiObj => `<span>${kanjiObj.Kanji}</span>`) // Générer le HTML pour chaque kanji
+                        .join(' ');
+
+
 
                     function displayQuestion() {
                         const currentKanji = randomKanjis[currentQuestionIndex];
@@ -452,7 +482,6 @@ function initExercice() {
                                             questionFurigana.style.color = '#F7F7F2';
                                             questionFurigana2.style.color = '#F7F7F2';
                                         }
-
                                     }, 2000);
 
                                     const childElement = headerNenuKanji.children[counter];

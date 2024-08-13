@@ -342,33 +342,38 @@ function playGame() {
     const difficulte = localStorage.getItem('Difficulté');
     const mode = localStorage.getItem('Mode');
     const selectedKanjis = JSON.parse(localStorage.getItem('selectedKanjis'));
-    const NbKanji = localStorage.getItem('Nb kanji');
+    const NbKanji = parseInt(localStorage.getItem('Nb kanji'), 10);
+    
+    console.log('Selected Kanjis:', selectedKanjis);
+    console.log('Number of Kanjis:', NbKanji);
+    console.log('Mode:', mode);
 
-    if (NbKanji === "0") {
+    if (NbKanji === 0) {
         alert('Veuillez sélectionner Nombre de Kanji dans l exercice.');
         console.log('Veuillez sélectionner Nombre de Kanji dans l exercice.');
         return;
-    } if (difficulte === '0') {
+    }
+    if (difficulte === '0') {
         alert('Veuillez sélectionner la difficulté dans l exercice.');
         console.log('Veuillez sélectionner la difficulté dans l exercice.');
         return;
-    } if (mode === '0') {
+    }
+    if (mode === '0') {
         alert('Veuillez sélectionner le mode dans l exercice.');
         console.log('Veuillez sélectionner le mode dans l exercice.');
         return;
-    } if (mode === '1') {
-        if (selectedKanjis.length === 0) {
+    }
+    if (mode === '1') {
+        if (selectedKanjis.length !== NbKanji) {
             alert('Veuillez sélectionner au moins un kanji.');
-            console.log('Veuillez sélectionner au moins un kanji.');
-            return;
-        } if (selectedKanjis.length < NbKanji) {
-            alert('Veuillez sélectionner le nombre de kanji correspondant.');
-            console.log('Veuillez sélectionner le nombre de kanji correspondant.');
+            console.log('Condition failed: selectedKanjis.length !== NbKanji');
             return;
         }
-    } else {
+    }
+     else {
         window.location.href = `../../exercice/exercice.html`;
     }
+    
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -379,4 +384,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
         console.error("L'élément avec l'ID 'play' n'existe pas.");
     }
 });
-
