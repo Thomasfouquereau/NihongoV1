@@ -48,6 +48,8 @@ mode1.addEventListener('click', function () {
 
     const ChoisirCesKanji = document.getElementById('ChoisirCesKanji');
     ChoisirCesKanji.style.display = 'flex';
+
+    window.scrollTo(0, 0);
 });
 
 mode2.addEventListener('click', function () {
@@ -343,10 +345,6 @@ function playGame() {
     const mode = localStorage.getItem('Mode');
     const selectedKanjis = JSON.parse(localStorage.getItem('selectedKanjis'));
     const NbKanji = parseInt(localStorage.getItem('Nb kanji'), 10);
-    
-    console.log('Selected Kanjis:', selectedKanjis);
-    console.log('Number of Kanjis:', NbKanji);
-    console.log('Mode:', mode);
 
     if (NbKanji === 0) {
         alert('Veuillez sélectionner Nombre de Kanji dans l exercice.');

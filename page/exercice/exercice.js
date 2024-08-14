@@ -1,5 +1,11 @@
+
+
 function initExercice() {
     document.addEventListener('DOMContentLoaded', function () {
+
+        const loader = document.getElementById('loader');
+        loader.style.display = 'block'; // Afficher le loader
+
         const mode = localStorage.getItem('Mode');
 
         function getRandomNumber(max) {
@@ -367,15 +373,6 @@ function initExercice() {
                     } else if (mode === '3') {
                         randomKanjis = getRandomKanjiN5(data);
                     }
-                    randomKanjis.forEach(kanjiObj => {
-                        // Vérifier que l'objet kanji a une propriété 'Kanji'
-                        if (kanjiObj && kanjiObj.Kanji) {
-                            // Accéder à la propriété 'Kanji' de chaque objet kanji
-                            console.log(kanjiObj.Kanji);
-                        } else {
-                            console.warn('Objet kanji invalide:', kanjiObj);
-                        }
-                    });
 
                     // Insérer les kanjis dans le headerMenuKanjiDiv
                     headerMenuKanjiDiv.innerHTML = randomKanjis
@@ -575,6 +572,9 @@ function initExercice() {
                     console.error('Error:', error);
                 });
         }
+        setTimeout(() => {
+            loader.style.display = 'none';
+        }, 2000);
     });
 }
 

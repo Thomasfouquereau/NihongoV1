@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then(data => {
-            console.log(data); // Inspectez la structure de data
-
             // Accédez à la propriété correcte de l'objet JSON
             const kanjis = data.kanji;
 
@@ -19,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Récupérez le dernier id
             const lastId = kanjis[kanjis.length - 1].id;
-
-            console.log(lastId);
 
             const lastIdSpan = document.querySelector('#last-id');
             if (lastIdSpan) {
