@@ -561,11 +561,9 @@ function initExercice() {
                                         finDiv.querySelector('.header-nenu-kanji-fin').innerHTML = headerMenuKanjiDiv.innerHTML;
                                     }
                                 }, 2000);
-
                             });
                         });
                     }
-
                     displayQuestion();
                 })
                 .catch(error => {
@@ -578,7 +576,4 @@ function initExercice() {
     });
 }
 
-
-
 initExercice();
-

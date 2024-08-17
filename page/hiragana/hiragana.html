@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Dictionnaire.css">
+    <link rel="stylesheet" href="./hiragana.css">
     <link rel="stylesheet" href="../../regle.css">
     <link rel="stylesheet" href="../../style commun.css">
-    <script src="Dictionnaire.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,44 +19,43 @@
 <body>
 
     <header>
-        <div class="info" id="up">
+        <div class="info">
             <span id="info-content"></span>
         </div>
         <div class="page">
             <div class="main-content">
                 <div class="header">
                     <div class="header-left">
-                        <a class="back" href="../kanji/kanji.html">
+                        <a class="back" href="../../index.html">
                             <img src="../../assets/back icon.svg" alt="Retour">
                             <div class="back-title">
-                                <span translate="no">もど</span>
-                                <span translate="no">戻る</span>
+                                <span>もど</span>
+                                <span>戻る</span>
                                 <span>Retour</span>
                             </div>
                         </a>
                         <div class="header-footer__heure-fr__jp">
-                            <span translate="no">フランス</span>
+                            <span>フランス</span>
                             <span id="heureFrance"></span>
                             <span>France</span>
                         </div>
                         <div class="header-footer__heure-fr__jp">
-                            <span translate="no">日本</span>
+                            <span>日本</span>
                             <span id="heureJapon"></span>
                             <span>Japon</span>
                         </div>
                     </div>
-                    <div class="header-title" id="dictionnaireTitle">
-                        <div class="kanji-header-help">
-                            <span class="furigana" translate="no">じ</span>
-                            <span class="furigana" translate="no">しょ</span>
-                        </div>
-                        <h1 translate="no">辞書</h1>
-                        <span>Dictionnaire</span>
+                    <div class="header-title" id="kanjiTitle">
+                        <span class="Hiragana">ひらがな</span>
+                        <h1>あ</h1>
+                        <span>Hiragana</span>
                     </div>
                     <div class="header-right">
                         <div class="header-right__kanji-info">
-                            <span>Nombre de kanji enregistrer</span>
-                            <span id="last-id"></span>
+                            <span>Nombre de Hiragana enregistrer</span>
+                            <div>
+                                <p class="nb-kanji-save1" id="last-id"></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -70,35 +68,45 @@
                                 <span>Accueil du site</span>
                             </div>
                         </a>
-                        <div class="coming-soon">
-                            <div class="a-venir__content">
-                                <span translate="no">きんじつこうかい</span>
-                                <span translate="no">近日公開</span>
-                                <span>Prochainement</span>
+                        <a class="Dictionnaire" href="../Dictionnaire/Dictionnaire.html">
+                            <span class="Dictionnaire-title-fr">Dictionnaire</span>
+                            <div class="Dictionnaire-title">
+                                <div class="kanji-header-help">
+                                    <span class="furigana-1" translate="no">じ</span>
+                                    <span class="furigana-2" translate="no">しょ</span>
+                                </div>
+                                <span class="Dictionnaire-title__main" translate="no">辞書</span>
+                                <div class="Dictionnaire-kanji">
+                                    <span id="last-id-solo"></span>
+                                    <div class="Dictionnaire-kanji__title">
+                                        <span class="Dictionnaire-Hiragana" translate="no">ひらがな</span>
+                                        <h3 translate="no">あ</h3>
+                                        <span>Hiragana</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="a-venir__content">
-                                <span translate="no">きんじつこうかい</span>
-                                <span translate="no">近日公開</span>
-                                <span>Prochainement</span>
-                            </div>
-                            <div class="a-venir__content">
-                                <span translate="no">きんじつこうかい</span>
-                                <span translate="no">近日公開</span>
-                                <span>Prochainement</span>
-                            </div>
-                        </div>
+                        </a>
                     </div>
-
-                    <div class="other-dic">
-                        <div class="other-dic-card">
-                            <span translate="no">カタカナ</span>
-                            <span translate="no">ア</span>
-                            <span>Katakana</span>
+                    <a class="play" href="./kanji-exo/kanji-regle.html">
+                        <span>Commencer</span>
+                        <img src="../../assets/left [ icon.svg" alt="">
+                        <img src="../../assets/right ] icon.svg" alt="">
+                        <span class="furigana" translate="no">はじ</span>
+                        <span translate="no">始める</span>
+                    </a>
+                    <div class="coming-soon">
+                        <div class="a-venir__content-1">
+                            <span translate="no">きんじつこうかい</span>
+                            <span translate="no">近日公開</span>
+                            <span>Prochainement</span>
                         </div>
-                        <div class="other-dic-card">
-                            <span translate="no">ひらがな</span>
-                            <span translate="no">あ</span>
-                            <span>Hiragana</span>
+                        <div>
+                            <div class="a-venir__content-2">
+                                <span translate="no">きんじつこうかい</span>
+                                <span translate="no">近日公開</span>
+                                <span>Prochainement</span>
+                                <img src="../../assets/draw icon.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,35 +159,12 @@
                     <span class="menu__content-fr">a venir</span>
                 </div>
             </div>
-            <div class="comb">
-
-            </div>
         </div>
     </header>
-    <div class="menu__dictionnaire">
-        <a href="../../index.html"><img src="../../assets/home icon.svg" /></a>
-        <button id="recherche"><img src="../../assets/recherche icon.svg" /></button>
-        <a href="#up"><img src="../../assets/up icon.svg" /></a>
-    </div>
-
-    <div class="recherche-container">
-        <input type="text" id="rechercheInput" placeholder="Rechercher un kanji">
-        <div class="resultats">
-
-        </div>
-        <button class="fermer">Fermer</button>
-    </div>
-
-    <section>
-
-        <div class="dictionnaire">
-
-        </div>
-
-    </section>
 
 </body>
 <script src="../../script.js"></script>
 <script src="../../heure.js"></script>
+<script src="./hiragana.js"></script>
 
 </html>

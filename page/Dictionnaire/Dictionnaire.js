@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const dictionnaire = document.querySelector('.dictionnaire');
+    const Recherche = document.querySelector('.recherche');
+    const RechercheBar = document.querySelector('#rechercheInput');
+    const Resultats = document.querySelector('.resultats');
+    const RechercheContainer = document.querySelector('.recherche-container');
     let lastId = null;
+
+
+
 
     fetch('../../data/kanji/liste kanji.json')
         .then(response => {
@@ -29,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 lastIdSpan.textContent = ` ${lastId}/2000`;
             }
 
+
+
             // Traitez les données JSON ici
             let htmlContent = '';
             kanjis.forEach(item => {
@@ -52,4 +61,23 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => {
             console.error('There has been a problem with your fetch operation:', error);
         });
+});
+
+const Recherche = document.querySelector('#recherche');
+const RechercheBar = document.querySelector('#rechercheInput');
+const Resultats = document.querySelector('.resultats');
+const RechercheContainer = document.querySelector('.recherche-container');
+const fermer = document.querySelector('.fermer');
+
+Recherche.addEventListener('click', function () {
+    if (RechercheContainer.style.display === 'flex') {
+        RechercheContainer.style.display = 'none';
+    } else {
+        RechercheContainer.style.display = 'flex';
+        RechercheBar.focus();
+    }
+});
+
+fermer.addEventListener('click', function () {
+    RechercheContainer.style.display = 'none';
 });

@@ -1,11 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .page {
     display: flex;
     width: 100vw;
     background-color: var(--couleur-primaire);
 }
 
-#dictionnaireTitle{
-    background: radial-gradient(circle, rgb(47, 74, 84) 59%, rgb(37, 37, 37) 99%)!important ;
+#dictionnaireTitle {
+    background: radial-gradient(circle, rgb(47, 74, 84) 59%, rgb(37, 37, 37) 99%) !important;
 }
 
 .menu a:nth-child(1) {
@@ -50,8 +54,8 @@
 
 @media screen and (max-width: 560px) {
 
-    .home{
-        top: 455vw!important;
+    .home {
+        top: 455vw !important;
     }
 
     .header-left {
@@ -147,7 +151,7 @@
     transform: translate(0.2vw, -1.1vw);
 }
 
-.other-dic-card{
+.other-dic-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,14 +182,14 @@
 }
 
 
-@media  screen and (max-width: 560px) {
+@media screen and (max-width: 560px) {
 
     .coming-soon {
         transform: translate(0.2vw, -0);
         width: var(--all-width);
         height: 89vw;
         background-color: var(--couleur-primaire);
-        z-index: 100;  
+        z-index: 100;
         position: absolute;
         top: 366vw;
     }
@@ -243,7 +247,7 @@
     .other-dic-card span:nth-child(3) {
         font-size: 5vw;
     }
-    
+
 }
 
 /* ___________________________________ dictionnaire */
@@ -298,7 +302,7 @@
     align-items: center;
 }
 
-.PrincipalReading{
+.PrincipalReading {
     font-size: 0.8vw;
     font-weight: 300;
     text-transform: capitalize;
@@ -310,7 +314,8 @@
     margin-bottom: 0.5vw;
 }
 
-.meaning,.PrincipalReadingRomaji {
+.meaning,
+.PrincipalReadingRomaji {
     font-size: 0.8vw;
     font-weight: 300;
     text-transform: capitalize;
@@ -324,18 +329,18 @@
     position: absolute;
     font-size: 0.9vw;
     font-weight: 300;
-    
+
 }
 
 .on-reading,
-.kun-reading{
+.kun-reading {
     width: 70%;
     text-wrap-mode: wrap;
     text-align: left;
 }
 
 .PrincipalReadingContainer,
-.PrincipalReadingRomajiContainer{
+.PrincipalReadingRomajiContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -378,7 +383,7 @@
         border-radius: var(--border-radius-mobile);
     }
 
-    .PrincipalReading{
+    .PrincipalReading {
         font-size: 4vw;
         font-weight: 300;
         text-transform: capitalize;
@@ -388,7 +393,8 @@
         font-size: 10vw;
     }
 
-    .meaning,.PrincipalReadingRomaji {
+    .meaning,
+    .PrincipalReadingRomaji {
         font-size: 4vw;
     }
 
@@ -421,19 +427,152 @@
 
 }
 
-.comb{
+.comb {
     position: absolute;
     border: 0.2vw solid var(--couleur-secondaire);
     right: 0.05vw;
     border-radius: var(--border-radius);
     width: 7.20vw;
     height: 25.75vw;
-    top:48.6vw
+    top: 48.6vw
 }
 
 @media screen and (max-width: 560px) {
-    .comb{
+    .comb {
         display: none;
+    }
+
+}
+
+/* ___________________________________ fin */
+
+/* ___________________________________ menu__dictionnaire */
+
+.menu__dictionnaire {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25vw;
+    height: 4vw;
+    background-color: #353535;
+    position: sticky;
+    z-index: 1002;
+    top: 89vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1.2vw;
+    background: #353535;
+    box-shadow: inset 2vw 2vw 3vw #292929,
+        inset -2vw -2vw 3vw #414141;
+}
+
+.menu__dictionnaire img {
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s;
+}
+
+.menu__dictionnaire img:hover {
+    transform: scale(1.2);
+}
+
+#recherche {
+    background-color: #35353500;
+    border: none;
+
+}
+
+.recherche-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #353535e6;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1001;
+}
+
+.recherche-container input {
+    width: 50vw;
+    height: 4vw;
+    border-radius: 1.2vw;
+    border: 0.2vw solid var(--couleur-secondaire);
+    font-size: 1.5vw;
+    padding-left: 1vw;
+    color: #353535;
+    position: absolute;
+    top :10vw
+}
+
+.resultats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 10vw;
+}
+
+.fermer {
+    position: absolute;
+    right: 3vw;
+    top: 89vh;
+    width: 12vw;
+    height: 4vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+    background: #353535;
+    box-shadow: inset 2vw 2vw 3vw #292929,
+        inset -2vw -2vw 3vw #414141;
+    color: var(--couleur-secondaire);
+    border: none;
+    border-radius: 1vw;
+}
+
+@media screen and (max-width: 560px) {
+
+    .menu__dictionnaire {
+        height: 20vw;
+        width: 75vw;
+        top: 89.5vh;
+        position: fixed;
+        border-radius: 2vw;
+        box-shadow: inset 1vw 1vw 2vw #292929,
+        inset -1vw -1vw 2vw #414141;
+    }
+
+    .menu__dictionnaire img {
+        width: 9vw;
+        height: 9vw;
+    }
+
+
+    .recherche-container input {
+        width: 80vw;
+        height: 13vw;
+        font-size: 4vw;
+        top: 40vw;
+        border-radius: 4vw;
+    }
+
+    .resultats{
+        margin-top: 20vw;
+    }
+
+    .fermer {
+        width: 28vw;
+        height: 10vw;
+        font-size: 4vw;
+        top: 84vh;
+        right: 50%;
+        transform: translateX(50%);
+        box-shadow: inset 1vw 1vw 2vw #292929,
+        inset -1vw -1vw 2vw #414141;
     }
     
 }
