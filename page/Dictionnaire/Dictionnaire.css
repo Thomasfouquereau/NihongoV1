@@ -548,7 +548,8 @@ html {
     .menu__dictionnaire {
         height: 20vw;
         width: 75vw;
-        top: 195.5vw;
+        top: auto;
+        bottom: 5vw;
         position: fixed;
         border-radius: 2vw;
         box-shadow: inset 1vw 1vw 2vw #292929,
@@ -559,7 +560,6 @@ html {
         width: 9vw;
         height: 9vw;
     }
-
 
     .recherche-container input {
         width: 80vw;
@@ -583,5 +583,5 @@ html {
         box-shadow: inset 1vw 1vw 2vw #292929,
         inset -1vw -1vw 2vw #414141;
     }
-    
+
 }
