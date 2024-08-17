@@ -655,7 +655,7 @@
     color: var(--couleur-secondaire);
 }
 
-.fermer{
+#fermer-ChoisirCesKanji{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -760,7 +760,7 @@
         margin: 3vw;
     }
 
-    .fermer{
+    #fermer-ChoisirCesKanji{
         height: 20vw;
         font-size: 6vw;
         padding: 4vw;

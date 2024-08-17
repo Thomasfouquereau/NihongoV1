@@ -186,7 +186,7 @@ modeSelectors.forEach(selector => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const fermerButton = document.querySelector('.fermer');
+    const fermerButton = document.querySelector('#fermer-ChoisirCesKanji');
     const popup = document.getElementById('ChoisirCesKanji');
 
     if (fermerButton && popup) {

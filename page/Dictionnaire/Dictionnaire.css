@@ -390,7 +390,16 @@ html {
     }
 
     .kanji {
-        font-size: 10vw;
+        font-size: 14vw;
+    }
+
+    .kanji-meaning{
+        height: 10vw;
+    }
+
+    .PrincipalReadingContainer,
+    .PrincipalReadingRomajiContainer{
+        width: 60vw;
     }
 
     .meaning,
@@ -539,7 +548,7 @@ html {
     .menu__dictionnaire {
         height: 20vw;
         width: 75vw;
-        top: 89.5vh;
+        top: 195.5vw;
         position: fixed;
         border-radius: 2vw;
         box-shadow: inset 1vw 1vw 2vw #292929,
@@ -568,7 +577,7 @@ html {
         width: 28vw;
         height: 10vw;
         font-size: 4vw;
-        top: 84vh;
+        top: 182vw;
         right: 50%;
         transform: translateX(50%);
         box-shadow: inset 1vw 1vw 2vw #292929,
