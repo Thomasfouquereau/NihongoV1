@@ -576,12 +576,12 @@ html {
         width: 80vw;
         height: 13vw;
         font-size: 4vw;
-        top: 30vw;
+        top: 15vw;
         border-radius: 4vw;
     }
 
     .resultats{
-        top: 40vw;
+        top: 30vw;
     }
 
     .fermer {
