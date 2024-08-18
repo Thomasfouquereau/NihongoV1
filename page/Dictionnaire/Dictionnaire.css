@@ -527,14 +527,15 @@ html {
     height: 60%;
     margin-top: 10vw;
     overflow-y: scroll;
-    scrollbar-color: rebeccapurple green;
+    scrollbar-color: #F7F7F2;
     scrollbar-width: thin;
     position: absolute;
     top: 2vw;
     padding-top: 1.3vw;
     padding-bottom: 1.3vw;
-    border: var(--border-size) solid var(--couleur-secondaire);
     border-radius: var(--border-radius);
+    box-shadow:  33px 33px 74px #1e1e1e,
+             -33px -33px 74px #4c4c4c;
 }
 
 .fermer {
@@ -588,8 +589,8 @@ html {
         width: 28vw;
         height: 10vw;
         font-size: 4vw;
-        top: auto;
-        bottom: 5vw;
+        top: 2vw;
+        bottom: auto;
         right: 50%;
         transform: translateX(50%);
         box-shadow: inset 1vw 1vw 2vw #292929,

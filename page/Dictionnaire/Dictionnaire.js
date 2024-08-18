@@ -114,6 +114,16 @@ document.addEventListener('DOMContentLoaded', function() {
             const filteredKanjis = kanjis.filter(kanji => 
                 kanji.Meaning.toLowerCase().includes(searchTerm.toLowerCase())
             );
+
+            // Prioriser les kanjis dont la signification commence par le terme de recherche
+            filteredKanjis.sort((a, b) => {
+                const aStartsWith = a.Meaning.toLowerCase().startsWith(searchTerm.toLowerCase());
+                const bStartsWith = b.Meaning.toLowerCase().startsWith(searchTerm.toLowerCase());
+                if (aStartsWith && !bStartsWith) return -1;
+                if (!aStartsWith && bStartsWith) return 1;
+                return 0;
+            });
+
             displayKanjis(filteredKanjis);
         } else {
             kanjiResults.innerHTML = ''; // Vider les résultats si la barre de recherche est vide
