@@ -262,6 +262,7 @@ html {
 }
 
 .kanji-item {
+    background-color: #353535;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -498,7 +499,7 @@ html {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #353535e6;
+    background-color: #353535;
     position: fixed;
     top: 0;
     left: 50%;
@@ -510,12 +511,11 @@ html {
     width: 50vw;
     height: 4vw;
     border-radius: 1.2vw;
-    border: 0.2vw solid var(--couleur-secondaire);
     font-size: 1.5vw;
     padding-left: 1vw;
     color: #353535;
     position: absolute;
-    top :10vw
+    top :5vw
 }
 
 .resultats{
@@ -523,8 +523,18 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 99.4vw;
+    height: 60%;
     margin-top: 10vw;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+    position: absolute;
+    top: 2vw;
+    padding-top: 1.3vw;
+    padding-bottom: 1.3vw;
+    border: var(--border-size) solid var(--couleur-secondaire);
+    border-radius: var(--border-radius);
 }
 
 .fermer {
@@ -542,6 +552,7 @@ html {
     border: none;
     border-radius: 1vw;
 }
+
 
 @media screen and (max-width: 560px) {
 
@@ -565,19 +576,20 @@ html {
         width: 80vw;
         height: 13vw;
         font-size: 4vw;
-        top: 40vw;
+        top: 30vw;
         border-radius: 4vw;
     }
 
     .resultats{
-        margin-top: 20vw;
+        top: 40vw;
     }
 
     .fermer {
         width: 28vw;
         height: 10vw;
         font-size: 4vw;
-        top: 182vw;
+        top: auto;
+        bottom: 5vw;
         right: 50%;
         transform: translateX(50%);
         box-shadow: inset 1vw 1vw 2vw #292929,
